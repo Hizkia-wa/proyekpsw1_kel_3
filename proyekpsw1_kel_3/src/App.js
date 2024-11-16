@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoginForm from "./components/LoginForm";
-import RegisterForm from "./components/RegisterForm";
+import RegisterForm from "./components/RegistrationForm";
 import Navbar from "./components/Navbar";
 import Materi from "./components/Materi";
 import LatihanSoal from "./components/LatihanSoal";

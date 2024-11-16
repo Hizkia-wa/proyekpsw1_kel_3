@@ -24,3 +24,5 @@ function Latihansoal() {
         </div>
     )
 }
+
+export default Latihansoal;
