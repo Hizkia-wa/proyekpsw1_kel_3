@@ -1,13 +1,16 @@
 import React from "react";
 import './Materi.css';
-import gbdimages from '../images/gbd.jpg';
+import gbdimages from '../images/gbd.Png';
+import gbrimages from '../images/gbr.png';
+import stkimages from '../images/stk.jpg';
+import pkimages from '../images/pk.jpg';
 
 function Materi() {
     const jurusanData = [
-        {nama: 'Goometri Bangun Datar', deskripsi: '//', gambar: mm},
-        {nama: 'Goometri Bangun Ruang', deskripsi: '//', gambar:mm},
-        {nama: 'Statistika', deskripsi: '//', gambar:mm},
-        {nama: 'Peluang Kejadian', deskripsi: '//', gambar:mm},
+        {nama: 'Goometri Bangun Datar', deskripsi: '//', gambar: gbdimages},
+        {nama: 'Goometri Bangun Ruang', deskripsi: '//', gambar: gbrimages},
+        {nama: 'Statistika', deskripsi: '//', gambar: stkimages},
+        {nama: 'Peluang Kejadian', deskripsi: '//', gambar:pkimages},
     ];
 
     return (
