@@ -1,5 +1,6 @@
 import React from "react";
 import './Materi.css';
+import gbdimages from '../images/gbd.jpg';
 
 function Materi() {
     const jurusanData = [
