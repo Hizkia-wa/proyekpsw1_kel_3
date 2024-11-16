@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  FaEnvelope,
-  FaLock,
-  FaCalculator,
-  FaUserLock,
-  FaUserAlt,
-} from "react-icons/fa";
+import {FaEnvelope,FaLock,FaCalculator,FaUserLock,FaUserAlt,} from "react-icons/fa";
 import "../App.css";
 
 function RegisterForm() {
