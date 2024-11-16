@@ -27,8 +27,8 @@ function LoginForm() {
       <div
         className="card p-5 shadow-lg"
         style={{
-          width: "500px",
-          borderRadius: "50px",
+          width: "510px",
+          borderRadius: "55px",
           background: "linear-gradient(800deg, #dfe6e9, #ffffff)",
         }}
       >
