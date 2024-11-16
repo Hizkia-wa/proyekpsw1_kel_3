@@ -15,7 +15,7 @@ function Materi() {
 
     return (
         <div className="jurusan-container">
-            <h1>Jurusan</h1>
+            <h1>Materi</h1>
             <div className="jurusan-cards">
             {jurusanData.map((jurusan, index) => (
                 <div key={index} className="jurusan-card">
