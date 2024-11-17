@@ -1,0 +1,33 @@
+.peluang-container {
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+.section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #318fcd;
+}
+
+.sample-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px
+}
+
+.sample-table th,
+.sample-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.sample-table th {
+    background-color: #f4f4f4;
+}
