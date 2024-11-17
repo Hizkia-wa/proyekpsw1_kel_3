@@ -7,18 +7,25 @@ import Materi from "./components/Materi";
 import LatihanSoal from "./components/LatihanSoal";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+function CenteredLayout({ children }) {
+  return (
+    <div className="d-flex align-items-center justify-content-center vh-100 bg-light">
+      {children}
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router>
-      <div className="d-flex align-items-center justify-content-center vh-100 bg-light">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<LoginForm />} />
-          <Route path="/register" element={<RegisterForm />} />
-          <Route path="materi" element={<Materi />} />
-          <Route path="latihansoal" element={<LatihanSoal />} />
-        </Routes>
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<CenteredLayout><LoginForm /></CenteredLayout>} />
+        <Route path="/register" element={<CenteredLayout><RegisterForm /></CenteredLayout>} />
+        <Route path="/materi" element={<Materi />} />
+        <Route path="/latihansoal" element={<LatihanSoal />} />
+        <Route path="*" element={<h1>404 Page Not Found</h1>} />
+      </Routes>
     </Router>
   );
 }
