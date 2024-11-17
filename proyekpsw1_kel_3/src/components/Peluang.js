@@ -28,7 +28,7 @@ function Peluang() {
                 title="Percobaan Peluang"
                 content={
                     <p>
-                        Artinya ialah kegiatan atau tindakan yang ujuannya untuk memperoleh 
+                        maksudnya ialah kegiatan atau tindakan yang ujuannya untuk memperoleh 
                         hasil tertentu. Misalnya nih, pelemparan uang koin ataupun dadu.
                     </p>
                 }
