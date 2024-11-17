@@ -1,6 +1,6 @@
 import React from "react";
 import './Materi.css';
-import gbdsimages from '../images/gbds.Png';
+import gbdsimages from '../images/gbds.jpg';
 import gbrsimages from '../images/gbrs.png';
 import stkimages from '../images/stk.jpg';
 import pkimages from '../images/pk.jpg';

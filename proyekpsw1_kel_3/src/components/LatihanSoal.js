@@ -1,12 +1,16 @@
 import React from "react";
 import './Materi.css';
+import gbdimages from '../images/gbd.png';
+import gbrimages from '../images/gbr.png';
+import stksimages from '../images/stks.jpg';
+import pksimages from '../images/pks.jpg';
 
 function Latihansoal() {
     const Latihandata = [
-        { nama: 'Geometri Bangun Datar', deskripsi: '/', gambar: mm},
-        { nama: 'Geometri Bangun Ruang', deskripsi: '/', gambar: mm},
-        { nama: 'Statistika', deskripsi: '/', gambar: mm},
-        { nama: 'Peluang Kejadian', deskripsi: '/', gambar: mm},
+        { nama: 'Geometri Bangun Datar', deskripsi: '/', gambar: gbdimages},
+        { nama: 'Geometri Bangun Ruang', deskripsi: '/', gambar: gbrimages},
+        { nama: 'Statistika', deskripsi: '/', gambar: stksimages},
+        { nama: 'Peluang Kejadian', deskripsi: '/', gambar: pksimages},
     ];
 
     return (
