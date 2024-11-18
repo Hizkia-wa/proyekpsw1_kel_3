@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./MateriGeometriDatar.css";
-import backgroundSegitiga from "./images/image1.jpg";
-import  backgroundPersegi from "./images/image2.jpg";
-import  backgroundLingkaran  from "./images/image3.jpg";
-import  backgroundTrapesium from  "./images/image4.jpg";
+import backgroundSegitiga from "../images/image1.jpg";
+import  backgroundPersegi from "../images/image2.jpg";
+import  backgroundLingkaran  from "../images/image3.jpg";
+import  backgroundTrapesium from  "../images/image4.jpg";
 
 const slides = [
     {
