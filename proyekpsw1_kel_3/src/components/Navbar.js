@@ -5,10 +5,10 @@ const Navbar = () => {
     return (
         <nav>
             <ul>
-                <li to="/"><Link>Home</Link></li>
-                <li to="/materi"><Link>Materi</Link></li>
-                <li to="/latihansoal"><Link>Latihan Soal</Link></li>
-                <li to="/soallatihan"><Link>Soal Latihan</Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/materi">Materi</Link></li>
+                <li><Link to="/latihansoal">Latihan Soal</Link></li>
+                <li><Link to="/soallatihan">Soal Latihan</Link></li>
             </ul>
         </nav>
     );
