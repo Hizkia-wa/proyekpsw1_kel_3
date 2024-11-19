@@ -11,7 +11,7 @@ function Materi() {
         {nama: 'Geometri Bangun Datar', deskripsi: '//', gambar: gbdsimages, path: '/geometribangundatar'},
         {nama: 'Geometri Bangun Ruang', deskripsi: '//', gambar: gbrsimages},
         {nama: 'Statistika', deskripsi: '//', gambar: stkimages, path: '/MateriStatistika'},
-        {nama: 'Peluang Kejadian', deskripsi: '//', gambar:pkimages},
+        {nama: 'Peluang Kejadian', deskripsi: '//', gambar:pkimages, path: '/Peluang'},
     ];
 
     return (

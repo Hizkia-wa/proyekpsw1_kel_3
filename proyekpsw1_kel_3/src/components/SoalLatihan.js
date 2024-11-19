@@ -5,7 +5,7 @@ import gbrimages from '../images/gbr.png';
 import stksimages from '../images/stks.jpg';
 import pksimages from '../images/pks.jpg';
 
-function Brilian() {
+function SoalLatihan() {
     const Latihandata = [
         { nama: 'Geometri Bangun Datar', deskripsi: '/', gambar: gbdimages},
         { nama: 'Geometri Bangun Ruang', deskripsi: '/', gambar: gbrimages},
@@ -15,7 +15,7 @@ function Brilian() {
 
     return (
         <div className="jurusan-container">
-            <h1>Brilian</h1>
+            <h1>Soal Latihan</h1>
             <div className="jurusan-cards">
                 {Latihandata.map((jurusan, index) => (
                     <div key={index} className="jurusan-card">
@@ -29,4 +29,4 @@ function Brilian() {
     )
 }
 
-export default Brilian;
+export default SoalLatihan;

@@ -13,13 +13,18 @@ function LoginForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    // Validasi login
     if (username.trim() === "" || password.trim() === "") {
-      setError("Username dan password Salah.");
+      setError("Username dan password tidak boleh kosong.");
       return;
     }
 
+    // Jika login berhasil
     setError("");
     alert("Login Successful!");
+
+    // Redirect ke halaman Materi
+    navigate("/materi");
   };
 
   return (

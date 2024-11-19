@@ -1,12 +1,12 @@
 import React from 'react';
-import './Peluang.css';
+import './MateriStatistika.css';
 
 // Impor gambar dari folder lokal
-import pengertianImg from '../image/pengertian.jpg';
-import percobaanImg from '../image/percobaan.jpg';
-import ruangSampelImg from '../image/ruangSampel.jpg';
-import titikSampelImg from '../image/titikSampel.jpg';
-import permutasiImg from '../image/permutasi.jpg';
+import pengertianImg from '../images/pengertian.jpg';
+import percobaanImg from '../images/percobaan.jpg';
+import ruangSampelImg from '../images/ruangSampel.jpg';
+import titikSampelImg from '../images/titikSampel.jpg';
+import permutasiImg from '../images/permutasi.jpg';
 
 const Peluang = () => {
   const sections = [
