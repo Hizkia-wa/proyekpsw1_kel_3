@@ -1,38 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+  background-color: #000000;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff, #a777e3);
 }
 
-.App-link {
-  color: #61dafb;
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(247, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); 
+}
+
+
+.App-header {
+  background: transparent;
+  color: #fff;
+  font-family: 'Poppins', sans-serif; 
+}
+
+
+.btn-primary {
+  background-color: #092ec0;
+  border-color: #000000;
+  transition: background-color 0.9s ease, transform 0.2s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.form-control {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.form-control:focus {
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
+}
+
+
+.alert {
+  border-radius: 10px;
+}
+
+
+a {
+  color: #fefefe;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h3:hover {
+  transform: scale(1.1); 
+  color: #6c63ff; 
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
   }
 }
+
