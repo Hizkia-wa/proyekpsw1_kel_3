@@ -50,7 +50,7 @@
   }
   
   .jurusan-card h2:hover {
-    color: #0056b3;
+    color: #007BFF;
     text-decoration: underline;
   }
 
@@ -63,4 +63,16 @@
   .jurusan-card a {
     text-decoration: none;
   }
+
+  .jurusan-link {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.jurusan-link:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
   
