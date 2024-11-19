@@ -1,21 +1,23 @@
+/* Navbar.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #6c63ff, #4b4f9b);
+  background: linear-gradient(135deg, #6f6f6f, #4a4a4a); /* Soft gray tones */
   padding: 20px 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for a more subtle look */
   border-radius: 10px;
   transition: background 0.3s ease;
 }
 
 .navbar:hover {
-  background: linear-gradient(135deg, #4b4f9b, #6c63ff);
+  background: linear-gradient(135deg, #4a4a4a, #6f6f6f); /* Slightly darker for hover effect */
 }
 
 .navbar-logo h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: #f5f5f5; /* Soft white for a clean look */
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -40,7 +42,7 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: white;
+  color: #f5f5f5; /* Light grayish color */
   font-size: 1.2rem;
   font-weight: 500;
   display: flex;
@@ -49,8 +51,8 @@
 }
 
 .navbar-links a:hover {
-  color: #ffd700; 
-  transform: translateY(-5px);
+  color: #d1c6b1; /* Soft beige gold for a more refined hover effect */
+  transform: translateY(-3px); /* Slight lift for a subtle effect */
 }
 
 .navbar-links a svg {
