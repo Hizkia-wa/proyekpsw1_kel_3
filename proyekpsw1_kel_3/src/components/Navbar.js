@@ -11,6 +11,7 @@ const Navbar = () => {
                 <li><Link to="/materi">Materi</Link></li>
                 <li><Link to="/latihansoal">Latihan Soal</Link></li>
                 <li><Link to="/soallatihan">Soal Latihan</Link></li>
+                <li><Link to="/brilian">Brilian</Link></li>
             </ul>
             </div>
         </nav>

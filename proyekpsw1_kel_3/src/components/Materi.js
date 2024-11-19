@@ -10,7 +10,7 @@ function Materi() {
     const jurusanData = [
         {nama: 'Geometri Bangun Datar', deskripsi: '//', gambar: gbdsimages, path: '/geometribangundatar'},
         {nama: 'Geometri Bangun Ruang', deskripsi: '//', gambar: gbrsimages},
-        {nama: 'Statistika', deskripsi: '//', gambar: stkimages},
+        {nama: 'Statistika', deskripsi: '//', gambar: stkimages, path: '/MateriStatistika'},
         {nama: 'Peluang Kejadian', deskripsi: '//', gambar:pkimages},
     ];
 

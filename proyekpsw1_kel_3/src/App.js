@@ -5,7 +5,9 @@ import RegisterForm from "./components/RegistrationForm";
 import Navbar from "./components/Navbar";
 import Materi from "./components/Materi";
 import LatihanSoal from "./components/LatihanSoal";
+import Brilian from "./components/Brilian";
 import MateriGeometriDatar from "./components/MateriGeometriDatar";
+import MateriStatistika from "./components/MateriStatistika";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -25,7 +27,9 @@ function App() {
         <Route path="/register" element={<CenteredLayout><RegisterForm /></CenteredLayout>} />
         <Route path="/materi" element={<Materi />} />
         <Route path="/geometribangundatar" element={<MateriGeometriDatar />} />
+        <Route path="/materistatistika" element={<MateriStatistika />} />
         <Route path="/latihansoal" element={<LatihanSoal />} />
+        <Route path="/brilian" element={<Brilian />} />
         <Route path="*" element={<h1>404 Page Not Found</h1>} />
       </Routes>
     </Router>
