@@ -11,7 +11,7 @@ const slides = [
         formulaArea : "L = 1/2 x alas x tinggi",
         formulaPerimeter : "K = jumlah semua sisi",
         inputs : ["alas", "tinggi", "sisiA", "sisiB", "sisiC"],
-        rendershape : () => (
+        renderShape : () => (
             <svg width ="100" height="100" viewBox="0 0 100 100">
                 <polygon points="50,15 90,85 10,85" fill="#4CAF50"/>
             </svg>
@@ -29,7 +29,7 @@ const slides = [
         formulaArea : "L = sisi x sisi ",
         formulaPerimeter : "K = jumlah semua sisi",
         inputs : ["sisi"],
-        rendershape : () => (
+        renderShape : () => (
             <svg width ="100" height="100" viewBox="0 0 100 100">
                 <rect width="80" height="80" x="10" y="10" fill="#2196F3" />
             </svg>
@@ -46,7 +46,7 @@ const slides = [
         formulaArea : "L = π x r² ",
         formulaPerimeter : "K = 2 × π × r",
         inputs : ["radius"],
-        rendershape : () => (
+        renderShape : () => (
             <svg width ="100" height="100" viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="40" fill="#FFC107" />
             </svg>
