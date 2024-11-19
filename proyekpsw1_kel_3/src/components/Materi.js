@@ -8,10 +8,10 @@ import pkimages from '../images/pk.jpg';
 
 function Materi() {
     const jurusanData = [
-        {nama: 'Geometri Bangun Datar', deskripsi: '//', gambar: gbdsimages, path: '/geometribangundatar'},
+        {nama: 'Geometri Bangun Datar', deskripsi: '//', gambar: gbdsimages, path: '/MateriGeometriDatar'},
         {nama: 'Geometri Bangun Ruang', deskripsi: '//', gambar: gbrsimages},
         {nama: 'Statistika', deskripsi: '//', gambar: stkimages, path: '/MateriStatistika'},
-        {nama: 'Peluang Kejadian', deskripsi: '//', gambar:pkimages, path: '/Peluang'},
+        {nama: 'Peluang Kejadian', deskripsi: '//', gambar:pkimages, path: '/MateriPeluang'},
     ];
 
     return (
