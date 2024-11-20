@@ -1,9 +1,9 @@
 import React from "react";
 import './Materi.css';
-import gbdimages from '../images/gbd.png';
-import gbrimages from '../images/gbr.png';
-import stksimages from '../images/stks.jpg';
-import pksimages from '../images/pks.jpg';
+import gbdimages from '../images/latsol2.jpg';
+import gbrimages from '../images/latsol1.jpg';
+import stksimages from '../images/latsol3.jpg';
+import pksimages from '../images/latsol4.jpg';
 import atpssimages from '../images/atpss.avif';
 import lmtssimages from '../images/lmtss.avif';
 import trnssimages from '../images/trnss.avif';

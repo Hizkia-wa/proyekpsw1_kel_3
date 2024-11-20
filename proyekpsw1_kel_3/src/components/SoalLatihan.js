@@ -1,13 +1,13 @@
 import React from "react";
 import './Materi.css';
-import gbdimages from '../images/gbd.png';
-import gbrimages from '../images/gbr.png';
-import stksimages from '../images/stks.jpg';
-import pksimages from '../images/pks.jpg';
-import atpsimages from '../images/atps.avif';
-import lmtsimages from '../images/lmts.avif';
-import trnsimages from '../images/trns.avif';
-import dblsimages from '../images/dbls.avif';
+import gbdimages from '../images/soal1.jpg';
+import gbrimages from '../images/soal2.jpg';
+import stksimages from '../images/soal3.avif';
+import pksimages from '../images/soal9.jpg';
+import atpsimages from '../images/soal5.jpg';
+import lmtsimages from '../images/soal6.jpg';
+import trnsimages from '../images/soal7.jpg';
+import dblsimages from '../images/soal8.jpg';
 
 function SoalLatihan() {
     const Latihandata = [
