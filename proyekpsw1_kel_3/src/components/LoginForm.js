@@ -13,18 +13,28 @@ function LoginForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Validasi login
+    // Validasi input kosong
     if (username.trim() === "" || password.trim() === "") {
       setError("Username dan password tidak boleh kosong.");
       return;
     }
 
+    // Ambil data pengguna dari localStorage
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const user = users.find(
+      (user) => user.username === username && user.password === password
+    );
+
+    // Validasi login
+    if (!user) {
+      setError("Username atau password salah.");
+      return;
+    }
+
     // Jika login berhasil
     setError("");
-    alert("Login Successful!");
-
-    // Redirect ke halaman Materi
-    navigate("/materi");
+    alert(`Welcome, ${user.username}!`);
+    navigate("/materi"); // Redirect ke halaman Materi
   };
 
   return (

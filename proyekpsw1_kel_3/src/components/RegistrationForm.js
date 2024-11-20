@@ -15,6 +15,7 @@ function RegisterForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+
     if (
       username.trim() === "" ||
       email.trim() === "" ||
@@ -25,20 +26,37 @@ function RegisterForm() {
       return;
     }
 
+
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       setError("Please enter a valid email address.");
       return;
     }
 
+
     if (password !== confirmPassword) {
       setError("Passwords do not match.");
       return;
     }
 
+ 
+    const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+    const userExists = existingUsers.some(
+      (user) => user.username === username || user.email === email
+    );
+
+    if (userExists) {
+      setError("Username or email is already registered.");
+      return;
+    }
+
+
+    const newUser = { username, email, password };
+    localStorage.setItem("users", JSON.stringify([...existingUsers, newUser]));
+
     setError("");
     alert("Registration Successful!");
-    navigate("/");
+    navigate("/"); 
   };
 
   return (
@@ -132,7 +150,7 @@ function RegisterForm() {
               <input
                 type="password"
                 className="form-control"
-                id="Masukkan Password "
+                id="confirmPassword"
                 placeholder="Masukkan Password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
