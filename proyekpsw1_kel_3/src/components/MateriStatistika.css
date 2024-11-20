@@ -1,49 +1,121 @@
+/* MateriStatistika.css */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
 
-  .materi-statistika {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0; 
-  }
+.materi-statistika {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
 
-  .materi-section {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
-    transition: transform 0.3s;
-  }
+.materi-section {
+  position: relative;
+  padding: 60px 40px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
 
-  .materi-section:hover {
-    transform: scale(1.02);
-  }
+.materi-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+}
 
-  .materi-section h2 {
-    font-size: 2.5em;
-    margin: 0 0 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.materi-section:hover {
+  transform: scale(1.05) rotateX(10deg) rotateY(10deg);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.materi-section:hover::before {
+  opacity: 0.6;
+}
+
+/* Teks Judul dengan Efek Animasi */
+.materi-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff6a00, #ff0099);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGlow 2s infinite alternate;
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff0099;
   }
-  
-  .materi-section p {
-    font-size: 1.5em;
-    line-height: 1.8;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin: 0;
-    max-width: 800px;
+  to {
+    text-shadow: 0 0 30px #ff0099, 0 0 40px #ff6a00;
   }
-  
+}
+
+/* Efek Animasi Slide pada Teks Konten */
+.materi-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  z-index: 2;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi Efek Partikel */
+.materi-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
+  z-index: 0;
+  animation: shimmer 3s infinite alternate;
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+/* Parallax Scrolling */
+.materi-section:hover {
+  background-attachment: fixed;
+}
