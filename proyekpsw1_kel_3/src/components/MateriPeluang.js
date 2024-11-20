@@ -47,11 +47,11 @@ const Peluang = () => {
   ];
 
   return (
-    <div className="peluang-container">
+    <div className="materi-statistika">
       {sections.map((section) => (
         <div
           key={section.id}
-          className="peluang-section"
+          className="materi-section"
           style={{
             backgroundImage: `url(${section.bgImage})`,
           }}

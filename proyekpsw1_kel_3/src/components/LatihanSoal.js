@@ -4,15 +4,22 @@ import gbdimages from '../images/gbd.png';
 import gbrimages from '../images/gbr.png';
 import stksimages from '../images/stks.jpg';
 import pksimages from '../images/pks.jpg';
+import atpssimages from '../images/atpss.avif';
+import lmtssimages from '../images/lmtss.avif';
+import trnssimages from '../images/trnss.avif';
+import dblssimages from '../images/dblss.avif';
 
 function Latihansoal() {
     const Latihandata = [
-        { nama: 'Geometri Bangun Datar', deskripsi: '/', gambar: gbdimages},
-        { nama: 'Geometri Bangun Ruang', deskripsi: '/', gambar: gbrimages},
-        { nama: 'Statistika', deskripsi: '/', gambar: stksimages},
-        { nama: 'Peluang Kejadian', deskripsi: '/', gambar: pksimages},
-    ];
-
+        { nama: 'Geometri Bangun Datar', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/materigeometridatar'},
+        { nama: 'Geometri Bangun Ruang', deskripsi: "Mempelajari volume dan luas permukaan bangun ruang.", gambar: gbrimages },
+        { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages },
+        { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpssimages },
+        { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
+        { nama: 'Limit', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: lmtssimages },
+        { nama: 'Turunan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: trnssimages },
+        { nama: 'Distribusi Binomial', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: dblssimages },
+    ]
     return (
         <div className="jurusan-container">
             <h1>Latihan Soal</h1>

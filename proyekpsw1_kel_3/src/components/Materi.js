@@ -5,6 +5,10 @@ import gbdsimages from '../images/gbds.jpg';
 import gbrsimages from '../images/gbrs.png';
 import stkimages from '../images/stk.jpg';
 import pkimages from '../images/pk.jpg';
+import atpimages from '../images/atp.avif';
+import lmtimages from '../images/lmt.avif';
+import trnimages from '../images/trn.avif';
+import dblimages from '../images/dbl.avif';
 
 function Materi() {
     const jurusanData = [
@@ -28,10 +32,38 @@ function Materi() {
         path: "/MateriStatistika",
       },
       {
+        nama: "Aturan pencacahan",
+        deskripsi:
+          "cabang ilmu matematika yang mempelajari cara menghitung banyaknya objek atau kejadian yang muncul",
+        gambar: atpimages,
+        path: "/MateriPeluang",
+      },
+      {
         nama: "Peluang Kejadian",
         deskripsi:
           "Peluang adalah nilai (kuantitas) untuk menyatakan seberapa besar terjadinya suatu peristiwa",
         gambar: pkimages,
+        path: "/MateriPeluang",
+      },
+      {
+        nama: "Limit",
+        deskripsi:
+          "Limit itu suatu batas yang menggunakan konsep pendekatan fungsi",
+        gambar: lmtimages,
+        path: "/MateriPeluang",
+      },
+      {
+        nama: "Turunan",
+        deskripsi:
+          "pengukuran terhadap bagaimana fungsi berubah seiring perubahan nilai yang dimasukan, atau secara umum turunan menunjukkan bagaimana suatu besaran berubah akibat perubahan besaran lainnya.",
+        gambar: trnimages,
+        path: "/MateriPeluang",
+      },
+      {
+        nama: "Distribusi Binomial",
+        deskripsi:
+          "Distribusi binomial adalah distribusi probabilitas statistik yang merangkum kemungkinan suatu nilai akan mengambil salah satu dari dua nilai independen.",
+        gambar: dblimages,
         path: "/MateriPeluang",
       },
     ];
