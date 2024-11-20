@@ -5,7 +5,7 @@ import pengertianImg from '../images/pengertian.jpg';
 import percobaanImg from '../images/percobaan.jpg';
 import ruangSampelImg from '../images/ruangSampel.jpg';
 import titikSampelImg from '../images/titikSampel.jpg';
-import permutasiImg from '../images/permutasi.jpg';
+import permutasiImg from '../images/majemuk.jpg';
 
 const Peluang = () => {
   const sections = [
@@ -51,7 +51,7 @@ const Peluang = () => {
           <p><strong>Kombinasi:</strong> Jika permutasi memperhatikan urutan, tidak demikian dengan kombinasi. Untuk menyelesaikan permasalahan peluang tanpa memperhatikan urutan, kamu bisa menggunakan kombinasi. Misalnya, suatu sekolah akan memilih 2 dari 10 siswa berprestasinya untuk mengikuti OSN. Dari 10 siswa tersebut, 4 diantaranya perempuan. Peluang terpilihnya satu laki-laki dan satu perempuan adalah? Dalam hal ini, urutan tidak diperhatikan. Adapun rumus kombinasi adalah sebagai berikut. Rumus: <strong>C(n, r) = n! / [r! × (n - r)!]</strong></p>
         </>
       ), 
-      bgImage: permutasiImg
+      bgImage: majemukImg
     }
   ];
 
