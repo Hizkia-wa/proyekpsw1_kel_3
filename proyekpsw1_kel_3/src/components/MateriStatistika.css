@@ -1,4 +1,3 @@
-/* MateriStatistika.css */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -48,7 +47,6 @@ body {
   opacity: 0.6;
 }
 
-/* Teks Judul dengan Efek Animasi */
 .materi-section h2 {
   font-size: 3rem;
   font-weight: bold;
@@ -70,7 +68,6 @@ body {
   }
 }
 
-/* Efek Animasi Slide pada Teks Konten */
 .materi-section p {
   font-size: 1.2rem;
   line-height: 1.8;
@@ -93,7 +90,6 @@ body {
   }
 }
 
-/* Animasi Efek Partikel */
 .materi-section::after {
   content: "";
   position: absolute;
@@ -115,7 +111,6 @@ body {
   }
 }
 
-/* Parallax Scrolling */
 .materi-section:hover {
   background-attachment: fixed;
 }
