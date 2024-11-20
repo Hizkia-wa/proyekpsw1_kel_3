@@ -1,116 +1,81 @@
+/* General Styles */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.materi-statistika {
+h1, h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Header Section */
+.header {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px 40px;
+}
+
+.header-content {
+  max-width: 50%;
+}
+
+.header-image img {
+  width: 300px;
+  height: auto;
+}
+
+/* Technology News Section */
+.tech-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #e8f5f7;
+}
+
+.news-content {
+  max-width: 50%;
+}
+
+.news-image img {
+  width: 300px;
+  height: auto;
+}
+
+/* Future of Work Section */
+.future-work {
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
   padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.materi-section {
-  position: relative;
-  padding: 60px 40px;
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
+.card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.materi-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.materi-section:hover {
-  transform: scale(1.05) rotateX(10deg) rotateY(10deg);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-}
-
-.materi-section:hover::before {
-  opacity: 0.6;
-}
-
-.materi-section h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  z-index: 2;
-  position: relative;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #ff6a00, #ff0099);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textGlow 2s infinite alternate;
-}
-
-@keyframes textGlow {
-  from {
-    text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff0099;
-  }
-  to {
-    text-shadow: 0 0 30px #ff0099, 0 0 40px #ff6a00;
-  }
-}
-
-.materi-section p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  z-index: 2;
-  position: relative;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideIn 1.5s ease forwards;
-  animation-delay: 0.5s;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.materi-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
-  z-index: 0;
-  animation: shimmer 3s infinite alternate;
-}
-
-@keyframes shimmer {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(50%);
-  }
-}
-
-.materi-section:hover {
-  background-attachment: fixed;
+.card p {
+  color: #333;
 }
