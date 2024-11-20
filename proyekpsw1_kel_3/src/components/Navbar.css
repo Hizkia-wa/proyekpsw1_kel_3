@@ -1,54 +1,63 @@
-/* Navbar.css */
-
-/* Pilih font elegan dari Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap');
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #6f6f6f, #4a4a4a); 
+  background: linear-gradient(135deg, #2e3a59, #1c2238); 
   padding: 20px 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   border-radius: 10px;
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .navbar:hover {
-  background: linear-gradient(135deg, #4a4a4a, #6f6f6f); 
+  background: linear-gradient(135deg, #1c2238, #2e3a59); 
 }
 
-/* Gunakan font Playfair Display untuk logo */
+
 .navbar-logo h2 {
-  font-family: 'Playfair Display', serif; /* Elegan dan klasik */
-  color: #f5f5f5; 
+  font-family: 'Playfair Display', serif; 
+  color: #f8f8f8; 
   font-size: 2.5rem;
-  font-weight: 700; /* Bold untuk tampilan yang lebih tegas */
-  letter-spacing: 1.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* Gunakan font Poppins untuk teks di menu */
+.navbar-logo h2:hover {
+  color: #f9d342; 
+  transform: scale(1.1); 
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
 .navbar-links a {
   text-decoration: none;
-  color: #f5f5f5;
-  font-family: 'Poppins', sans-serif; /* Font modern dan ringan */
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif; 
   font-size: 1.2rem;
   font-weight: 500;
   display: flex;
   align-items: center;
-  transition: color 0.3s ease, transform 0.3s ease;
+  gap: 8px; 
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
+
 
 .navbar-links a:hover {
-  color: #d1c6b1;
-  transform: translateY(-3px);
+  color: #f9d342; 
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); 
 }
 
+
 .navbar-links a svg {
-  margin-right: 8px;
-  font-size: 1.3rem;
+  font-size: 1.5rem; 
 }
 
 .navbar-links ul {
@@ -59,60 +68,57 @@
 }
 
 .navbar-links ul li {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .navbar-links ul li:first-child {
   margin-left: 0;
 }
 
-/* Responsiveness */
+/* Responsif */
 @media screen and (max-width: 1024px) {
   .navbar {
-    padding: 20px 30px; 
+    padding: 20px 30px;
   }
 
   .navbar-logo h2 {
-    font-size: 2.2rem; 
+    font-size: 2rem;
   }
 
   .navbar-links ul {
-    flex-direction: row;
-    margin-top: 0;
+    flex-wrap: wrap;
   }
 
   .navbar-links ul li {
-    margin: 8px 15px; 
+    margin: 10px 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
-    flex-direction: column; 
-    align-items: flex-start; 
-    padding: 20px 15px; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 15px;
   }
 
   .navbar-logo h2 {
-    font-size: 2rem; 
-    margin-bottom: 20px; 
+    font-size: 2rem;
+    margin-bottom: 15px;
   }
 
   .navbar-links ul {
-    flex-direction: column; 
-    width: 100%; 
-    padding: 0; 
-    margin-top: 0;
+    flex-direction: column;
+    width: 100%;
   }
 
   .navbar-links ul li {
-    width: 100%; 
-    margin: 10px 0; 
-    text-align: left; 
+    width: 100%;
+    margin: 8px 0;
   }
 
   .navbar-links a {
-    padding: 10px; 
+    width: 100%;
+    padding: 12px 20px;
     font-size: 1.1rem;
   }
 }

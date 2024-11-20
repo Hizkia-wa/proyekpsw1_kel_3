@@ -1,78 +1,123 @@
 .jurusan-container {
-    font-family: 'Arial', sans-serif;
-    padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-  }
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f3f4f6, #e9ecef);
+  color: #333;
+  text-align: center;
+  border-radius: 10px;
+}
 
-  .jurusan-container h1 {
-    font-size: 2.5rem;
-    color: #222;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
+.jurusan-container h1 {
+  font-size: 3rem;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
+}
 
-  .jurusan-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
+.jurusan-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
+.jurusan-card {
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border-radius: 75px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 320px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.jurusan-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+}
+
+.jurusan-card .jurusan-image {
+  width:100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.jurusan-card:hover .jurusan-image {
+  transform: scale(1.05);
+}
+
+.jurusan-card h2 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  color: #007BFF;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.jurusan-card h2:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.jurusan-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 15px 20px;
+  line-height: 1.5;
+}
+
+.jurusan-card a {
+  text-decoration: none;
+}
+
+.jurusan-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #007BFF;
+  background: #e0f7fa;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 15px auto;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jurusan-link:hover {
+  color: #ffffff;
+  background: #007BFF;
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+  text-decoration: none;
+}
+
+/* Responsivitas */
+@media screen and (max-width: 1024px) {
   .jurusan-card {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
-    text-align: center;
-  }
-  
-  .jurusan-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  .jurusan-card .jurusan-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 280px;
   }
 
   .jurusan-card h2 {
     font-size: 1.5rem;
-    margin: 10px 0;
-    color: #007BFF;
-    cursor: pointer;
-    transition: color 0.3s ease;
   }
-  
-  .jurusan-card h2:hover {
-    color: #007BFF;
-    text-decoration: underline;
-  }
-
-  .jurusan-card p {
-    font-size: 1rem;
-    color: #666;
-    margin: 10px;
-  }
-
-  .jurusan-card a {
-    text-decoration: none;
-  }
-
-  .jurusan-link {
-    text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s ease;
 }
 
-.jurusan-link:hover {
-    color: #007BFF;
-    text-decoration: underline;
-}
+@media screen and (max-width: 768px) {
+  .jurusan-container {
+    padding: 20px;
+  }
 
-  
+  .jurusan-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .jurusan-card {
+    width: 100%;
+  }
+}

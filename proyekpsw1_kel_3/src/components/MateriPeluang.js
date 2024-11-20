@@ -1,7 +1,6 @@
 import React from 'react';
 import './MateriStatistika.css';
 
-// Impor gambar dari folder lokal
 import pengertianImg from '../images/pengertian.jpg';
 import percobaanImg from '../images/percobaan.jpg';
 import ruangSampelImg from '../images/ruangSampel.jpg';
