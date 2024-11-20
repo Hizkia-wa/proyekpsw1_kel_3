@@ -1,11 +1,11 @@
 import React from "react";
 import './Materi.css';
 import { Link } from "react-router-dom";
-import gbdsimages from '../images/gbds.jpg';
-import gbrsimages from '../images/gbrs.png';
-import stkimages from '../images/stk.jpg';
-import pkimages from '../images/pk.jpg';
-import atpimages from '../images/atp.avif';
+import gbdsimages from '../images/geometridatar.avif';
+import gbrsimages from '../images/geometriruang.avif';
+import stkimages from '../images/statistika.avif';
+import pkimages from '../images/peluang.avif';
+import atpimages from '../images/pencacahan.avif';
 import lmtimages from '../images/lmt.avif';
 import trnimages from '../images/trn.avif';
 import dblimages from '../images/dbl.avif';
