@@ -1,5 +1,10 @@
 import React from "react";
-import {BrowserRouter as Router,Route,Routes,useLocation,} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegistrationForm";
 import Navbar from "./components/Navbar";
@@ -8,63 +13,72 @@ import LatihanSoal from "./components/LatihanSoal";
 import Brilian from "./components/Brilian";
 import SoalLatihan from "./components/SoalLatihan";
 import MateriGeometriDatar from "./components/MateriGeometriDatar";
-import MaterStatistika from "./components/MateriStatistika";
+import MateriStatistika from "./components/MateriStatistika";
 import MateriPeluang from "./components/MateriPeluang";
 import MateriGeometriRuang from "./components/MateriGeometriRuang";
+import Footer from "./components/Footer"; // Tambahkan Footer
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
   return (
-    <div className="d-flex align-items-center justify-content-center vh-100 bg-light">{children}</div>
+    <div className="d-flex align-items-center justify-content-center vh-100 bg-light">
+      <div className="w-100">{children}</div>
+    </div>
   );
 }
 
 function App() {
   const location = useLocation();
-  const hideNavbarPaths = ["/", "/register"];
+  const hideNavbarPaths = ["/", "/register"]; 
 
   return (
-    <>
+    <div className="app-container d-flex flex-column min-vh-100"> {/* Wrapper Flexbox */}
       {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <CenteredLayout>
-              <LoginForm />
-            </CenteredLayout>
-          }
-        />
 
- 
-        <Route
-          path="/register"
-          element={
-            <CenteredLayout>
-              <RegisterForm />
-            </CenteredLayout>
-          }
-        />
+      <div className="flex-grow-1"> {/* Konten Utama */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <CenteredLayout>
+                <LoginForm />
+              </CenteredLayout>
+            }
+          />
 
+          <Route
+            path="/register"
+            element={
+              <CenteredLayout>
+                <RegisterForm />
+              </CenteredLayout>
+            }
+          />
 
-        <Route path="/materi" element={<Materi />} />
-        <Route path="/latihansoal" element={<LatihanSoal />} />
-        <Route path="/brilian" element={<Brilian />} />
-        <Route path="/soallatihan" element={<SoalLatihan />} />
-        <Route path="/materigeometridatar" element={<MateriGeometriDatar />} />
-        <Route path="/materigeometriruang" element={<MateriGeometriRuang />} />
-        <Route path="/materistatistika" element={<MaterStatistika />} />
-        <Route path="/materipeluang" element={<MateriPeluang />} />
+          <Route path="/materi" element={<Materi />} />
+          <Route path="/latihansoal" element={<LatihanSoal />} />
+          <Route path="/brilian" element={<Brilian />} />
+          <Route path="/soallatihan" element={<SoalLatihan />} />
+          <Route path="/materigeometridatar" element={<MateriGeometriDatar />} />
+          <Route path="/materigeometriruang" element={<MateriGeometriRuang />} />
+          <Route path="/materistatistika" element={<MateriStatistika />} />
+          <Route path="/materipeluang" element={<MateriPeluang />} />
 
+          <Route
+            path="*"
+            element={
+              <CenteredLayout>
+                <div className="text-center">
+                  <h1>404 - Halaman Tidak Ditemukan</h1>
+                </div>
+              </CenteredLayout>
+            }
+          />
+        </Routes>
+      </div>
 
-        <Route
-          path="*"
-          element={
-            <div className="text-center mt-5"> <h1>404 - Halaman Tidak Ditemukan</h1></div>
-          }
-        />
-      </Routes>
-    </>
+      <Footer /> {/* Footer di bagian bawah */}
+    </div>
   );
 }
 

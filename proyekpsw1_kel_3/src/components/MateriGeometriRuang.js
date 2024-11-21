@@ -1,12 +1,11 @@
 import React from "react";
 import "./MateriGeometriRuang.css";
-import stk1 from "../images/STK1.jpg";
-import stk2 from "../images/STK2.jpg";
-import stk3 from "../images/STK3.jpg";
-import stk4 from "../images/STK4.jpg";
+import stk1 from "../images/STK1.avif";
+import stk2 from "../images/STK2.avif";
+import stk3 from "../images/STK3.avif";
+import stk4 from "../images/STK4.webp";
 import stk5 from "../images/STK5.jpg";
 import stk6 from "../images/STK6.jpg";
-
 
 const MateriGeometriRuang = () => {
   const sections = [
@@ -51,7 +50,7 @@ const MateriGeometriRuang = () => {
       content:
         "Pada bagian ini, akan disajikan beberapa contoh jaring-jaring bangun ruang di antaranya jaring-jaring kubus, balok, prisma, limas, tabung, dan kerucut.",
       bgImage: stk6,
-    }
+    },
   ];
 
   return (
@@ -62,13 +61,13 @@ const MateriGeometriRuang = () => {
           className="materi-section"
           style={{
             backgroundImage: `url(${section.bgImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
           }}
         >
-          <div className="materi-content">
-            <h2>{section.title}</h2>
-            <p>{section.content}</p>
+          <div className="materi-overlay">
+            <div className="materi-content">
+              <h2>{section.title}</h2>
+              <p>{section.content}</p>
+            </div>
           </div>
         </div>
       ))}
