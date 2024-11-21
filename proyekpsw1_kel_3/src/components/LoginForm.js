@@ -33,7 +33,7 @@ function LoginForm() {
 
     setError("");
     console.log(`Welcome, ${user.username}!`); // Bisa dihapus jika tidak perlu log
-    navigate("/materi");
+    navigate("/Home");
   };
 
   return (

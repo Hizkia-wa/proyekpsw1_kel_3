@@ -2,25 +2,25 @@ import React from "react";
 import {FaCalculator,FaChalkboardTeacher,FaBook,FaLaptopCode,} from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css"; 
+import { Navigate } from "react-router-dom";
 
 function Home() {
   return (
-<div className="bg-light vh-100 d-flex flex-column justify-content-center align-items-center">
-  <header className="text-center mb-5">
-    <h1 className="text-primary fw-bold animated-title">
-      <FaCalculator size={50} className="me-2 animated-icon" />
-      <span className="math-text">R U M A P I</span>
-    </h1>
-    <p className="text-muted fs-5 animated-subtitle">
-      <em>Rumus Matematika Pintar</em>
-    </p>
-    <p className="text-dark fs-6 animated-description">
-      <span className="math-equation">y = mx + c</span>
-      <br />
-      Platform belajar matematika yang interaktif, seru, dan cerdas!
-    </p>
-  </header>
-
+    <div className="bg-light vh-100 d-flex flex-column justify-content-center align-items-center">
+      <header className="text-center mb-5">
+        <h1 className="text-primary fw-bold animated-title">
+          <FaCalculator size={50} className="me-2 animated-icon" />
+          <span className="math-text">R U M A P I</span>
+        </h1>
+        <p className="text-muted fs-5 animated-subtitle">
+          <em>Rumus Matematika Pintar</em>
+        </p>
+        <p className="text-dark fs-6 animated-description">
+          <span className="math-equation">y = mx + c</span>
+          <br />
+          Platform belajar matematika yang interaktif, seru, dan cerdas!
+        </p>
+      </header>
 
       <section className="container text-center">
         <div className="row g-4">
@@ -62,7 +62,7 @@ function Home() {
       <footer className="mt-5">
         <button
           className="btn btn-primary btn-lg px-5 py-2 shadow"
-          onClick={() => alert("Ayo mulai ke halaman materi!")}
+          onClick={() => (window.location.href = "/materi")} 
         >
           Mulai Belajar
         </button>
