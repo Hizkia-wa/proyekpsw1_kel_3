@@ -1,10 +1,15 @@
 import React from "react";
 import './Materi.css';
 import { Link } from "react-router-dom";
-import gbdimages from '../images/gbd.png';
-import gbrimages from '../images/gbr.png';
-import stksimages from '../images/stks.jpg';
-import pksimages from '../images/pks.jpg';
+import gbdimages from '../images/bri1.jpg';
+import gbrimages from '../images/bri9.jpg';
+import stksimages from '../images/bri4.jpg';
+import pksimages from '../images/bri5.jpg';
+import atpssimages from '../images/bri6.jpg';
+import lmtssimages from '../images/bri7.jpg';
+import trnssimages from '../images/bri10.jpg';
+import dblssimages from '../images/bri8.avif';
+
 
 function Brilian() {
     const Latihandata = [
@@ -12,10 +17,10 @@ function Brilian() {
         { nama: 'Geometri Bangun Ruang', deskripsi: "Mempelajari volume dan luas permukaan bangun ruang.", gambar: gbrimages},
         { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages, path: '/BrilianStatistika'},
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
-        { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
-        { nama: 'Limit', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
-        { nama: 'Turunan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
-        { nama: 'Distribusi Binomial', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
+        { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpssimages },
+        { nama: 'Limit', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: lmtssimages },
+        { nama: 'Turunan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: trnssimages },
+        { nama: 'Distribusi Binomial', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: dblssimages },
     ];
 
     return (

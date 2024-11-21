@@ -1,13 +1,13 @@
 import React from "react";
 import './Materi.css';
-import gbdimages from '../images/latsol2.jpg';
-import gbrimages from '../images/latsol1.jpg';
-import stksimages from '../images/latsol3.jpg';
-import pksimages from '../images/latsol4.jpg';
-import atpssimages from '../images/atpss.avif';
+import gbdimages from '../images/lat9.jpg';
+import gbrimages from '../images/lat2.jpg';
+import stksimages from '../images/lat3.jpg';
+import pksimages from '../images/lat4.avif';
+import atpssimages from '../images/lat6.jpg';
 import lmtssimages from '../images/lmtss.avif';
-import trnssimages from '../images/trnss.avif';
-import dblssimages from '../images/dblss.avif';
+import trnssimages from '../images/lat8.jpg';
+import dblssimages from '../images/lat5.jpg';
 
 function Latihansoal() {
     const Latihandata = [
