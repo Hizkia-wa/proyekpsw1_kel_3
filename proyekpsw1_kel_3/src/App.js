@@ -17,6 +17,7 @@ import MateriGeometriDatar from "./components/MateriGeometriDatar";
 import MateriStatistika from "./components/MateriStatistika";
 import MateriPeluang from "./components/MateriPeluang";
 import MateriGeometriRuang from "./components/MateriGeometriRuang";
+import GeometriDatar from "./components/GeometriDatar";
 import BrilianStatistika from "./components/BrilianStatistika";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -78,6 +79,7 @@ function App() {
           <Route path="/materistatistika" element={<MateriStatistika />} />
           <Route path="/materipeluang" element={<MateriPeluang />} />
           <Route path="/brilianstatistika" element={<BrilianStatistika />} />
+          <Route path="/GeometriDatar" element={<GeometriDatar />} />
 
           {/* Rute 404 */}
           <Route

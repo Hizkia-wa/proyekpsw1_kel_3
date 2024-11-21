@@ -17,6 +17,7 @@ function Materi() {
         deskripsi:
           "Materi tentang geometri bidang datar pada umumnya menjelaskan tentang sebuah jarak, baik jarak antara titik dengan garis maupun antara dua titik",
         gambar: gbdsimages,
+        path: "/GeometriDatar",
       },
       {
         nama: "Geometri Bangun Ruang",
