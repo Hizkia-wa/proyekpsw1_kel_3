@@ -14,8 +14,8 @@ import dblssimages from '../images/bri8.avif';
 function Brilian() {
     const Latihandata = [
         { nama: 'Geometri Bangun Datar', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/materigeometridatar'},
-        { nama: 'Geometri Bangun Ruang', deskripsi: "Mempelajari volume dan luas permukaan bangun ruang.", gambar: gbrimages },
-        { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages },
+        { nama: 'Geometri Bangun Ruang', deskripsi: "Mempelajari volume dan luas permukaan bangun ruang.", gambar: gbrimages},
+        { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages, path: '/BrilianStatistika'},
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
         { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpssimages },
         { nama: 'Limit', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: lmtssimages },
