@@ -1,6 +1,6 @@
 import React from "react";
-import { FaUsers, FaEnvelope, FaCommentDots, FaBullseye } from "react-icons/fa"; // Ikon yang diperlukan
-import "./Navbar.css"; // Import CSS Footer
+import { FaUsers, FaEnvelope, FaCommentDots, FaBullseye } from "react-icons/fa"; 
+import "./Navbar.css"; 
 
 const Footer = () => {
   return (
