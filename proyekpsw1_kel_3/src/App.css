@@ -11,6 +11,7 @@ body {
 
 .App {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -174,8 +175,14 @@ h3:hover {
 }
 
 @media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    height: auto;
+  }
+
   .card {
     width: 90%;
+    padding: 20px;
   }
 
   .btn-primary {
@@ -190,11 +197,13 @@ h3:hover {
   h3 {
     font-size: 1.5rem;
   }
+
+  .animated-title {
+    font-size: 1.5rem;
+  }
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Slab:wght@400;600&display=swap');
-
 
 @keyframes fadeInUp {
   0% {
@@ -234,12 +243,11 @@ h3:hover {
   text-transform: uppercase;
 }
 
-
 .animated-icon {
   animation: scaleIn 0.8s ease-out 0.2s forwards;
   display: inline-block;
   opacity: 0;
-  color: #1628ae; 
+  color: #1628ae;
 }
 
 .animated-subtitle {
@@ -271,3 +279,4 @@ h3:hover {
   display: inline-block;
   margin: 10px 0;
 }
+
