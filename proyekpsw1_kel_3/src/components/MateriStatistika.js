@@ -1,6 +1,12 @@
 import React from "react";
 import "./MateriStatistika.css";
 import stk1 from "../images/STK1.avif";
+import stk2 from "../images/stkmean.png";
+import stk3 from "../images/stkmedian.png";
+import stk4 from "../images/stkmodus.png";
+import stk5 from "../images/stkkuartil.png";
+import stk6 from "../images/stkdesil.png";
+import stk7 from "../images/stkpersentil.png"
 
 const MateriStatistika = () => {
   return (
@@ -83,6 +89,7 @@ const MateriStatistika = () => {
           <p>Merupakan salah satu ukuran untuk memberikan gambaran yang lebih jelas dan singkat tentang sekumpulan data dengan melihat pusat suatu data, apabila data diurutkan dari yang terkecil sampai terbesar atau sebaliknya. Jumlah seluruh nilai data dibagi dengan jumlah data.</p>
         </div>
         <div className="news-image">
+        <img src={stk2} alt="Statistika" /> 
         </div>
       </section>
 
@@ -93,6 +100,7 @@ const MateriStatistika = () => {
           <p><strong>Catatan</strong>Posisi tengah dari seperangkat data sebanyak N yang telah terurut terletak pada posisi yang ke (𝑁+1) 2. Jika N ganjil, maka ada data yang berada pada posisi tengah dan nilai data itu merupakan nilai median. Jika N genap, maka sebagai mediannya diambil rata-rata hitung dua data yang ada ditengah</p>
         </div>
         <div className="news-image">
+        <img src={stk3} alt="Statistika" /> 
         </div>
       </section>
 
@@ -102,6 +110,7 @@ const MateriStatistika = () => {
           <p>Modus adalah ukuran pemusatan data yang digunakan untuk menyatakan kejadian yang paling banyak terjadi atau paling banyak muncul. Modus data berkelompok ditentukan dengan rumus:.</p>
         </div>
         <div className="news-image">
+        <img src={stk4} alt="Statistika" /> 
         </div>
       </section>
 
@@ -112,6 +121,7 @@ const MateriStatistika = () => {
           <p>Kuartil juga dapat diartikan dengan suatu nilai, yang bisa membagi kumpulan data menjadi empat bagian sama besar. Hal ini berguna dalam berbagai analisis statistika, termasuk identifikasi outlier (nilai-nilai yang jauh dari nilai-nilai lainnya), dan pemahaman karakteristik distribusi data.</p>
         </div>
         <div className="news-image">
+        <img src={stk5} alt="Statistika" />
         </div>
       </section>
 
@@ -122,6 +132,7 @@ const MateriStatistika = () => {
           <p>Di dalam kehidupan sehari-hari, desil biasa dimanfaatkan untuk mengelompokkan tingkat kesejahteraan rakyat. Misalnya kelompok Desil 1, Desil 2, dan seterusnya.</p>
         </div>
         <div className="news-image">
+        <img src={stk6} alt="Statistika" />
         </div>
       </section>
 
@@ -131,6 +142,7 @@ const MateriStatistika = () => {
           <p>Persentil adalah ukuran statistik yang digunakan untuk membagi sekumpulan data menjadi 100 bagian yang sama, masing-masing mencerminkan 1% dari distribusi data tersebut. Dalam istilah sederhana, persentil menunjukkan posisi atau peringkat suatu nilai dalam sebuah dataset.</p>
         </div>
         <div className="news-image">
+        <img src={stk7} alt="Statistika" />
         </div>
       </section>
     </div>
