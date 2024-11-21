@@ -16,6 +16,7 @@ import MateriGeometriDatar from "./components/MateriGeometriDatar";
 import MateriStatistika from "./components/MateriStatistika";
 import MateriPeluang from "./components/MateriPeluang";
 import MateriGeometriRuang from "./components/MateriGeometriRuang";
+import Footer from "./components/Footer"; // Tambahkan Footer
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -31,49 +32,53 @@ function App() {
   const hideNavbarPaths = ["/", "/register"]; 
 
   return (
-    <>
+    <div className="app-container d-flex flex-column min-vh-100"> {/* Wrapper Flexbox */}
       {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <CenteredLayout>
-              <LoginForm />
-            </CenteredLayout>
-          }
-        />
+      <div className="flex-grow-1"> {/* Konten Utama */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <CenteredLayout>
+                <LoginForm />
+              </CenteredLayout>
+            }
+          />
 
-        <Route
-          path="/register"
-          element={
-            <CenteredLayout>
-              <RegisterForm />
-            </CenteredLayout>
-          }
-        />
+          <Route
+            path="/register"
+            element={
+              <CenteredLayout>
+                <RegisterForm />
+              </CenteredLayout>
+            }
+          />
 
-        <Route path="/materi" element={<Materi />} />
-        <Route path="/latihansoal" element={<LatihanSoal />} />
-        <Route path="/brilian" element={<Brilian />} />
-        <Route path="/soallatihan" element={<SoalLatihan />} />
-        <Route path="/materigeometridatar" element={<MateriGeometriDatar />} />
-        <Route path="/materigeometriruang" element={<MateriGeometriRuang />} />
-        <Route path="/materistatistika" element={<MateriStatistika />} />
-        <Route path="/materipeluang" element={<MateriPeluang />} />
+          <Route path="/materi" element={<Materi />} />
+          <Route path="/latihansoal" element={<LatihanSoal />} />
+          <Route path="/brilian" element={<Brilian />} />
+          <Route path="/soallatihan" element={<SoalLatihan />} />
+          <Route path="/materigeometridatar" element={<MateriGeometriDatar />} />
+          <Route path="/materigeometriruang" element={<MateriGeometriRuang />} />
+          <Route path="/materistatistika" element={<MateriStatistika />} />
+          <Route path="/materipeluang" element={<MateriPeluang />} />
 
-        <Route
-          path="*"
-          element={
-            <CenteredLayout>
-              <div className="text-center">
-                <h1>404 - Halaman Tidak Ditemukan</h1>
-              </div>
-            </CenteredLayout>
-          }
-        />
-      </Routes>
-    </>
+          <Route
+            path="*"
+            element={
+              <CenteredLayout>
+                <div className="text-center">
+                  <h1>404 - Halaman Tidak Ditemukan</h1>
+                </div>
+              </CenteredLayout>
+            }
+          />
+        </Routes>
+      </div>
+
+      <Footer /> {/* Footer di bagian bawah */}
+    </div>
   );
 }
 
