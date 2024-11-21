@@ -16,7 +16,8 @@ import MateriGeometriDatar from "./components/MateriGeometriDatar";
 import MateriStatistika from "./components/MateriStatistika";
 import MateriPeluang from "./components/MateriPeluang";
 import MateriGeometriRuang from "./components/MateriGeometriRuang";
-import Footer from "./components/Footer"; // Tambahkan Footer
+import BrilianStatistika from "./components/BrilianStatistika";
+import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -32,10 +33,10 @@ function App() {
   const hideNavbarPaths = ["/", "/register"]; 
 
   return (
-    <div className="app-container d-flex flex-column min-vh-100"> {/* Wrapper Flexbox */}
+    <div className="app-container d-flex flex-column min-vh-100">
       {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
 
-      <div className="flex-grow-1"> {/* Konten Utama */}
+      <div className="flex-grow-1">
         <Routes>
           <Route
             path="/"
@@ -63,8 +64,8 @@ function App() {
           <Route path="/materigeometriruang" element={<MateriGeometriRuang />} />
           <Route path="/materistatistika" element={<MateriStatistika />} />
           <Route path="/materipeluang" element={<MateriPeluang />} />
-
-          <Route
+          <Route path="/brilianstatistika" element={<BrilianStatistika />} />
+          <Route 
             path="*"
             element={
               <CenteredLayout>
@@ -77,7 +78,7 @@ function App() {
         </Routes>
       </div>
 
-      <Footer /> {/* Footer di bagian bawah */}
+      <Footer />
     </div>
   );
 }
