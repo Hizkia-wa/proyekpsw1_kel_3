@@ -1,9 +1,9 @@
 import React from "react";
 import "./MateriGeometriRuang.css";
-import stk1 from "../images/STK1.jpg";
-import stk2 from "../images/STK2.jpg";
-import stk3 from "../images/STK3.jpg";
-import stk4 from "../images/STK4.jpg";
+import stk1 from "../images/STK1.avif";
+import stk2 from "../images/STK2.avif";
+import stk3 from "../images/STK3.avif";
+import stk4 from "../images/STK4.webp";
 import stk5 from "../images/STK5.jpg";
 import stk6 from "../images/STK6.jpg";
 
