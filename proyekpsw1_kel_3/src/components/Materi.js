@@ -59,7 +59,7 @@ function Materi() {
         deskripsi:
           "pengukuran terhadap bagaimana fungsi berubah seiring perubahan nilai yang dimasukan, atau secara umum turunan menunjukkan bagaimana suatu besaran berubah akibat perubahan besaran lainnya.",
         gambar: trnimages,
-        path: "/MateriPeluang",
+        path: "/MateriTurunan",
       },
       {
         nama: "Distribusi Binomial",
