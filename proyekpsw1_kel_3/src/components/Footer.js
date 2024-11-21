@@ -8,9 +8,8 @@ const Footer = () => {
       <div className="footer-content">
         <ul>
           <li><a href="/team"><FaUsers /> Team</a></li>
-          <li>
-            <a href="/contact"><FaEnvelope /> Contact</a></li>
-          <li><a href="/testimoni"><FaCommentDots /> Testimoni</a></li>
+          <li><a href="/contact"><FaEnvelope /> Contact</a></li>
+          <li><a href="/Testimoni"><FaCommentDots /> Testimoni</a></li>
           <li><a href="/mission"><FaBullseye /> Mission</a></li>
         </ul>
         <p>© 2024 R U M A P I. All rights reserved.</p>

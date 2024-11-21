@@ -1,0 +1,317 @@
+/* Styling umum untuk halaman */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4faff; /* Warna latar belakang lembut */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1.5s ease-out; /* Animasi untuk memunculkan halaman */
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header halaman */
+h1 {
+  color: #0056b3; /* Biru tema */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  animation: slideDown 1s ease-out; /* Animasi header muncul dari atas */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Form komentar */
+form {
+  background-color: #ffffff; /* Latar putih */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(0.98);
+  animation: bounceIn 0.5s ease-out forwards; /* Animasi form muncul */
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+textarea {
+  border: 2px solid #cce7ff; /* Border biru lembut */
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #0056b3; /* Biru fokus */
+  box-shadow: 0 0 10px rgba(0, 86, 179, 0.5);
+}
+
+/* Tombol rating */
+button.btn {
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+button.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Tambahkan bayangan saat hover */
+}
+
+/* Efek hover untuk rating */
+button.btn-warning {
+  background-color: #ffca28; /* Kuning cerah */
+  color: #333;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+button.btn-warning:hover {
+  background-color: #fbbd10; /* Kuning lebih terang */
+}
+
+button.btn-outline-secondary {
+  color: #555;
+  border: 2px solid #cce7ff; /* Biru lembut */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+button.btn-outline-secondary:hover {
+  color: #0056b3; /* Biru saat hover */
+  border-color: #0056b3;
+}
+
+button.btn-primary {
+  background-color: #0056b3;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #003d80;
+  transform: scale(1.05);
+}
+
+/* Daftar testimoni */
+.list-group {
+  margin-top: 20px;
+  animation: fadeInList 1s ease-out;
+}
+
+@keyframes fadeInList {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.list-group-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #cce7ff;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.list-group-item .text-warning {
+  font-size: 1.2rem; /* Ukuran bintang lebih besar */
+  transition: color 0.3s ease;
+}
+
+.list-group-item p {
+  font-style: italic;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+/* Heading testimoni pengguna */
+h2 {
+  color: #003d80;
+  margin-bottom: 10px;
+  animation: fadeInText 1s ease-out;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button.btn {
+    font-size: 0.9rem;
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Styling umum untuk halaman */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4faff; /* Warna latar belakang lembut */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header halaman */
+h1 {
+  color: #0056b3; /* Biru tema */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Form komentar */
+form {
+  background-color: #ffffff; /* Latar putih */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  border: 2px solid #cce7ff; /* Border biru lembut */
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #0056b3; /* Biru fokus */
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* Tombol rating */
+button.btn {
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button.btn:hover {
+  transform: scale(1.1);
+}
+
+button.btn-warning {
+  background-color: #ffca28; /* Kuning cerah */
+  color: #333;
+  border: none;
+}
+
+button.btn-outline-secondary {
+  color: #555;
+  border: 2px solid #cce7ff; /* Biru lembut */
+}
+
+button.btn-primary {
+  background-color: #0056b3;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+button.btn-primary:hover {
+  background-color: #003d80;
+}
+
+/* Daftar testimoni */
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #cce7ff;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item .text-warning {
+  font-size: 1.2rem; /* Ukuran bintang lebih besar */
+}
+
+/* Heading testimoni pengguna */
+h2 {
+  color: #003d80;
+  margin-bottom: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button.btn {
+    font-size: 0.9rem;
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+  }
+}

@@ -8,7 +8,7 @@ import {
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegistrationForm";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home"; // Import halaman Home
+import Home from "./components/Home"; 
 import Materi from "./components/Materi";
 import LatihanSoal from "./components/LatihanSoal";
 import Brilian from "./components/Brilian";
@@ -21,6 +21,7 @@ import GeometriDatar from "./components/GeometriDatar";
 import MateriTurunan from "./components/MateriTurunan";
 import BrilianStatistika from "./components/BrilianStatistika";
 import Footer from "./components/Footer";
+import Testimoni from "./components/Testimoni";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -82,6 +83,7 @@ function App() {
           <Route path="/brilianstatistika" element={<BrilianStatistika />} />
           <Route path="/GeometriDatar" element={<GeometriDatar />} />
           <Route path="/MateriTurunan" element={<MateriTurunan />} />
+          <Route path="/Testimoni" element={<Testimoni />} />
 
           {/* Rute 404 */}
           <Route
