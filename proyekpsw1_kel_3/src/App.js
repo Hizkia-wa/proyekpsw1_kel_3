@@ -8,6 +8,7 @@ import {
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegistrationForm";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home"; // Import halaman Home
 import Materi from "./components/Materi";
 import LatihanSoal from "./components/LatihanSoal";
 import Brilian from "./components/Brilian";
@@ -30,7 +31,7 @@ function CenteredLayout({ children }) {
 
 function App() {
   const location = useLocation();
-  const hideNavbarPaths = ["/", "/register"]; 
+  const hideNavbarPaths = ["/", "/register"]; // Navbar disembunyikan pada halaman tertentu
 
   return (
     <div className="app-container d-flex flex-column min-vh-100">
@@ -38,6 +39,7 @@ function App() {
 
       <div className="flex-grow-1">
         <Routes>
+          {/* Rute ke halaman Login */}
           <Route
             path="/"
             element={
@@ -47,6 +49,7 @@ function App() {
             }
           />
 
+          {/* Rute ke halaman Register */}
           <Route
             path="/register"
             element={
@@ -56,16 +59,28 @@ function App() {
             }
           />
 
+          {/* Rute ke halaman Home */}
+          <Route path="/home" element={<Home />} />
+
+          {/* Rute lainnya */}
           <Route path="/materi" element={<Materi />} />
           <Route path="/latihansoal" element={<LatihanSoal />} />
           <Route path="/brilian" element={<Brilian />} />
           <Route path="/soallatihan" element={<SoalLatihan />} />
-          <Route path="/materigeometridatar" element={<MateriGeometriDatar />} />
-          <Route path="/materigeometriruang" element={<MateriGeometriRuang />} />
+          <Route
+            path="/materigeometridatar"
+            element={<MateriGeometriDatar />}
+          />
+          <Route
+            path="/materigeometriruang"
+            element={<MateriGeometriRuang />}
+          />
           <Route path="/materistatistika" element={<MateriStatistika />} />
           <Route path="/materipeluang" element={<MateriPeluang />} />
           <Route path="/brilianstatistika" element={<BrilianStatistika />} />
-          <Route 
+
+          {/* Rute 404 */}
+          <Route
             path="*"
             element={
               <CenteredLayout>

@@ -31,10 +31,9 @@ function LoginForm() {
       return;
     }
 
-    // Jika login berhasil
     setError("");
-    alert(`Welcome, ${user.username}!`);
-    navigate("/materi"); // Redirect ke halaman Materi
+    console.log(`Welcome, ${user.username}!`); // Bisa dihapus jika tidak perlu log
+    navigate("/materi");
   };
 
   return (

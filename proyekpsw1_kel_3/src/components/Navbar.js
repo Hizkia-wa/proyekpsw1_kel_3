@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-links">
         <ul>
-          <li><Link to="/"><FaHome /> Home</Link></li>
+          <li><Link to="/Home"><FaHome /> Home</Link></li>
           <li><Link to="/materi"><FaBook /> Materi</Link></li>
           <li><Link to="/latihansoal"><FaQuestionCircle /> Latihan Soal</Link></li>
           <li><Link to="/soallatihan"><FaPuzzlePiece /> Soal Latihan</Link></li>
