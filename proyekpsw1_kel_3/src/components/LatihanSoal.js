@@ -12,7 +12,7 @@ import dblssimages from '../images/lat5.jpg';
 function Latihansoal() {
     const Latihandata = [
         { nama: 'Geometri Bangun Datar', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/materigeometridatar'},
-        { nama: 'Geometri Bangun Ruang', deskripsi: "Mempelajari volume dan luas permukaan bangun ruang.", gambar: gbrimages },
+        { nama: 'Geometri Bangun Ruang', deskripsi: "Mempelajari volume dan luas permukaan bangun ruang.", gambar: gbrimages, path: '/Latihansoalbangunruang' },
         { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages },
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpssimages },
         { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
