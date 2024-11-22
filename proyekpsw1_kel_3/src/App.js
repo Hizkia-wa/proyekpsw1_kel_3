@@ -22,6 +22,7 @@ import MateriTurunan from "./components/MateriTurunan";
 import BrilianStatistika from "./components/BrilianStatistika";
 import Footer from "./components/Footer";
 import Testimoni from "./components/Testimoni";
+import Contact from "./components/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -84,6 +85,7 @@ function App() {
           <Route path="/GeometriDatar" element={<GeometriDatar />} />
           <Route path="/MateriTurunan" element={<MateriTurunan />} />
           <Route path="/Testimoni" element={<Testimoni />} />
+          <Route path="/Contact" element={<Contact />} />
 
           {/* Rute 404 */}
           <Route

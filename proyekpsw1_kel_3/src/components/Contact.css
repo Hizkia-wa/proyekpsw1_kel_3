@@ -1,0 +1,92 @@
+/* Contact.css */
+
+/* General Styles */
+.contact-page {
+  background-color: #000; /* Black background */
+  color: #fff;
+  padding: 40px 0;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-nav a:hover {
+  color: #007bff;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-form .form-control {
+  background-color: #333;
+  border: none;
+  color: #fff;
+}
+
+.contact-form .form-control::placeholder {
+  color: #aaa;
+}
+
+.contact-form .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Info */
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Footer Section */
+.hire-us-section {
+  background-color: #111;
+  padding: 20px 0;
+}
+
+.hire-us-section h3 {
+  font-size: 1.8rem;
+}
+
+.hire-us-section button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.hire-us-section button:hover {
+  background-color: #fff;
+  color: #000;
+}

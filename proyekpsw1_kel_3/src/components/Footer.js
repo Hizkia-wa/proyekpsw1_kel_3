@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <ul>
           <li><a href="/team"><FaUsers /> Team</a></li>
-          <li><a href="/contact"><FaEnvelope /> Contact</a></li>
+          <li><a href="/Contact"><FaEnvelope /> Contact</a></li>
           <li><a href="/Testimoni"><FaCommentDots /> Testimoni</a></li>
           <li><a href="/mission"><FaBullseye /> Mission</a></li>
         </ul>
