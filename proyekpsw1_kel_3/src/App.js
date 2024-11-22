@@ -74,11 +74,6 @@ function App() {
           <Route path="/Testimoni" element={<Testimoni />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/geometribangunruang" element={<Latihansoalbangunruang />} />
-
-<<<<<<< HEAD
-=======
-          {/* Rute 404 */} 
->>>>>>> 58527810da3580e6271b24a64d19359c61051b5f
           <Route
             path="*"
             element={
