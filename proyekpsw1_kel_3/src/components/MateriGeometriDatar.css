@@ -145,6 +145,20 @@ button :hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.slides-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
 @media (max-width: 768px) {
     .slides-container {
       width: 90%; 

@@ -1,13 +1,13 @@
 import React from "react";
 import "./GeometriDatar.css";
-import stk1 from "../images/STK1.avif";
-import stk2 from "../images/STK2.avif";
-import stk3 from "../images/STK3.avif";
-import stk4 from "../images/STK4.webp";
-import stk5 from "../images/STK5.jpg";
-import stk6 from "../images/STK6.jpg";
-import stk7 from "../images/STK7.jpg";
-import stk8 from "../images/STK8.webp";
+import stk1 from "../images/STK1.png";
+import stk2 from "../images/STK2.png";
+import stk3 from "../images/STK3.png";
+import stk4 from "../images/STK4.png";
+import stk5 from "../images/STK5.png";
+import stk6 from "../images/STK6.png";
+import stk7 from "../images/STK1.png";
+import stk8 from "../images/STK2.png";
 
 const GeometriDatar = () => {
   const sections = [
