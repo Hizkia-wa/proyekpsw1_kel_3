@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
+import {BrowserRouter as Router,Route,Routes,useLocation,} from "react-router-dom";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegistrationForm";
 import Navbar from "./components/Navbar";
@@ -17,6 +12,7 @@ import MateriGeometriDatar from "./components/MateriGeometriDatar";
 import MateriStatistika from "./components/MateriStatistika";
 import MateriPeluang from "./components/MateriPeluang";
 import MateriGeometriRuang from "./components/MateriGeometriRuang";
+import MateriLimitTrigonometri from "./components/MateriLimitTrigonometri";
 import GeometriDatar from "./components/GeometriDatar";
 import MateriTurunan from "./components/MateriTurunan";
 import BrilianStatistika from "./components/BrilianStatistika";
@@ -35,7 +31,7 @@ function CenteredLayout({ children }) {
 
 function App() {
   const location = useLocation();
-  const hideNavbarPaths = ["/", "/register"]; // Navbar disembunyikan pada halaman tertentu
+  const hideNavbarPaths = ["/", "/register"];
 
   return (
     <div className="app-container d-flex flex-column min-vh-100">
@@ -43,7 +39,6 @@ function App() {
 
       <div className="flex-grow-1">
         <Routes>
-          {/* Rute ke halaman Login */}
           <Route
             path="/"
             element={
@@ -52,8 +47,6 @@ function App() {
               </CenteredLayout>
             }
           />
-
-          {/* Rute ke halaman Register */}
           <Route
             path="/register"
             element={
@@ -63,31 +56,23 @@ function App() {
             }
           />
 
-          {/* Rute ke halaman Home */}
           <Route path="/home" element={<Home />} />
 
-          {/* Rute lainnya */}
           <Route path="/materi" element={<Materi />} />
           <Route path="/latihansoal" element={<LatihanSoal />} />
           <Route path="/brilian" element={<Brilian />} />
           <Route path="/soallatihan" element={<SoalLatihan />} />
-          <Route
-            path="/materigeometridatar"
-            element={<MateriGeometriDatar />}
-          />
-          <Route
-            path="/materigeometriruang"
-            element={<MateriGeometriRuang />}
-          />
+          <Route path="/materigeometridatar" element={<MateriGeometriDatar />} />
+          <Route path="/materigeometriruang" element={<MateriGeometriRuang />} />
           <Route path="/materistatistika" element={<MateriStatistika />} />
           <Route path="/materipeluang" element={<MateriPeluang />} />
+          <Route path="/materilimittrigonometri" element={<MateriLimitTrigonometri />} />
           <Route path="/brilianstatistika" element={<BrilianStatistika />} />
           <Route path="/GeometriDatar" element={<GeometriDatar />} />
           <Route path="/MateriTurunan" element={<MateriTurunan />} />
           <Route path="/Testimoni" element={<Testimoni />} />
           <Route path="/Contact" element={<Contact />} />
 
-          {/* Rute 404 */}
           <Route
             path="*"
             element={

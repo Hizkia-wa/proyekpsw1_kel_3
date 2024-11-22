@@ -52,7 +52,7 @@ function Materi() {
         deskripsi:
           "Limit itu suatu batas yang menggunakan konsep pendekatan fungsi",
         gambar: lmtimages,
-        path: "/MateriPeluang",
+        path: "/MateriLimitTrigonometri",
       },
       {
         nama: "Turunan",
