@@ -102,7 +102,7 @@ const Contact = () => {
 
 
       <div className="hire-us-section text-center mt-5">
-        <h3>Cari Kami!</h3>
+        <h3>Mulai Belajar Dengan Kami!</h3>
         <p>Kami siap memberi Anda solusi terbaik untuk kebutuhan Anda.</p>
         <button className="btn btn-outline-light"
         onClick={() => navigate ("/Home")}>Mulai</button>
