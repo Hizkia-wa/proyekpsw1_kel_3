@@ -18,9 +18,6 @@ const MateriStatistika = () => {
           <p>Penerapan statistika sangat luas, mencakup berbagai bidang ilmu, seperti ilmu alam fisika, astronomi, dan biologi, ilmu sosial sosiologi dan psikologi, serta di sektor bisnis ekonomi dan industri.</p>
           <p>Dengan demikian, materi statistika matematika pada tingkat kelas 12 membekali siswa dengan keterampilan analitis dan pemahaman matematika yang mendalam untuk menghadapi tantangan di dunia nyata.</p>
         </div>
-        <div className="header-image">
-          <img src={stk1} alt="Statistika" /> 
-        </div>
       </header>
 
       <section className="tech-news">

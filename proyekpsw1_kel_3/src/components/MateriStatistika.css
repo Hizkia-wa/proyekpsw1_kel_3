@@ -15,7 +15,7 @@ p {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
   padding: 20px 40px;
@@ -23,11 +23,6 @@ p {
 
 .header-content {
   max-width: 50%;
-}
-
-.header-image img {
-  width: 300px;
-  height: auto;
 }
 
 .tech-news {
@@ -77,9 +72,26 @@ p {
 }
 
 .card img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
+  width: 350%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.card:hover {
+  animation: float 0.6s ease-in-out infinite;
 }
 
 .card p {
