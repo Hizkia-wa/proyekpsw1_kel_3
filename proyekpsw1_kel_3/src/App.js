@@ -16,9 +16,11 @@ import MateriLimitTrigonometri from "./components/MateriLimitTrigonometri";
 import GeometriDatar from "./components/GeometriDatar";
 import MateriTurunan from "./components/MateriTurunan";
 import BrilianStatistika from "./components/BrilianStatistika";
+import BrilianLimit from "./components/BrilianLimit";
 import Footer from "./components/Footer";
 import Testimoni from "./components/Testimoni";
 import Contact from "./components/Contact";
+import Team from "./components/Team";
 import Latihansoalbangunruang from "./components/Latihansoalbangunruang";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -69,10 +71,12 @@ function App() {
           <Route path="/materipeluang" element={<MateriPeluang />} />
           <Route path="/materilimittrigonometri" element={<MateriLimitTrigonometri />} />
           <Route path="/brilianstatistika" element={<BrilianStatistika />} />
+          <Route path="/brilianlimit" element={<BrilianLimit />} />
           <Route path="/GeometriDatar" element={<GeometriDatar />} />
           <Route path="/MateriTurunan" element={<MateriTurunan />} />
           <Route path="/Testimoni" element={<Testimoni />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/geometribangunruang" element={<Latihansoalbangunruang />} />
           <Route
             path="*"

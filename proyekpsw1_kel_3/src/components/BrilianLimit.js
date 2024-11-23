@@ -182,7 +182,7 @@ const slides = [
     },
 ];
 
-const MateriLimit = () => {
+const BrilianLimit = () => {
     const [inputValues, setInputValues] = useState({});
     const [results, setResults] = useState({});
 
@@ -253,4 +253,4 @@ const MateriLimit = () => {
     );
 };
 
-export default MateriLimit;
+export default BrilianLimit;

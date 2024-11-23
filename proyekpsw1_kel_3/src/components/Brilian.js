@@ -18,7 +18,7 @@ function Brilian() {
         { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages, path: '/BrilianStatistika'},
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
         { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpssimages },
-        { nama: 'Limit', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: lmtssimages },
+        { nama: 'Limit', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: lmtssimages, path: '/BrilianLimit' },
         { nama: 'Turunan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: trnssimages },
         { nama: 'Distribusi Binomial', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: dblssimages },
     ];
