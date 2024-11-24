@@ -1,0 +1,194 @@
+.materi-geometri {
+    background: linear-gradient(to right, #d6e6f2, #eef7fc);
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+.materi-geometri .materi-datar,
+.materi-geometri .materi-ruang {
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    max-width: 1200px;
+}
+
+.materi-geometri .materi-datar:hover,
+.materi-geometri .materi-ruang:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+    background-color: #f0f9ff;
+}
+
+.materi-geometri .materi-datar h2,
+.materi-geometri .materi-ruang h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease-out;
+    transition: color 0.3s ease;
+}
+
+.materi-geometri .materi-datar h2::after,
+.materi-geometri .materi-ruang h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    border-radius: 2px;
+}
+
+.materi-geometri .materi-datar:hover h2,
+.materi-geometri .materi-ruang:hover h2 {
+    color: #2563eb;
+}
+
+.materi-geometri .materi-datar p,
+.materi-geometri .materi-ruang p {
+    font-size: 1.4rem;
+    color: #374151;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+.materi-geometri .materi-datar:hover p,
+.materi-geometri .materi-ruang:hover p {
+    color: #2563eb;
+}
+
+.materi-geometri .geometri-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.materi-geometri .geometri-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    animation: fadeIn 1.5s ease;
+}
+
+.materi-geometri .geometri-content h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1d4ed8;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.materi-geometri .geometri-content h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background-color: #60a5fa;
+}
+
+.materi-geometri .geometri-image {
+    flex: 1;
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+.materi-geometri .geometri-image img {
+    width: 85%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.materi-geometri .geometri-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.materi-geometri .geometri-section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    .materi-geometri .geometri-section {
+        flex-direction: column;
+    }
+}
+
+.header {
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease;
+}
+
+.header p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #e0f2fe;
+    margin-bottom: 0;
+    animation: fadeIn 2s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2.4rem;
+    }
+
+    .header p {
+        font-size: 1.4rem;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
