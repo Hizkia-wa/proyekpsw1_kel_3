@@ -11,10 +11,9 @@ import SoalLatihan from "./components/SoalLatihan";
 import MateriGeometriDatar from "./components/MateriGeometriDatar";
 import MateriStatistika from "./components/MateriStatistika";
 import MateriPeluang from "./components/MateriPeluang";
-import MateriGeometriRuang from "./components/MateriGeometriRuang";
 import MateriLimitTrigonometri from "./components/MateriLimitTrigonometri";
-import GeometriDatar from "./components/GeometriDatar";
 import MateriTurunan from "./components/MateriTurunan";
+import MateriGeometri from "./components/MateriGeometri";
 import BrilianStatistika from "./components/BrilianStatistika";
 import BrilianLimit from "./components/BrilianLimit";
 import Footer from "./components/Footer";
@@ -66,13 +65,12 @@ function App() {
           <Route path="/brilian" element={<Brilian />} />
           <Route path="/soallatihan" element={<SoalLatihan />} />
           <Route path="/materigeometridatar" element={<MateriGeometriDatar />} />
-          <Route path="/materigeometriruang" element={<MateriGeometriRuang />} />
           <Route path="/materistatistika" element={<MateriStatistika />} />
           <Route path="/materipeluang" element={<MateriPeluang />} />
           <Route path="/materilimittrigonometri" element={<MateriLimitTrigonometri />} />
           <Route path="/brilianstatistika" element={<BrilianStatistika />} />
           <Route path="/brilianlimit" element={<BrilianLimit />} />
-          <Route path="/GeometriDatar" element={<GeometriDatar />} />
+          <Route path="/materigeometri" element={<MateriGeometri />} />
           <Route path="/MateriTurunan" element={<MateriTurunan />} />
           <Route path="/Testimoni" element={<Testimoni />} />
           <Route path="/Contact" element={<Contact />} />

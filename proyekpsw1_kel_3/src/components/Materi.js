@@ -13,18 +13,11 @@ import dblimages from '../images/dbl.avif';
 function Materi() {
     const jurusanData = [
       {
-        nama: "Geometri Bangun Datar",
+        nama: "Materi Geometri",
         deskripsi:
-          "Materi tentang geometri bidang datar pada umumnya menjelaskan tentang sebuah jarak, baik jarak antara titik dengan garis maupun antara dua titik",
-        gambar: gbdsimages,
-        path: "/GeometriDatar",
-      },
-      {
-        nama: "Geometri Bangun Ruang",
-        deskripsi:
-          "bangun ruang adalah sebutan untuk bangun-bangun yang berbentuk tiga dimensi atau bangun yang memiliki ruang yang di batasi dengan sisi-sisi nya.",
+          "Geometri adalah cabang ilmu matematika yang mempelajari bentuk, ukuran, dimensi, dan sifat-sifat garis, sudut, bidang, dan ruang. Geometri juga dikenal sebagai ilmu ukur.",
         gambar: gbrsimages,
-        path: "/MateriGeometriRuang",
+        path: "/MateriGeometri",
       },
       {
         nama: "Statistika",
