@@ -1,0 +1,71 @@
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .main-section {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .left-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-image {
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .right-section {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .my-team {
+    margin-top: 60px;
+  }
+  
+  .team-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .team-gallery {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .team-image {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }  

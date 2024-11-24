@@ -20,6 +20,7 @@ import Footer from "./components/Footer";
 import Testimoni from "./components/Testimoni";
 import Contact from "./components/Contact";
 import Team from "./components/Team";
+import Mission from "./components/Mission";
 import Latihansoalbangunruang from "./components/Latihansoalbangunruang";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -75,6 +76,7 @@ function App() {
           <Route path="/Testimoni" element={<Testimoni />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/mission" element={<Mission />} />
           <Route path="/geometribangunruang" element={<Latihansoalbangunruang />} />
           <Route
             path="*"

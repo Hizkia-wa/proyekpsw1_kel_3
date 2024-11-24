@@ -1,17 +1,17 @@
 import React from "react";
 import "./MateriGeometri.css"; 
-import triangleImg from "./images/STK1.jpg";
-import squareImg from "./images/STK2.jpg";
-import circleImg from "./images/STK3.jpg";
-import rectangleImg from "./images/STK4.jpg";
-import trapezoidImg from "./images/STK5.jpg";
-import parallelogramImg from "./images/STK6.jpg";
-import rhombusImg from "./images/STK7.jpg";
-import cubeImg from "./images/STK1.jpg";
-import rectangularPrismImg from "./images/STK1.jpg";
-import pyramidImg from "./images/STK1.jpg";
-import coneImg from "./images/STK1.jpg";
-import sphereImg from "./images/STK1.jpg";
+import triangleImg from "../images/STK1.avif";
+import squareImg from "../images/STK2.png";
+import circleImg from "../images/STK3.png";
+import rectangleImg from "../images/STK4.png";
+import trapezoidImg from "../images/STK5.png";
+import parallelogramImg from "../images/STK6.png";
+import rhombusImg from "../images/STK1.png";
+import cubeImg from "../images/STK2.png";
+import rectangularPrismImg from "../images/STK3.png";
+import pyramidImg from "../images/STK4.png";
+import coneImg from "../images/STK5.png";
+import sphereImg from "../images/STK6.png";
 
 const MateriGeometri = () => {
   const datarSections = [

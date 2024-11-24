@@ -1,13 +1,13 @@
 import React from "react";
 import "./MateriTurunan.css";
-import diff1 from "./images/STK1.jpg";
-import diff2 from "./images/STK2.jpg";
-import diff3 from "./images/STK3.jpg";
-import diff4 from "./images/STK4.jpg";
-import diff5 from "./images/STK5.jpg";
-import diff6 from "./images/STK6.jpg";
-import diff7 from "./images/STK7.jpg";
-import diff8 from "./images/STK8.jpg";
+import diff1 from "../images/STK1.avif";
+import diff2 from "../images/STK2.png";
+import diff3 from "../images/STK3.png";
+import diff4 from "../images/STK4.png";
+import diff5 from "../images/STK5.png";
+import diff6 from "../images/STK6.png";
+import diff7 from "../images/STK1.png";
+import diff8 from "../images/STK2.png";
 
 const MateriTurunan = () => {
   return (

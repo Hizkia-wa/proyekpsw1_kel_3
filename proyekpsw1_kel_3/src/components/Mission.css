@@ -1,0 +1,77 @@
+/* Container utama */
+.business-section {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #f1f6f4;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Kolom kiri untuk teks, kanan untuk kartu */
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: start;
+  }
+  
+  /* Bagian Kiri: Teks */
+  .text-section {
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Bagian Kanan: Kartu */
+  .card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #e8f4f2;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Tambahkan animasi transisi */
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Warna khusus untuk kartu Management */
+  .card-management {
+    background-color: #193e37;
+    color: #fff;
+  }
+  
+  /* Efek Hover */
+  .card:hover {
+    background-color: #cbe3dd; /* Warna baru saat hover */
+    transform: translateY(-5px); /* Efek mengangkat kartu */
+  }
+  
+  .card-management:hover {
+    background-color: #145c4b; /* Warna baru saat hover untuk Management */
+  }  
