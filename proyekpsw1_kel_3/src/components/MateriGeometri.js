@@ -7,11 +7,11 @@ import rectangleImg from "../images/gpersegipanjang.png";
 import trapezoidImg from "../images/g.png";
 import parallelogramImg from "../images/gjajargenjang.png";
 import rhombusImg from "../images/gbelahketupat.png";
-import cubeImg from "../images/STK2.png";
+import cubeImg from "../images/gkubus.png";
 import rectangularPrismImg from "../images/STK3.png";
-import pyramidImg from "../images/STK4.png";
-import coneImg from "../images/STK5.png";
-import sphereImg from "../images/STK6.png";
+import pyramidImg from "../images/gprisma.png";
+import coneImg from "../images/gkerucut.png";
+import sphereImg from "../images/gbola.png";
 
 const MateriGeometri = () => {
   const datarSections = [
