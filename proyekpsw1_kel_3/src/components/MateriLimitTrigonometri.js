@@ -36,14 +36,14 @@ const MateriStatistika = () => {
         </div>
       </section>
 
-      <section className="tech-news">
+      <section className="tech-news1">
         <div className="news-content">
           <h3>2. Cosinus</h3>
           <p>VFungsi trigonometri cosinus ini merupakan perbandingan sisi segitiga di sudut dengan sisi miring. Perbandingan ini digunakan ketika segitiga adalah segitiga siku-siku atau sudutnya sebesar 90 derajat. Nilai positifnya cosinus berada di kuadran I dan IV. Sedangkan nilai negatifnya terdapat padai kuadran II dan III.</p>
           <h3>3. Tangen</h3>
           <p>Fungsi trigonometri tangen ini berupa perbandingan sisi segitiga di depan sudut, dengan di bagian sudut segitiga. Perbandingan ini digunakan jika segitiga adalah segitiga siku-siku atau sudutnya sebesar 90 derajat. Nilai positifnya berada di kuadran I dan III. Sementara itu, nilai negatifnya ada di kuadran II dan IV.</p>
         </div>
-        <div className="news-image">
+        <div className="news-image2">
         <img src={lt1} alt="limit trigonometri" />
         </div>
       </section>
@@ -66,7 +66,7 @@ const MateriStatistika = () => {
         </div>
       </section>
       
-      <section className="tech-news">
+      <section className="tech-news2">
         <div className="news-content">
           <h2>Rumus Limit Fungsi Trigonometri</h2>
           <p>Tabel frekuensi distribusi adalah tabel yang digunakan untuk menyajikan data dalam bentuk yang lebih terorganisasi dengan mengelompokkan data ke dalam kelas-kelas tertentu, kemudian mencatat jumlah kemunculan (frekuensi) data dalam setiap kelas. Tabel ini sering digunakan untuk data kuantitatif atau data yang memiliki banyak nilai.</p>
@@ -76,7 +76,7 @@ const MateriStatistika = () => {
         </div>
       </section>
 
-      <section className="tech-news">
+      <section className="tech-news3">
         <div className="news-content">
           <h2>Rumus Identitas Trigonometri</h2>
           <p>Pada saat menentukan nilai dari suatu limitnya, beberapa cara atau metode yang sering dipakai adalah substitusi, pemfaktoran, turunan, dan kali sekawan. Dalam trigonometri, terdapat beberapa rumus yang berbentuk seperti di bawah ini.</p>
@@ -121,7 +121,7 @@ const MateriStatistika = () => {
         </div>
       </section>
 
-      <section className="tech-news">
+      <section className="tech-news5">
         <div className="news-content">
           <h2>Bentuk-Bentuk Umum Limit Trigonometri</h2>
           <h2>Rumus Limit Fungsi Trigonometri</h2>
