@@ -6,17 +6,54 @@ import { Navigate } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="bg-light vh-100 d-flex flex-column justify-content-center align-items-center">
-      <header className="text-center mb-5">
-        <h1 className="text-primary fw-bold animated-title">
+    <div
+      className="bg-light vh-100 d-flex flex-column justify-content-start align-items-center text-center"
+      style={{
+        paddingTop: "5rem", // Memberi ruang di atas
+        paddingBottom: "2rem", // Memberi ruang di bawah
+      }}
+    >
+      <header className="mb-5" style={{ maxWidth: "600px" }}>
+        <h1
+          className="text-primary fw-bold animated-title"
+          style={{
+            fontSize: "2.5rem",
+            lineHeight: "1.2",
+            marginBottom: "1rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <FaCalculator size={50} className="me-2 animated-icon" />
-          <span className="math-text">R U M A P I</span>
+          <span className="math-text" style={{ fontWeight: "600" }}>
+            R U M A P I
+          </span>
         </h1>
-        <p className="text-muted fs-5 animated-subtitle">
-          <em>Rumus Matematika Pintar</em>
+        <p
+          className="text-muted fs-5 animated-subtitle"
+          style={{ marginBottom: "0.75rem", fontStyle: "italic" }}
+        >
+          Rumus Matematika Pintar
         </p>
-        <p className="text-dark fs-6 animated-description">
-          <span className="math-equation">y = mx + c</span>
+        <p
+          className="text-dark fs-6 animated-description"
+          style={{
+            margin: "0 auto",
+            fontSize: "1rem",
+            lineHeight: "1.5",
+            color: "#555",
+          }}
+        >
+          <span
+            className="math-equation"
+            style={{
+              fontFamily: "'Courier New', monospace",
+              fontSize: "1.2rem",
+            }}
+          >
+            y = mx + c
+          </span>
           <br />
           Platform belajar matematika yang interaktif, seru, dan cerdas!
         </p>
@@ -62,7 +99,7 @@ function Home() {
       <footer className="mt-5">
         <button
           className="btn btn-primary btn-lg px-5 py-2 shadow"
-          onClick={() => (window.location.href = "/materi")} 
+          onClick={() => (window.location.href = "/materi")}
         >
           Mulai Belajar
         </button>
