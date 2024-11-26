@@ -1,71 +1,143 @@
+/* Global Styles */
 .container {
-    font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
+  font-family: 'Poppins', sans-serif; /* Ganti font ke Poppins yang lebih modern */
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: #333;
+}
 
-  .main-section {
-    display: flex;
-    align-items: center;
-    margin: 40px 0;
+/* Main Section */
+.main-section {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.left-section {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1); /* Zoom in efek saat dihover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Tambah bayangan */
+}
+
+.right-section {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #6c63ff; /* Warna teks utama yang menarik */
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.8;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Tombol CTA */
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #6c63ff; /* Warna biru keunguan untuk tombol */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a362ea; /* Ganti warna tombol saat hover */
+  transform: scale(1.1); /* Efek pembesaran */
+}
+
+/* Team Section */
+.my-team {
+  margin-top: 60px;
+}
+
+.team-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #6c63ff; /* Sesuaikan warna dengan tema */
+  font-weight: 600;
+}
+
+.team-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.team-image {
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.team-image:hover {
+  transform: scale(1.15); /* Zoom in saat hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Tambah bayangan */
+}
+
+/* Animasi untuk gambar team */
+.team-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Overlay gelap transparan */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 10px;
+}
+
+.team-image:hover::after {
+  opacity: 1; /* Tampilkan overlay saat hover */
+}
+
+.team-image:hover::before {
+  content: "See More"; /* Teks tambahan saat hover */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .left-section {
-    flex: 1;
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .profile-image {
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  .right-section {
-    flex: 2;
-    padding-left: 20px;
-  }
-  
-  .section-title {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    line-height: 1.8;
-    font-size: 18px;
-    color: #555;
-  }
-  
-  .cta-button {
-    margin-top: 20px;
-    padding: 10px 30px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  .my-team {
-    margin-top: 60px;
-  }
-  
-  .team-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .team-gallery {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .team-image {
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }  
+}
