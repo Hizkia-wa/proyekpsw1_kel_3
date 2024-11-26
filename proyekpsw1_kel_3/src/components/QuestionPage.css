@@ -1,203 +1,194 @@
-/* Pengaturan elemen global untuk box-sizing */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Halaman utama */
-  .question-page {
-    font-family: "Arial", sans-serif;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: #e7f3fe; /* Warna latar pastel biru */
-  }
-  
-  /* Kotak besar soal dan tombol navigasi */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.question-page {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #e7f3fe;
+}
+
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.previous-button, .next-button {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  min-width: 150px;
+  text-align: center;
+  background-color: #b3d9ff;
+  color: #ffffff;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.previous-button:hover, .next-button:hover {
+  background-color: #91c7f9;
+}
+
+.question-box {
+  flex-grow: 1;
+  max-width: 800px;
+  background-color: #d7ebfd;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #b3d9ff;
+}
+
+.oval-button {
+  background-color: #b3d9ff;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.oval-button:hover {
+  background-color: #91c7f9;
+}
+
+.interactive-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown-container label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.dropdown-container select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b3d9ff;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  min-width: 1000px;
+  text-align: center;
+}
+
+.option-button {
+  background-color: #96cde4;
+  border: 2px solid #b3d9ff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.option-button:hover {
+  transform: scale(1.05);
+  background-color: #e7f3fe;
+}
+
+.option-button.correct {
+  background-color: #a5d6a7;
+  border-color: #81c784;
+  color: white;
+}
+
+.option-button.incorrect {
+  background-color: #ef9a9a;
+  border-color: #e57373;
+  color: white;
+}
+
+.explanation-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.explanation-toggle {
+  background-color: #b3d9ff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explanation-toggle:hover {
+  background-color: #91c7f9;
+  transform: scale(1.05);
+}
+
+.explanation-text {
+  margin-top: 20px;
+  background-color: #e3f2fd;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid #b3d9ff;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 900px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.explanation-text p {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
   .question-container {
-    display: flex; /* Gunakan flexbox */
-    align-items: center; /* Vertikal sejajar */
-    justify-content: space-between; /* Tombol kiri dan kanan berada di ujung */
-    width: 100%;
-    gap: 20px; /* Spasi antara elemen */
-    margin-bottom: 20px;
-    flex-wrap: wrap; /* Agar tidak bergeser jika ruang terbatas */
-  }
-  
-  .previous-button, .next-button {
-    flex-shrink: 0; /* Pastikan tombol tidak mengecil */
-    padding: 10px 20px;
-    min-width: 150px; /* Agar tombol memiliki lebar konsisten */
-    text-align: center;
-    background-color: #b3d9ff; /* Warna pastel biru */
-    color: #ffffff;
-    border-radius: 25px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .previous-button:hover, .next-button:hover {
-    background-color: #91c7f9; /* Warna hover */
-  }
-  
-  .question-box {
-    flex-grow: 1; /* Kotak soal fleksibel untuk memenuhi ruang */
-    max-width: 800px; /* Maksimal lebar kotak soal */
-    background-color: #d7ebfd; /* Latar pastel biru lembut */
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 2px solid #b3d9ff; /* Garis luar pastel biru */
-  }
-  
-  /* Tombol navigasi oval */
-  .oval-button {
-    background-color: #b3d9ff; /* Pastel biru */
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .oval-button:hover {
-    background-color: #91c7f9; /* Warna hover */
-  }
-  
-  /* Bagian interaktif */
-  .interactive-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    flex-wrap: wrap; /* Agar elemen tidak saling bertumpuk pada layar kecil */
-  }
-  
-  .dropdown-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .dropdown-container label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  .dropdown-container select {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #b3d9ff;
-    font-size: 16px;
-    background-color: #ffffff; /* Putih bersih */
-  }
-  
-  /* Opsi jawaban */
-  .options-container {
-    display: flex;
-    justify-content: center; /* Agar opsi jawaban berada di tengah */
-    align-items: center;     /* Vertikal tengah jika diperlukan */
-    flex-wrap: wrap;         /* Agar responsif */
-    gap: 15px;
-    min-width: 1000px;
-    text-align: center;      /* Teks dalam tombol juga berada di tengah */
-  }
-  
-  .option-button {
-    background-color: #ffffff;
-    border: 2px solid #b3d9ff; /* Warna pastel biru */
-    border-radius: 8px;
-    padding: 10px 20px;
-    width: 200px;
-    cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.3s ease;
-  }
-  
-  .option-button:hover {
-    transform: scale(1.05);
-    background-color: #e7f3fe; /* Latar hover pastel biru lembut */
-  }
-  
-  .option-button.correct {
-    background-color: #a5d6a7; /* Hijau pastel */
-    border-color: #81c784;
-    color: white;
-  }
-  
-  .option-button.incorrect {
-    background-color: #ef9a9a; /* Merah pastel */
-    border-color: #e57373;
-    color: white;
-  }
-  
-  /* Pembahasan */
-  .explanation-container {
-    text-align: center; /* Rata tengah */
-    width: 100%;
-    margin-top: 20px; /* Tambah jarak atas */
-  }
-  
-  .explanation-toggle {
-    background-color: #b3d9ff; /* Tombol pastel biru */
-    border: none;
-    border-radius: 25px; /* Tombol oval */
-    padding: 12px 25px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .explanation-toggle:hover {
-    background-color: #91c7f9; /* Warna hover */
-    transform: scale(1.05); /* Efek memperbesar */
-  }
-  
-  .explanation-text {
-    margin-top: 20px;
-    background-color: #e3f2fd; /* Latar pastel biru muda */
-    padding: 25px; /* Tambah padding untuk memperbesar kotak */
-    border-radius: 15px; /* Ujung melengkung */
-    border: 2px solid #b3d9ff; /* Garis luar pastel biru */
-    font-size: 16px; /* Ukuran font lebih besar */
-    line-height: 1.8; /* Spasi antar baris */
-    color: #333; /* Teks lebih gelap untuk kontras */
-    max-width: 900px; /* Batasi lebar kotak */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Tambahkan bayangan untuk efek menarik */
-    text-align: justify; /* Teks rata kiri-kanan */
-    margin-left: auto;
-    margin-right: auto; /* Agar tetap berada di tengah */
-  }
-  
-  .explanation-text p {
-    margin-bottom: 15px; /* Spasi antar paragraf */
-  }
-  
-  /* Media Query untuk responsivitas (layar kecil) */
-  @media (max-width: 768px) {
-    .question-container {
       flex-direction: column;
       align-items: stretch;
-    }
-  
-    .options-container {
+  }
+
+  .options-container {
       flex-direction: column;
       gap: 10px;
-      min-width: auto; /* Hapus lebar minimum agar kontainer dapat menyusut */
-    }
-  
-    .option-button {
-      width: auto; /* Agar tombol dapat menyusut sesuai kontainer */
-    }
+      min-width: auto;
   }
-  
+
+  .option-button {
+      width: auto;
+  }
+}

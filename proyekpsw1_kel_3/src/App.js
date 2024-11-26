@@ -22,6 +22,7 @@ import Contact from "./components/Contact";
 import Team from "./components/Team";
 import Mission from "./components/Mission";
 import Latihansoalbangunruang from "./components/Latihansoalbangunruang";
+import QuestionPage from "./components/QuestionPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -78,6 +79,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/mission" element={<Mission />} />
           <Route path="/geometribangunruang" element={<Latihansoalbangunruang />} />
+          <Route path="/QuestionPage" element={<QuestionPage />} />
           <Route
             path="*"
             element={
