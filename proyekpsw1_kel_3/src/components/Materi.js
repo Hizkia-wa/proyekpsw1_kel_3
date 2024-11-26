@@ -65,7 +65,7 @@ function Materi() {
         deskripsi:
           "Distribusi binomial adalah distribusi probabilitas statistik yang merangkum kemungkinan suatu nilai akan mengambil salah satu dari dua nilai independen.",
         gambar: dblimages,
-        path: "/MateriPeluang",
+        path: "/MateriBinomial",
       },
     ];
 
