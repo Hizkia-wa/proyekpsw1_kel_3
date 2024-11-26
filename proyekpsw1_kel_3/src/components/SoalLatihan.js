@@ -11,8 +11,8 @@ import dblsimages from '../images/soal8.jpg';
 
 function SoalLatihan() {
     const Latihandata = [
-        { nama: 'Geometri Bangun Datar', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/materigeometridatar'},
-        { nama: 'Geometri Bangun Ruang', deskripsi: "Mempelajari volume dan luas permukaan bangun ruang.", gambar: gbrimages },
+        { nama: 'Geometri Bangun D2 & D3', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/materigeometridatar'},
+        { nama: 'Kongruen dan Kesebangunan', deskripsi: "berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.", gambar: gbrimages},
         { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages },
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpsimages },
         { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },

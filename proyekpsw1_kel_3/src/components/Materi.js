@@ -13,11 +13,17 @@ import dblimages from '../images/dbl.avif';
 function Materi() {
     const jurusanData = [
       {
-        nama: "Materi Geometri",
+        nama: 'Geometri Bangun D2 & D3',
         deskripsi:
           "Geometri adalah cabang ilmu matematika yang mempelajari bentuk, ukuran, dimensi, dan sifat-sifat garis, sudut, bidang, dan ruang. Geometri juga dikenal sebagai ilmu ukur.",
         gambar: gbrsimages,
         path: "/MateriGeometri",
+      },
+      {
+        nama: 'Kongruen dan Kesebangunan',
+        deskripsi:
+           "berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.",
+        gambar: gbdsimages,
       },
       {
         nama: "Statistika",

@@ -13,14 +13,14 @@ import dblssimages from "../images/lat5.jpg";
 function Latihansoal() {
   const Latihandata = [
     {
-      nama: "Geometri Bangun Datar",
+      nama: 'Geometri Bangun D2 & D3',
       deskripsi: "Mempelajari bentuk dan sifat geometri datar.",
       gambar: gbdimages,
       path: "/materigeometridatar",
     },
     {
-      nama: "Geometri Bangun Ruang",
-      deskripsi: "Mempelajari volume dan luas permukaan bangun ruang.",
+      nama: 'Kongruen dan Kesebangunan',
+      deskripsi:"berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.",
       gambar: gbrimages,
       path: "/geometribangunruang",
     },
