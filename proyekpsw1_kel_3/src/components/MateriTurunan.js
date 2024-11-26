@@ -1,5 +1,5 @@
 import React from "react";
-import "./MateriTurunan.css";
+import "./MateriStatistika.css";
 import diff1 from "../images/STK1.avif";
 import diff2 from "../images/STK2.png";
 import diff3 from "../images/STK3.png";

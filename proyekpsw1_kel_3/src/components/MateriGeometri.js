@@ -1,5 +1,5 @@
 import React from "react";
-import "./MateriGeometri.css"; 
+import "./MateriStatistika.css"; 
 import triangleImg from "../images/gsegitiga.png";
 import squareImg from "../images/gpersegi.png";
 import circleImg from "../images/glingkaran.png";

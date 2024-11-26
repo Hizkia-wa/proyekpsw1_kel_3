@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: antiquewhite;
 }
 
 h1, h2 {
@@ -10,14 +11,14 @@ h1, h2 {
 }
 
 p {
-  color: #666;
+  color: black;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: #DBECF4;
   padding: 20px 40px;
 }
 
@@ -30,7 +31,81 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  background-color: #e8f5f7;
+  background-color: #abcae2;
+}
+
+.tech-news1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #b9d4e9;
+}
+
+.tech-news2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #BAD6EB;
+}
+
+.tech-news3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #CADEED;
+}
+
+.tech-news4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #DBECF4;
+}
+
+.tech-news5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #acc9d7;
+}
+
+.tech-news6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #bde0f7;
+}
+
+.tech-news7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: hsl(198, 100%, 92%);
+  margin-bottom: 10px;
+}
+
+.tech-news8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: hsl(198, 70%, 82%);
+  margin-bottom: 10px;
+}
+
+.tech-news9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #b5dafa;
 }
 
 .news-content {
@@ -79,6 +154,7 @@ p {
 
 .card:hover img {
   transform: scale(1.2);
+  animation: float 0.6s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -90,8 +166,8 @@ p {
   }
 }
 
-.card:hover {
-  animation: float 0.6s ease-in-out infinite;
+.cards:hover {
+  /* animation: float 0.6s ease-in-out infinite; */
 }
 
 .card p {
