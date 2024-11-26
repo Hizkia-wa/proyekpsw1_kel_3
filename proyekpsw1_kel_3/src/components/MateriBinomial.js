@@ -1,112 +1,108 @@
 import React from "react";
 import "./MateriStatistika.css";
-import stk2 from "../images/stkmean.png";
-import stk3 from "../images/stkmedian.png";
-import stk4 from "../images/stkmodus.png";
-import stk5 from "../images/stkkuartil.png";
-import stk6 from "../images/stkdesil.png";
-import stk7 from "../images/stkpersentil.png";
+import Binomial1 from "../images/Binomial1.png";
+import Binomial2 from "../images/Binomial2.png";
+import Binomial3 from "../images/Binomial3.png";
+import Binomial4 from "../images/Binomial4.png";
+import Binomial5 from "../images/Binomial5.png";
+import Binomial6 from "../images/Binomial6.png";
+
 
 const MateriStatistika = () => {
   return (
     <div>
       <header className="header">
         <div className="header-content">
-          <h1>Statistika</h1>
+          <h1>Distribusi Binomial</h1>
           <p>
-            Statistika adalah cabang ilmu yang memfokuskan pada cara merancang,
-            menghimpun, menganalisis, menafsirkan, dan menyajikan data.
+            Distribusi binomial adalah salah satu jenis distribusi probabilitas
+            diskrit. Distribusi ini menggambarkan peluang suatu peristiwa
+            terjadi dalam sejumlah percobaan yang memiliki dua kemungkinan
+            hasil, yaitu sukses atau gagal
           </p>
           <p>
-            Penerapan statistika sangat luas, mencakup berbagai bidang ilmu,
-            seperti ilmu alam fisika, astronomi, dan biologi, ilmu sosial
-            sosiologi dan psikologi, serta di sektor bisnis ekonomi dan
-            industri.
+            Karakteristik Distribusi Binomial: Percobaan bernilai dua: Setiap
+            percobaan hanya memiliki dua hasil, yaitu sukses (dengan
+            probabilitas 𝑝 p) dan gagal (dengan probabilitas 𝑞 = 1 − 𝑝 q=1−p).
           </p>
           <p>
-            Dengan demikian, materi statistika matematika pada tingkat kelas 12
-            membekali siswa dengan keterampilan analitis dan pemahaman
-            matematika yang mendalam untuk menghadapi tantangan di dunia nyata.
+            Rumus Distribusi Binomial: 𝑃 ( 𝑋 = 𝑘 ) = ( 𝑛 𝑘 ) ⋅ 𝑝 𝑘 ⋅ ( 1 − 𝑝 ) 𝑛
+            − 𝑘 P(X=k)=( k n ​ )⋅p k ⋅(1−p) n−k
           </p>
         </div>
       </header>
 
       <section className="tech-news">
         <div className="news-content">
-          <h2>Populasi dan Sampel</h2>
+          <h2>Distribusi Binomial</h2>
           <p>
-            Populasi adalah objek yang dijadikan penelitian. Misalnya, jika kamu
-            akan melakukan penelitian tentang pengaruh hormon steroid pada
-            pertumbuhan ayam pedaging atau broiler, maka populasi yang dipilih
-            adalah ayam pedaging yang dibudidayakan oleh peternak.
+            Distribusi Binomial digunakan untuk menghitung peluang suatu
+            peristiwa tertentu terjadi dalam sejumlah percobaan yang memiliki
+            dua kemungkinan hasil, yaitu sukses atau gagal.
           </p>
           <p>
-            Sampel adalah bagian dari populasi yang bisa dijadikan sumber
-            informasi. Misalnya, dari banyaknya ayam pedaging yang dimiliki oleh
-            peternak, kamu cukup mengambil beberapa saja untuk kamu amati selama
-            proses penelitian. Artinya, kamu tidak perlu menjadikan semua ayam
-            sebagai bahan penelitian.
+            Komponen Penting Distribusi Binomial: Jumlah percobaan ( 𝑛 n):
+            Banyaknya percobaan atau uji coba yang dilakukan.
           </p>
         </div>
         <div className="news-image">
-          <h2>Variabel dan Data</h2>
-          <p>
-            Variabel adalah sifat beda antarobjek penelitian, misalnya tinggi
-            badan, warna bunga, bentuk biji, jenis pupuk, dan masih banyak
-            lainnya. Variabel yang bisa dinyatakan dengan angka disebut variabel
-            kuantitatif. Contohnya tinggi badan, berat badan, suhu, dan
-            sebagainya. Nah, ternyata variabel kuantitatif masih dibagi menjadi
-            dua, yaitu variabel diskrit dan kontinu.
-          </p>
+          <h2>Rumus Dasar:</h2>
+          <p>P(X=k)=( k n ​ )⋅p k ⋅q n−k</p>
           <li>
-            Variabel diskrit adalah variabel yang nilainya ditentukan dari hasil
-            perhitungan.
+            Hitung Peluang Sukses dan Gagal: Gunakan probabilitas 𝑝 p untuk
+            sukses, dan 𝑞 = 1 − 𝑝 q=1−p untuk gagal.
           </li>
           <li>
-            Variabel kontinu adalah variabel yang nilainya didapat dari hasil
-            pengukuran.
+            Substitusi ke Rumus: Masukkan nilai 𝑛 n, 𝑘 k, 𝑝 p, dan 𝑞 q ke dalam
+            rumus.
           </li>
           <p>
-            Data adalah nilai variabel dari suatu objek. Data juga dibedakan
-            menjadi data kuantitatif, kualitatif, diskrit, dan kontinu.
+            Keberhasilan ( 𝑝 p): Probabilitas suatu peristiwa terjadi (sukses)
+            dalam satu percobaan.
           </p>
         </div>
       </section>
 
       <section className="future-work">
-        <h2>Pengumpulan Data dan Teknik Sampling</h2>
+        <h2>Penerapan dalam Kehidupan Sehari-hari</h2>
         <div className="cards">
           <div className="card">
             <p>
-              <strong>Metode sampel acak </strong>adalah metode pemilihan sampel
-              berdasarkan konsep peluang atau angka acak. Artinya, sampel yang
-              diambil secara acak.{" "}
+              <strong>Melempar Koin </strong>Contoh: Dalam 10 kali lemparan
+              koin, berapa peluang kepala muncul sebanyak 5 kali? Penjelasan:
+              Probabilitas muncul kepala ( 𝑝 p) = 0.5, dan kegagalan ( 𝑞 q) =
+              0.5. Kita bisa gunakan rumus binomial untuk menghitung peluang
+              ini.{" "}
             </p>
           </div>
           <div className="card">
             <p>
-              <strong>Metode sistematik </strong>adalah metode untuk mendapatkan
-              sampel secara sistematik. Misalnya, kamu memiliki 2.000 kartu dan
-              masing-masing kartu sudah kamu beri indentitas berupa nomor.
-              Sementara itu, kartu yang kamu butuhkan untuk penelitian hanya
-              100.{" "}
+              <strong>Mendapat Soal Benar dalam Ujian Pilihan Ganda: </strong>
+              Contoh: Dalam ujian pilihan ganda dengan 20 soal, peluang menjawab
+              benar untuk setiap soal adalah 0.75. Berapa peluang seorang siswa
+              menjawab benar 15 soal? Penjelasan: Jumlah soal ( 𝑛 n) = 20,
+              peluang benar ( 𝑝 p) = 0.75, kegagalan ( 𝑞 q) = 0.25, dan
+              keberhasilan ( 𝑘 k) = 15. Gunakan distribusi binomial untuk
+              menghitung..{" "}
             </p>
           </div>
           <div className="card">
             <p>
-              <strong>Metode sampling terstratifikasi </strong>adalah metode
-              untuk mencari sampel dengan cara membagi suatu populasi dalam dua
-              grup berdasarkan beberapa pertimbangan sifat. Lalu, tiap sampel
-              diambil dari masing-masing grup.
+              <strong>Peluang Menang dalam Undian: </strong>Contoh: Sebuah
+              undian memiliki peluang 10% untuk menang. Jika kamu membeli 5
+              tiket, berapa peluang menang sekali? Penjelasan: Probabilitas
+              menang ( 𝑝 p) = 0.1, peluang kalah ( 𝑞 q) = 0.9, jumlah tiket ( 𝑛
+              n) = 5, dan keberhasilan ( 𝑘 k) = 1.
             </p>
           </div>
           <div className="card">
             <p>
-              <strong>Metode sampling kelompok </strong>Metode ini hampir sama
-              dengan metode sampling terstartifikasi, hanya saja sampel yang
-              dipilih adalah grup/ kelompok bukan tiap-tiap individu pada
-              masing-masing grup. Dengan demikian, sampelnya adalah seluruh
-              anggota grup/ kelompok yang dipilih.
+              <strong>Kesehatan: </strong>Contoh: Dalam populasi tertentu, 80%
+              orang dewasa terdeteksi bebas dari penyakit tertentu. Jika 10
+              orang diperiksa secara acak, berapa peluang 8 orang terbebas dari
+              penyakit tersebut? Penjelasan: Probabilitas bebas penyakit ( 𝑝 p)
+              = 0.8, peluang tidak bebas ( 𝑞 q) = 0.2, jumlah sampel ( 𝑛 n) =
+              10, dan keberhasilan ( 𝑘 k) = 8.
             </p>
           </div>
         </div>
@@ -114,14 +110,13 @@ const MateriStatistika = () => {
 
       <section className="tech-news2">
         <div className="news-content">
-          <h2>Tabel Distribusi frekuensi</h2>
+          <h2>Produksi Barang di Pabrik:</h2>
           <p>
-            Tabel frekuensi distribusi adalah tabel yang digunakan untuk
-            menyajikan data dalam bentuk yang lebih terorganisasi dengan
-            mengelompokkan data ke dalam kelas-kelas tertentu, kemudian mencatat
-            jumlah kemunculan (frekuensi) data dalam setiap kelas. Tabel ini
-            sering digunakan untuk data kuantitatif atau data yang memiliki
-            banyak nilai.
+            Contoh: Sebuah mesin produksi menghasilkan barang dengan
+            probabilitas cacat sebesar 5%. Jika 50 barang diambil acak, berapa
+            peluang hanya 2 barang yang cacat? Penjelasan: Probabilitas cacat (
+            𝑝 p) = 0.05, peluang tidak cacat ( 𝑞 q) = 0.95, jumlah barang ( 𝑛 n)
+            = 50, dan keberhasilan ( 𝑘 k) = 2.
           </p>
         </div>
         <div className="news-image"></div>
@@ -129,23 +124,12 @@ const MateriStatistika = () => {
 
       <section className="tech-news3">
         <div className="news-content">
-          <h2>Ukuran Pemusatan Data</h2>
+          <h2>Kenapa Penting?</h2>
           <p>
-            Ukuran pemusatan data adalah nilai yang dipakai untuk menggambarkan
-            sekumpulan data dengan cara mengidentifikasi pusat kumpulan data
-            tersebut. Salah satu kegunaan dari ukuran pemusatan data adalah
-            untuk membandingkan dua (populasi) atau contoh, karena sangat sulit
-            untuk membandingkan masing-masing anggota dari masing-masing anggota
-            populasi atau masing-masing anggota data contoh. Nilai ukuran
-            pemusatan ini dibuat sedemikian sehingga cukup mewakili seluruh
-            nilai pada data yang bersangkutan.
-          </p>
-          <p>
-            Ukuran pemusatan mencakup data: <br></br>a. Ungrouped data, yaitu
-            data yang belum dikelompokkan (data tunggal) <br></br>b. Grouped
-            data, yaitu data yang telah dikelompokkan.Untuk menghitung ukuran
-            pemusatan pada data yangtelah dikelompokkan, digunakan tabel
-            distribusi frekuensi
+            Distribusi binomial sangat berguna dalam menganalisis situasi nyata,
+            terutama ketika kita ingin memahami peluang terjadinya peristiwa
+            tertentu. Dengan memahami konsep ini, kita dapat membuat keputusan
+            berdasarkan data probabilitas.
           </p>
         </div>
         <div className="news-image"></div>
@@ -162,7 +146,7 @@ const MateriStatistika = () => {
           </p>
         </div>
         <div className="news-image">
-          <img src={stk2} alt="Statistika" />
+          <img src={Binomial1} alt="Binomial1" />
         </div>
       </section>
 
@@ -183,7 +167,7 @@ const MateriStatistika = () => {
           </p>
         </div>
         <div className="news-image">
-          <img src={stk3} alt="Statistika" />
+          <img src={Binomial2} alt="Binomial2" />
         </div>
       </section>
 
@@ -197,7 +181,7 @@ const MateriStatistika = () => {
           </p>
         </div>
         <div className="news-image">
-          <img src={stk4} alt="Statistika" />
+          <img src={Binomial3} alt="Binomial3" />
         </div>
       </section>
 
@@ -218,7 +202,7 @@ const MateriStatistika = () => {
           </p>
         </div>
         <div className="news-image">
-          <img src={stk5} alt="Statistika" />
+          <img src={Binomial4} alt="Binomial4" />
         </div>
       </section>
 
@@ -240,7 +224,7 @@ const MateriStatistika = () => {
           </p>
         </div>
         <div className="news-image">
-          <img src={stk6} alt="Statistika" />
+          <img src={Binomial5} alt="Binomial5" />
         </div>
       </section>
 
@@ -256,7 +240,7 @@ const MateriStatistika = () => {
           </p>
         </div>
         <div className="news-image">
-          <img src={stk7} alt="Statistika" />
+          <img src={Binomial6} alt="Binomial6" />
         </div>
       </section>
     </div>
