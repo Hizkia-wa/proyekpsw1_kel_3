@@ -23,7 +23,8 @@ import Team from "./components/Team";
 import Mission from "./components/Mission";
 import Latihansoalbangunruang from "./components/Latihansoalbangunruang";
 import QuestionPage from "./components/QuestionPage";
-import MateriBinomial from "./components/MateriBinomial"
+import MateriBinomial from "./components/MateriBinomial";
+import SoalLatihanStatistika from "./components/LatihanSaolStatistika";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -81,6 +82,7 @@ function App() {
           <Route path="/mission" element={<Mission />} />
           <Route path="/geometribangunruang" element={<Latihansoalbangunruang />} />
           <Route path="/QuestionPage" element={<QuestionPage />} />
+          <Route path="/SoalLatihanStatistika" element={<SoalLatihanStatistika />} />
            <Route path="/MateriBinomial" element={<MateriBinomial />} />
           <Route
             path="*"

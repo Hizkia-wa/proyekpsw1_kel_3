@@ -28,7 +28,7 @@ function Latihansoal() {
       nama: "Statistika",
       deskripsi: "Analisis data menggunakan statistika.",
       gambar: stksimages,
-      path: "/materistatistika",
+      path: "/SoalLatihanStatistika",
     },
     {
       nama: "Aturan Pencacahan",
