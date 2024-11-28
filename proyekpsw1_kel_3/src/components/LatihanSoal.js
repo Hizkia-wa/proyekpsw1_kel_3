@@ -28,7 +28,7 @@ function Latihansoal() {
       nama: "Statistika",
       deskripsi: "Analisis data menggunakan statistika.",
       gambar: stksimages,
-      path: "/SoalLatihanStatistika",
+      path: "/LatihanSoalStatistika",
     },
     {
       nama: "Aturan Pencacahan",
@@ -46,7 +46,7 @@ function Latihansoal() {
       nama: "Limit",
       deskripsi: "Konsep limit pada fungsi matematika.",
       gambar: lmtssimages,
-      path: "/materilimittrigonometri",
+      path: "/LatihanSoalLimit",
     },
     {
       nama: "Turunan",

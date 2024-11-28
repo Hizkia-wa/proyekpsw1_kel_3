@@ -1,102 +1,81 @@
 import React, { useState } from "react";
 import "./QuestionPage.css";
 
-const LatihanSoalStatistika = () => {
+const LatihanSoalLimit = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
 
   const questions = [
     {
-      question: "Rata-rata dari data berikut: 5, 7, 8, 10, 12 adalah?",
-      options: ["7", "8", "9", "10"],
-      correctOption: "8",
-      explanation: "Rata-rata dihitung dengan Σx/n = (5+7+8+10+12)/5 = 42/5 = 8.",
-    },
-    {
-      question: "Modus dari data berikut: 2, 3, 4, 3, 5, 3, 6 adalah?",
-      options: ["2", "3", "4", "6"],
-      correctOption: "3",
+      question: "Diketahui 𝑓(𝑥)=x^2−4/x−2. Tentukan lim⁡ x→2 𝑓(𝑥).",
+      options: ["0", "2", "4", "6"],
+      correctOption: "4",
       explanation:
-        "Modus adalah data yang paling sering muncul. Pada data ini, angka 3 muncul sebanyak 3 kali, lebih banyak dari yang lain.",
+        "Faktorkan pembilang menjadi (x-2)(x+2), lalu sederhanakan. hasilnya adalah 𝑓(𝑥)=x+2, maka lim x→2 𝑓(𝑥)=2+2=4.)",
     },
     {
-      question: "Median dari data berikut: 12, 14, 15, 16, 20 adalah?",
-      options: ["14", "15", "16", "20"],
-      correctOption: "15",
+      question: "Hitung nilai lim⁡ x→∞ 2x+3/5x-4.",
+      options: ["0", "2/5", "1", "∞"],
+      correctOption: "2/5",
       explanation:
-        "Median adalah nilai tengah setelah data diurutkan. Data yang diurutkan: 12, 14, 15, 16, 20. Nilai tengahnya adalah 15.",
+        "Bagi pembilang dan penyebut dengan x, hasilnya adalah 2/5.",
     },
     {
-      question: "Variansi dari data berikut: 2, 4, 6 adalah?",
-      options: ["2.67", "4", "6", "8"],
-      correctOption: "2.67",
+      question: "Diketahui g(x)=x^2−3x+2. Tentukan lim x→1​ g(x).",
+      options: ["0", "1", "2", "-2"],
+      correctOption: "0",
       explanation:
-        "Rata-rata = 4. Variansi = [(2-4)² + (4-4)² + (6-4)²] / 3 = (4 + 0 + 4) / 3 = 2.67.",
+        " Substitusi langsung x=1, hasilnya g(1)=1^2−3(1)+2=0.",
     },
     {
-      question: "Kuartil ketiga dari data: 10, 15, 20, 25, 30, 35 adalah?",
-      options: ["25", "27.5", "30", "32.5"],
-      correctOption: "30",
+      question: "lim x→0 1−cos(x)/x^2 =?",
+      options: ["∞", "tidak terdefinisi", "0", "1"],
+      correctOption: "1",
       explanation:
-        "Kuartil ketiga (Q3) berada di posisi 3/4(n+1). Data diurutkan: 10, 15, 20, 25, 30, 35. Q3 = data ke-5, yaitu 30.",
+        "Pembahasan: Gunakan identitas trigonometri: lim x→0 1−cos(x)/x^2 = 1/2.",
     },
     {
-      question: "Berapa persen data berada di bawah persentil ke-40?",
-      options: ["40%", "50%", "60%", "70%"],
-      correctOption: "40%",
+      question: "lim x→3 x^2−9​/x-3 =?",
+      options: ["0", "9", "6", "12"],
+      correctOption: "6",
       explanation:
-        "Persentil ke-40 menunjukkan bahwa 40% dari data berada di bawah nilai tersebut.",
+        "Faktorkan x^2−9 menjadi (x−3)(x+3), lalu sederhanakan.",
     },
     {
-      question: "Mean dari data berkelompok dengan frekuensi: 2, 3, 5, 10 adalah?",
-      options: ["6", "7", "8", "9"],
-      correctOption: "7",
+      question: "x→0 lim tan(x)/x =?",
+      options: ["1", "0", "-1", "∞"],
+      correctOption: "1",
+      explanation:
+        "Gunakan sifat limit: lim x→0 tan(x)/x =1.",
+    },
+    {
+      question: "lim x→0 e^x −1/x =?",
+      options: ["1", "0", "e", "tidak terdefinisi"],
+      correctOption: "1",
       explanation:
         "Mean = Σ(f * x) / Σf. Asumsikan nilai tengah kelas: {2, 4, 6, 8}. Mean = (2*2 + 4*3 + 6*5 + 8*10) / 20 = 7.",
     },
     {
-      question: "Jika data memiliki variansi 16, berapa simpangan bakunya?",
-      options: ["2", "4", "8", "16"],
-      correctOption: "4",
+      question: "lim x→∞ 3x^3+2x/5x^3-x =?",
+      options: ["∞", "0", "1", "3/5"],
+      correctOption: "3/5",
       explanation:
-        "Simpangan baku adalah akar kuadrat dari variansi. √16 = 4.",
+        "Bagi semua suku dengan pangkat tertinggi, yaitu 𝑥^3",
     },
     {
-      question: "Modus dari data berkelompok dengan frekuensi tertinggi adalah?",
-      options: ["nilai tengah kelas", "tepi bawah kelas", "nilai rata-rata", "median"],
+      question: "lim x→0 sin^2(x)/x^2 =?",
+      options: ["0", "-1", "1", "1/2"],
       correctOption: "nilai tengah kelas",
       explanation:
         "Modus pada data berkelompok dihitung menggunakan kelas dengan frekuensi tertinggi.",
     },
-    {
-      question:
-        "Median dari data berkelompok dapat dihitung menggunakan rumus?",
-      options: [
-        "L + [(N/2 - F) / f] * w",
-        "Σf * x / Σf",
-        "Σ(f * x) / N",
-        "L + [(N - F) / f] * w",
-      ],
-      correctOption: "L + [(N/2 - F) / f] * w",
+    {question:
+        "lim x→2 x^3−8/x-2 =?",
+      options: [ "4", "8", "12", "16", ],
+      correctOption: "12",
       explanation:
-        "Rumus median pada data berkelompok adalah L + [(N/2 - F) / f] * w.",
-    },
-    {
-      question:
-        "Sebuah kelas memiliki data: 5, 10, 10, 15. Berapa nilai mediannya?",
-      options: ["10", "12.5", "15", "5"],
-      correctOption: "10",
-      explanation:
-        "Median adalah nilai tengah. Setelah diurutkan: {5, 10, 10, 15}, median = (10 + 10)/2 = 10.",
-    },
-    {
-      question:
-        "Jika data memiliki kuartil Q1=25 dan Q3=75, berapa jangkauan interkuartilnya?",
-      options: ["25", "50", "75", "100"],
-      correctOption: "50",
-      explanation:
-        "Jangkauan interkuartil (IQR) dihitung dengan Q3 - Q1 = 75 - 25 = 50.",
+        "Faktorkan x^3−8 menjadi (x−2)(x^2+2x+4), lalu substitusi x=2.",
     },
   ];
 
@@ -204,4 +183,4 @@ const LatihanSoalStatistika = () => {
   );
 };
 
-export default LatihanSoalStatistika;
+export default LatihanSoalLimit;
