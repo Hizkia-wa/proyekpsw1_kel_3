@@ -137,13 +137,7 @@ const MateriStatistika = () => {
 
       <section className="tech-news4">
         <div className="news-content">
-          <h2>Rata-rata Hitung/Mean</h2>
-          <p>
-            Merupakan salah satu ukuran untuk memberikan gambaran yang lebih
-            jelas dan singkat tentang sekumpulan data dengan melihat pusat suatu
-            data, apabila data diurutkan dari yang terkecil sampai terbesar atau
-            sebaliknya. Jumlah seluruh nilai data dibagi dengan jumlah data.
-          </p>
+          <h2>Rumus dan Penjelasan Distribusi Binomial</h2>
         </div>
         <div className="news-image">
           <img src={Binomial1} alt="Binomial1" />
@@ -152,19 +146,7 @@ const MateriStatistika = () => {
 
       <section className="tech-news5">
         <div className="news-content">
-          <h2>Median</h2>
-          <p>
-            Median adalah nilai tengah dari kumpulan data yang tersusun secara
-            teratur (diurutkan menurut besarnya) Median membagi data menjadi dua
-            bagian yang sama sehingga median disebut juga ukuran letak.
-          </p>
-          <p>
-            <strong>Catatan</strong>Posisi tengah dari seperangkat data sebanyak
-            N yang telah terurut terletak pada posisi yang ke (𝑁+1) 2. Jika N
-            ganjil, maka ada data yang berada pada posisi tengah dan nilai data
-            itu merupakan nilai median. Jika N genap, maka sebagai mediannya
-            diambil rata-rata hitung dua data yang ada ditengah
-          </p>
+          <h2>Fungsi Distribusi Probabilitas Binomial</h2>
         </div>
         <div className="news-image">
           <img src={Binomial2} alt="Binomial2" />
@@ -173,12 +155,8 @@ const MateriStatistika = () => {
 
       <section className="tech-news6">
         <div className="news-content">
-          <h2>Modus</h2>
-          <p>
-            Modus adalah ukuran pemusatan data yang digunakan untuk menyatakan
-            kejadian yang paling banyak terjadi atau paling banyak muncul. Modus
-            data berkelompok ditentukan dengan rumus:.
-          </p>
+          <h2>Rumus Lengkap Distribusi Binomial</h2>
+   
         </div>
         <div className="news-image">
           <img src={Binomial3} alt="Binomial3" />
@@ -187,19 +165,11 @@ const MateriStatistika = () => {
 
       <section className="tech-news7">
         <div className="news-content">
-          <h2>Kuartil</h2>
+          <h2>Peluang Distribusi Binomial</h2>
           <p>
-            Kuartil adalah konsep dalam statistika yang membagi data menjadi
-            empat bagian sama besar. Kuartil dibagi menjadi tiga, yaitu kuartil
-            pertama (Q1), kuartil kedua (Q2), dan kuartil ketiga (Q3).
+            Dilengkapi dengan Keterangan
           </p>
-          <p>
-            Kuartil juga dapat diartikan dengan suatu nilai, yang bisa membagi
-            kumpulan data menjadi empat bagian sama besar. Hal ini berguna dalam
-            berbagai analisis statistika, termasuk identifikasi outlier
-            (nilai-nilai yang jauh dari nilai-nilai lainnya), dan pemahaman
-            karakteristik distribusi data.
-          </p>
+
         </div>
         <div className="news-image">
           <img src={Binomial4} alt="Binomial4" />
@@ -208,20 +178,8 @@ const MateriStatistika = () => {
 
       <section className="tech-news8">
         <div className="news-content">
-          <h2>Desil</h2>
-          <p>
-            Desil adalah suatu istilah yang menunjukkan pembagian data menjadi
-            10 bagian sama besar. Sebelum menentukan desil, data harus diurutkan
-            terlebih dahulu, ya. Ada sembilan desil yang nantinya bisa membagi
-            data menjadi sepuluh bagian sama besar. Artinya, setiap bagian
-            memiliki persentase yang sama, yaitu 10%. Perhatikan ilustrasi
-            berikut.
-          </p>
-          <p>
-            Di dalam kehidupan sehari-hari, desil biasa dimanfaatkan untuk
-            mengelompokkan tingkat kesejahteraan rakyat. Misalnya kelompok Desil
-            1, Desil 2, dan seterusnya.
-          </p>
+          <h2>Percobaan Rumus</h2>
+
         </div>
         <div className="news-image">
           <img src={Binomial5} alt="Binomial5" />
@@ -230,14 +188,8 @@ const MateriStatistika = () => {
 
       <section className="tech-news9">
         <div className="news-content">
-          <h2>Persentil</h2>
-          <p>
-            Persentil adalah ukuran statistik yang digunakan untuk membagi
-            sekumpulan data menjadi 100 bagian yang sama, masing-masing
-            mencerminkan 1% dari distribusi data tersebut. Dalam istilah
-            sederhana, persentil menunjukkan posisi atau peringkat suatu nilai
-            dalam sebuah dataset.
-          </p>
+          <h2>Distribusi Binomial</h2>
+
         </div>
         <div className="news-image">
           <img src={Binomial6} alt="Binomial6" />
