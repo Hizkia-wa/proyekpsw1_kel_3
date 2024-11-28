@@ -19,7 +19,7 @@ h1 {
     letter-spacing: 2px;
     color: #1e272e;
     background: linear-gradient(90deg, #27ae60, #2980b9);
-    -webkit-backgroundclip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
