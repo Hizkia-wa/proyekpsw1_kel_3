@@ -56,22 +56,16 @@ const MateriStatistika = () => {
         <div className="news-content">
           <h2>Tabel Distribusi frekuensi</h2>
           <p>Tabel frekuensi distribusi adalah tabel yang digunakan untuk menyajikan data dalam bentuk yang lebih terorganisasi dengan mengelompokkan data ke dalam kelas-kelas tertentu, kemudian mencatat jumlah kemunculan (frekuensi) data dalam setiap kelas. Tabel ini sering digunakan untuk data kuantitatif atau data yang memiliki banyak nilai.</p>
+          <p>selain itu, Tabel distribusi frekuensi merupakan tabel yang digunakan untuk menyajikan data dalam bentuk kelompok (interval) sehingga data lebih mudah dianalisis. Tabel ini sering digunakan untuk data kuantitatif .</p>
         </div>
         <div className="news-image">
-        </div>
-      </section>
-
-      <section className="tech-news3">
-        <div className="news-content">
-          <h2>Ukuran Pemusatan Data</h2>
+        <h2>Ukuran Pemusatan Data</h2>
           <p>Ukuran pemusatan data adalah nilai yang dipakai untuk menggambarkan sekumpulan data dengan cara mengidentifikasi pusat kumpulan data tersebut.  Salah satu kegunaan dari ukuran pemusatan data adalah untuk membandingkan dua (populasi) atau contoh, karena sangat sulit untuk membandingkan masing-masing
             anggota dari masing-masing anggota populasi atau masing-masing anggota data contoh. Nilai ukuran pemusatan ini dibuat sedemikian sehingga cukup mewakili seluruh nilai pada data yang bersangkutan.</p>
             <p>Ukuran pemusatan mencakup data: <br></br>a. Ungrouped data, yaitu data yang belum dikelompokkan (data tunggal) <br></br>b. Grouped data, yaitu data yang telah dikelompokkan.Untuk menghitung ukuran pemusatan pada data yangtelah dikelompokkan, digunakan tabel distribusi frekuensi</p>
         </div>
-        <div className="news-image">
-        </div>
       </section>
-
+      
       <section className="tech-news4">
         <div className="news-content">
           <h2>Rata-rata Hitung/Mean</h2>
