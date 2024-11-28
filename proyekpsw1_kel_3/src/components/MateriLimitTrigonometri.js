@@ -14,7 +14,7 @@ import lt10 from "../images/lt10.webp";
 
 
 
-const MateriStatistika = () => {
+const MateriLimitTrigonometri = () => {
   return (
     <div>
       <header className="header">
@@ -43,7 +43,7 @@ const MateriStatistika = () => {
           <h3>3. Tangen</h3>
           <p>Fungsi trigonometri tangen ini berupa perbandingan sisi segitiga di depan sudut, dengan di bagian sudut segitiga. Perbandingan ini digunakan jika segitiga adalah segitiga siku-siku atau sudutnya sebesar 90 derajat. Nilai positifnya berada di kuadran I dan III. Sementara itu, nilai negatifnya ada di kuadran II dan IV.</p>
         </div>
-        <div className="news-image2">
+        <div className="news-image">
         <img src={lt1} alt="limit trigonometri" />
         </div>
       </section>
@@ -136,4 +136,4 @@ const MateriStatistika = () => {
   );
 };
 
-export default MateriStatistika;
+export default MateriLimitTrigonometri;

@@ -1,0 +1,185 @@
+/* Kontainer Utama */
+.slides-container {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+}
+
+/* Judul Utama */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1e272e;
+    background: linear-gradient(90deg, #27ae60, #2980b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul Slide */
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #34495e;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    text-transform: capitalize;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #27ae60;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scaleX(1.5);
+        opacity: 0.6;
+    }
+}
+
+/* Teks */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #34495e;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Kontainer Input */
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.inputs label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1em;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    margin-top: 8px;
+    width: 200px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+input:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.6);
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Tombol */
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #218c53;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Slide */
+.slide {
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #34495e;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.slide:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Hasil */
+.result {
+    margin-top: 20px;
+    background: #ecf5ec;
+    padding: 15px;
+    border-radius: 10px;
+    color: #2c3e50;
+    font-size: 1em;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .slides-container {
+        width: 90%;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
