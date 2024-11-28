@@ -52,7 +52,7 @@ function Latihansoal() {
       nama: "Turunan",
       deskripsi: "Mempelajari turunan fungsi.",
       gambar: trnssimages,
-      path: "/MateriTurunan",
+      path: "/LatihanTurunan",
     },
     {
       nama: "Distribusi Binomial",
