@@ -24,7 +24,9 @@ function Materi() {
         deskripsi:
            "berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.",
         gambar: gbdsimages,
+        path: "/MateriKongruen",
       },
+      
       {
         nama: "Statistika",
         deskripsi:

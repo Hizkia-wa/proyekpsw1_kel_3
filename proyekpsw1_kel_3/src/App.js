@@ -29,6 +29,8 @@ import LatihanTurunan from "./components/LatihanTurunan";
 import LatihanSoalStatistika from "./components/LatihanSaolStatistika";
 import LatihanSoalLimit from "./components/LatihanSoalLimit";
 import BrillianBinomial from "./components/BrillianBinomial";
+import MateriKongruen from "./components/MateriKongruen";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -91,6 +93,7 @@ function App() {
            <Route path="/MateriBinomial" element={<MateriBinomial />} />
            <Route path="/LatihanTurunan" element={<LatihanTurunan /> } />
            <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
+           <Route path="/MateriKongruen" element={<MateriKongruen />} />
           <Route
             path="*"
             element={
