@@ -33,6 +33,8 @@ import MateriKongruen from "./components/MateriKongruen";
 import SoalLatihanStatistika from "./components/SoalLatihanStatistika";
 import SoalLatihanTurunan from "./components/SoalLatihanTurunan";
 import MateriAp from "./components/MateriAp";
+import Latihansoalap from "./components/Latihansoalap";
+import LatihanSoalBinomial from "./components/LatihanSoalBinomial";
 import Soallatihanpeluang from "./components/Soallatihanpeluang";
 import SoallatihanAp from "./components/SoallatihanAp";
 import Latihansoalap from "./components/Latihansoalap";
@@ -95,11 +97,11 @@ function App() {
           <Route path="/QuestionPage" element={<QuestionPage />} />
           <Route path="/LatihanSoalStatistika" element={<LatihanSaolStatistika />} />
           <Route path="/LatihanSoalLimit" element={<LatihanSoalLimit />} />
-           <Route path="/MateriBinomial" element={<MateriBinomial />} />
-           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
-           <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
-           <Route path="/latihanturunan" element={<LatihanTurunan />} />
-           <Route path="/latihangeometri" element={<LatihanGeometri />} />
+          <Route path="/MateriBinomial" element={<MateriBinomial />} />
+          <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
+          <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
+          <Route path="/latihanturunan" element={<LatihanTurunan />} />
+          <Route path="/latihangeometri" element={<LatihanGeometri />} />
           <Route path="/MateriBinomial" element={<MateriBinomial />} />
           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
           <Route path="/MateriKongruen" element={<MateriKongruen />} />
@@ -107,6 +109,8 @@ function App() {
           <Route path="/SoalLatihanTurunan" element={<SoalLatihanTurunan />} />
           <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/MateriAp" element={<MateriAp />} />
+          <Route path="/Latihansoalap" element={<Latihansoalap />} />
+          <Route path="/LatihanSoalBinomial" element={<LatihanSoalBinomial />} />
           <Route path="/Soallatihanpeluang" element={<Soallatihanpeluang />} />
           <Route path="/SoallatihanAp" element={<SoallatihanAp />} />
           <Route path="/Latihansoalap" element={<Latihansoalap />} />
