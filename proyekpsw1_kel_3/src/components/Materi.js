@@ -39,7 +39,7 @@ function Materi() {
         deskripsi:
           "cabang ilmu matematika yang mempelajari cara menghitung banyaknya objek atau kejadian yang muncul",
         gambar: atpimages,
-        path: "/MateriPeluang",
+        path: "/MateriAp",
       },
       {
         nama: "Peluang Kejadian",
