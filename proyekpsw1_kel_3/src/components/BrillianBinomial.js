@@ -7,7 +7,7 @@ const slides = [
     formulaArea: "P(X = k) = (n k) ⋅ p^k ⋅ (1-p)^(n-k)",
     question:
       "Dalam 10 kali lemparan koin, berapa peluang kepala muncul sebanyak 5 kali?",
-    inputs: ["JumlahPercobaan", "JumlahKeberhasilan", "PeluangSukses"],
+    inputs: ["Jumlah Percobaan", "Jumlah Keberhasilan", "Peluang Sukses"],
     calculate: ({ JumlahPercobaan, JumlahKeberhasilan, PeluangSukses }) => {
       const n = parseInt(JumlahPercobaan, 10);
       const k = parseInt(JumlahKeberhasilan, 10);
@@ -36,7 +36,7 @@ const slides = [
     formulaArea: "P(X = k) = (n k) ⋅ p^k ⋅ (1-p)^(n-k)",
     question:
       "Dalam ujian pilihan ganda dengan 20 soal, berapa peluang siswa menjawab benar 15 soal jika peluang benar untuk setiap soal adalah 0.75?",
-    inputs: ["JumlahPercobaan", "JumlahKeberhasilan", "PeluangSukses"],
+    inputs: ["Jumlah Percobaan", "Jumlah Keberhasilan", "Peluang Sukses"],
     calculate: ({ JumlahPercobaan, JumlahKeberhasilan, PeluangSukses }) => {
       const n = parseInt(JumlahPercobaan, 10);
       const k = parseInt(JumlahKeberhasilan, 10);
@@ -65,7 +65,7 @@ const slides = [
     formulaArea: "P(X = k) = (n k) ⋅ p^k ⋅ (1-p)^(n-k)",
     question:
       "Dalam 5 kali bermain game, berapa peluang menang 3 kali jika peluang menang setiap game adalah 0.4?",
-    inputs: ["JumlahPercobaan", "JumlahKeberhasilan", "PeluangSukses"],
+    inputs: ["Jumlah Percobaan", "Jumlah Keberhasilan", "Peluang Sukses"],
     calculate: ({ JumlahPercobaan, JumlahKeberhasilan, PeluangSukses }) => {
       const n = parseInt(JumlahPercobaan, 10);
       const k = parseInt(JumlahKeberhasilan, 10);

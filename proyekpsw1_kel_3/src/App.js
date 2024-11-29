@@ -16,6 +16,7 @@ import MateriTurunan from "./components/MateriTurunan";
 import MateriGeometri from "./components/MateriGeometri";
 import BrilianStatistika from "./components/BrilianStatistika";
 import Brilianpeluang from "./components/Brilianpeluang";
+import BrilianAp from "./components/BrilianAp";
 import BrilianLimit from "./components/BrilianLimit";
 import Footer from "./components/Footer";
 import Testimoni from "./components/Testimoni";
@@ -100,6 +101,7 @@ function App() {
           <Route path="/MateriBinomial" element={<MateriBinomial />} />
           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
           <Route path="/Brilianpeluang" element={<Brilianpeluang />} />
+          <Route path="/BrilianAp" element={<BrilianAp />} />
           <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
           <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/latihangeometri" element={<LatihanGeometri />} />
