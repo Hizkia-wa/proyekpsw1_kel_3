@@ -35,6 +35,7 @@ import SoalLatihanTurunan from "./components/SoalLatihanTurunan";
 import MateriAp from "./components/MateriAp";
 import Soallatihanpeluang from "./components/Soallatihanpeluang";
 import SoallatihanAp from "./components/SoallatihanAp";
+import Latihansoalap from "./components/Latihansoalap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -108,6 +109,7 @@ function App() {
           <Route path="/MateriAp" element={<MateriAp />} />
           <Route path="/Soallatihanpeluang" element={<Soallatihanpeluang />} />
           <Route path="/SoallatihanAp" element={<SoallatihanAp />} />
+          <Route path="/Latihansoalap" element={<Latihansoalap />} />
           <Route
             path="*"
             element={
