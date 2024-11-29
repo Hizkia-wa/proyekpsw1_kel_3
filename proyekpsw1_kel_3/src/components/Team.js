@@ -18,6 +18,8 @@ import tm15 from '../images/tm15.jpg';
 import tm16 from '../images/tm16.jpg';
 
 
+
+
 const teamData = [
   { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "Nama saya Hizkia Cristian Siahaan, saya lahir di Medan, 03 Februari 2006 usia saya saat ini 18 tahun saat ini saya sedang menempuh pendidikan di institusi teknologi del. Syukur saya panjatkan kepada tuhan atas kehendaknya kami dapat membangun web RUMAPI ini dengan sungguh. Saya memiliki HOBI belajar dan mencoba hal baru selain itu saya juga sangat suka bernyanyi" },
   { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "Nama saya Jonathan Simamora,Panggil aja nathan Saya adalah mahasiswa It del akt 2024 Tidak terpikir sebelumnya ternyata bisa sampai sejauh ini saya bertahan sehingga dapat berpartisipasi dalam pembuatan web RUMAPI ini syukur saya panjatkan kepada tuhan atas kehendaknya kami dapat membangun web ini dengan sungguh." },
@@ -52,7 +54,6 @@ const Team = () => {
             </div>
           </main>
           <section className="my-team">
-            <h3 className="team-title">My Team</h3>
             <div className="team-gallery">
               {myTeamImages[index].map((image, i) => (
                 <img key={i} src={image} alt={`Team Member ${i + 1}`} className="team-image" />

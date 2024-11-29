@@ -58,7 +58,7 @@ function Latihansoal() {
       nama: "Distribusi Binomial",
       deskripsi: "Distribusi probabilitas dalam statistik.",
       gambar: dblssimages,
-      path: "/brilianstatistika",
+      path: "/LatihanSoalBinomial",
     },
   ];
 
