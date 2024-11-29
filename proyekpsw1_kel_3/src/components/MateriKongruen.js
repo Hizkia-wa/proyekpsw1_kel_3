@@ -1,11 +1,8 @@
 import React from "react";
 import "./MateriStatistika.css";
-import Binomial1 from "../images/Binomial1.png";
-import Binomial2 from "../images/Binomial2.png";
-import Binomial3 from "../images/Binomial3.png";
-import Binomial4 from "../images/Binomial4.png";
 import Kongruen from "../images/Kongruen.png";
 import Kesebangunan from  "../images/Kesebangunan.png";
+import Perbedaan from "../images/Perbedaan.png";
 
 
 const MateriKongruen = () => {
@@ -131,26 +128,23 @@ const MateriKongruen = () => {
         </div>
       </section>
 
-      <section className="tech-news6">
-        <div className="news-content">
-          <h2>Latihan Soal dan Jawaban</h2>
-        </div>
-        <div className="news-image">
-          <img src={Binomial3} alt="Latihan Soal" />
-        </div>
-      </section>
-
       <section className="tech-news7">
         <div className="news-content">
           <h2>Kesimpulan</h2>
           <p>
-            Kongruen dan kesebangunan adalah konsep yang saling melengkapi dalam
-            geometri. Dengan memahaminya, kita dapat menyelesaikan banyak
-            permasalahan dalam kehidupan sehari-hari.
+            jadi , kongruen dan kesebangunan adalah dua konsep yang berbeda dalam
+            Definisi Kongruen: Dua bangun disebut kongruen jika memiliki bentuk dan
+            ukuran yang sama persis. Artinya, jika satu bangun dipindahkan,
+            diputar, atau dicerminkan, maka bangun tersebut akan sama persis
+            dengan bangun lainnya. 
+            Definisi Kesebangunan: Dua bangun disebut sebangun jika
+            memiliki bentuk yang sama tetapi ukuran yang berbeda. Artinya,
+            ukuran satu bangun merupakan hasil perkalian skala dari bangun
+            lainnya
           </p>
         </div>
         <div className="news-image">
-          <img src={Binomial4} alt="Kesimpulan" />
+          <img src={Perbedaan} alt="Kesimpulan" />
         </div>
       </section>
     </div>
