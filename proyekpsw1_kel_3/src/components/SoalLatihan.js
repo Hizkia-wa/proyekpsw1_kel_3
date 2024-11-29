@@ -15,7 +15,7 @@ function SoalLatihan() {
         { nama: 'Geometri Bangun D2 & D3', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/materigeometridatar'},
         { nama: 'Kongruen dan Kesebangunan', deskripsi: "Berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.", gambar: gbrimages, path: '/kongruen' },
         { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages, path:'/soallatihanstatistika' },
-        { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpsimages, path: '/aturanpencacahan' },
+        { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpsimages, path: '/SoallatihanAp' },
         { nama: 'Peluang Kejadian', deskripsi: "Menghitung peluang kejadian berdasarkan data.", gambar: pksimages, path: '/Soallatihanpeluang' },
         { nama: 'Limit', deskripsi: "Memahami konsep limit pada fungsi matematika.", gambar: lmtsimages, path: '/limit' },
         { nama: 'Turunan', deskripsi: "Mempelajari konsep turunan fungsi.", gambar: trnsimages, path: '/SoalLatihanTurunan' },
