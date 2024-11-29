@@ -9,8 +9,13 @@ function Home() {
     <div
       className="bg-light vh-100 d-flex flex-column justify-content-start align-items-center text-center"
       style={{
-        paddingTop: "5rem", // Memberi ruang di atas
-        paddingBottom: "2rem", // Memberi ruang di bawah
+        paddingTop: "5rem", 
+        paddingBottom: "2rem", 
+        width: "100vw", 
+        height: "100vh", 
+        margin: "0", 
+        padding: "0", 
+        overflowX: "hidden", 
       }}
     >
       <header className="mb-5" style={{ maxWidth: "600px" }}>

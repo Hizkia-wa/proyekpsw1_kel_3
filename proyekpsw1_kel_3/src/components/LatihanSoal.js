@@ -34,7 +34,7 @@ function Latihansoal() {
       nama: "Aturan Pencacahan",
       deskripsi: "Menghitung probabilitas suatu kejadian.",
       gambar: atpssimages,
-      path: "/materipeluang",
+      path: "/Latihansoalap",
     },
     {
       nama: "Peluang Kejadian",
