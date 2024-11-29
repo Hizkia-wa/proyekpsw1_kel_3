@@ -13,7 +13,7 @@ const MateriTurunan = () => {
       </header>
 
       <section className="tech-news">
-        <div className="news-content">
+        <div className="card">
           <h2>Pengantar Turunan</h2>
           <p>Turunan adalah ukuran perubahan suatu fungsi terhadap variabel bebasnya. Dalam kalkulus, turunan sering digunakan untuk menentukan kemiringan kurva atau tingkat perubahan suatu nilai pada suatu titik tertentu.</p>
           <p><strong>Rumus dasar:</strong> f'(x) = lim h→0 [f(x + h) - f(x)] / h</p>
@@ -60,7 +60,7 @@ const MateriTurunan = () => {
           <p>Aturan rantai digunakan untuk menghitung turunan dari fungsi komposisi. Turunan fungsi luar dikalikan dengan turunan fungsi dalam.</p>
           <p><strong>Rumus:</strong> Jika f(x) = g(h(x)), maka f'(x) = g'(h(x)) × h'(x).</p>
         </div>
-        <div className="news-image">
+        <div className="card">
           <h2>Turunan Fungsi Eksponen dan Logaritma</h2>
           <p>Turunan fungsi eksponen dan logaritma memiliki formula khusus. Contohnya, turunan eksponen natural dan logaritma natural.</p>
           <ul>

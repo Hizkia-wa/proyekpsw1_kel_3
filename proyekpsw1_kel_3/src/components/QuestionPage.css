@@ -183,7 +183,7 @@
   }
 
   .options-container {
-      flex-direction: column;
+      flex-direction:column;
       gap: 10px;
       min-width: auto;
   }

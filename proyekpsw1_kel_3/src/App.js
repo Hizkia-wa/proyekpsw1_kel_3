@@ -26,6 +26,7 @@ import QuestionPage from "./components/QuestionPage";
 import MateriBinomial from "./components/MateriBinomial";
 import LatihanSaolStatistika from "./components/LatihanSaolStatistika";
 import LatihanTurunan from "./components/LatihanTurunan";
+import LatihanGeometri from "./components/LatihanGeometri";
 import LatihanSoalStatistika from "./components/LatihanSaolStatistika";
 import LatihanSoalLimit from "./components/LatihanSoalLimit";
 import BrillianBinomial from "./components/BrillianBinomial";
@@ -91,6 +92,11 @@ function App() {
           <Route path="/QuestionPage" element={<QuestionPage />} />
           <Route path="/LatihanSoalStatistika" element={<LatihanSaolStatistika />} />
           <Route path="/LatihanSoalLimit" element={<LatihanSoalLimit />} />
+           <Route path="/MateriBinomial" element={<MateriBinomial />} />
+           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
+           <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
+           <Route path="/latihanturunan" element={<LatihanTurunan />} />
+           <Route path="/latihangeometri" element={<LatihanGeometri />} />
           <Route path="/MateriBinomial" element={<MateriBinomial />} />
           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
           <Route path="/MateriKongruen" element={<MateriKongruen />} />
