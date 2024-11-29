@@ -1,100 +1,165 @@
-.container {
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #f8f9fa;
-  text-align: center;
+
+
+/* Tambahan hover (opsional) */
+.adjusted-image:hover {
+  filter: invert(0) brightness(1); /* Kembali ke warna asli saat dihover */
 }
 
+/* Container latar belakang putih */
+.background {
+  width: 100%; /* Penuhi layar */
+  height: 100vh; /* Penuhi tinggi layar */
+  background-color: #ffffff; /* Latar belakang putih */
+  position: fixed; /* Tetap berada di belakang */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Letakkan di belakang konten */
+}
+
+/* Container utama */
+.container_latihan {
+  width: 100%; /* Penuhi lebar layar */
+  margin: 20px auto; /* Pusatkan secara horizontal dengan jarak atas */
+  padding: 0; /* Hilangkan padding */
+  background-color: #A5D7E8; /* Warna putih untuk kartu */
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+}
+
+/* Judul */
 h1 {
-  color: #343a40;
-  margin-bottom: 20px;
+  text-align: center;
+  color: #333333;
+  margin: 20px 0;
+  font-weight: normal; /* Menghapus efek bold */
 }
 
-.question-card {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Teks dalam card di tengah */
-  width: 100%;
-  max-width: 700px; /* Lebar maksimum card */
+/* Navigasi soal */
+.navigation {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* Konten card di tengah secara vertikal */
-  align-items: center; /* Konten card di tengah secara horizontal */
+  justify-content: center;
+  margin: 20px 0;
 }
 
-h2 {
-  color: #495057;
-  margin-bottom: 20px;
+.nav-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  background-color: #e0e0e0;
+  color: #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-weight: normal; /* Menghapus efek bold */
 }
 
+.nav-item.active {
+  background-color: #4caf50; /* Hijau untuk soal yang sudah dijawab */
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Kartu soal */
+.question-card {
+  margin: 10px auto; /* Margin rata tengah */
+  padding: 15px; /* Padding lebih kecil */
+  width: 90%; /* Lebar 90% dari container */
+  max-width: 60%; /* Batas maksimum lebar */
+  background-color: #ffffff; /* Latar putih */
+  border-radius: 8px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+  transition: box-shadow 0.3s ease;
+  font-size: 10px; /* Ukuran font soal diperkecil menjadi 10px */
+  line-height: 1.4; /* Jarak antar baris */
+  font-weight: normal; /* Menghapus efek bold */
+
+  /* FLEXBOX UNTUK PENGATURAN TENGAH */
+  display: flex; /* Aktifkan flexbox */
+  flex-direction: column; /* Atur agar item ditumpuk secara vertikal */
+  justify-content: center; /* Pusatkan konten secara vertikal */
+  align-items: center; /* Pusatkan konten secara horizontal */
+  min-height: 200px; /* Tambahkan tinggi minimum agar kartu cukup besar */
+}
+
+/* Warna latar jika jawaban benar atau salah */
+.question-card.correct {
+  box-shadow: 0px 12px 30px rgba(7, 254, 15, 0.8); /* Hijau lebih besar untuk benar */
+}
+
+.question-card.incorrect {
+  box-shadow: 0px 12px 30px rgba(244, 67, 54, 0.8); /* Merah lebih besar untuk salah */
+}
+
+/* Pilihan jawaban */
 .options-container {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center; /* Semua opsi di tengah card */
+  flex-direction: column; /* Atur pilihan secara vertikal */
+  align-items: center; /* Pusatkan secara horizontal */
+  justify-content: center; /* Pusatkan secara vertikal */
+  width: 100%; /* Pastikan opsi menyesuaikan lebar kartu */
 }
 
+/* Pilihan jawaban */
 .option {
-  padding: 15px 20px;
-  font-size: 18px;
-  width: 100%;
-  max-width: 500px; /* Lebar maksimum kotak opsi */
-  min-height: 60px; /* Tinggi minimum kotak opsi */
-  border: 2px solid #ced4da;
-  border-radius: 5px;
-  background-color: #e9ecef;
+  padding: 8px 10px; /* Padding lebih kecil */
+  margin: 6px 0; /* Margin antar opsi lebih kecil */
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  text-align: center; /* Teks di tengah kotak opsi */
-  display: flex;
-  align-items: center; /* Teks di tengah secara vertikal */
-  justify-content: center; /* Teks di tengah secara horizontal */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 35%; /* Supaya lebar kotak menyesuaikan teks */
+  max-width: 80%; /* Batas maksimum lebar 80% dari container */
+  text-align: center; /* Teks tetap rata kiri */
+  font-size: 10px; /* Ukuran font jawaban diperkecil menjadi 10px */
+  line-height: 1.3; /* Jarak antar baris lebih kecil */
+  font-weight: normal; /* Menghapus efek bold */
 }
 
 .option:hover {
-  background-color: #dee2e6;
-  transform: scale(1.02);
+  background-color: #e8e8e8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .option.correct {
-  background-color: #28a745;
-  color: white;
+  background-color: #d4edda; /* Hijau muda untuk jawaban benar */
   border-color: #28a745;
 }
 
 .option.incorrect {
-  background-color: #dc3545;
-  color: white;
+  background-color: #f8d7da; /* Merah muda untuk jawaban salah */
   border-color: #dc3545;
 }
 
+/* Tombol Tampilkan Pembahasan */
 .btn-show {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #6c757d;
-  color: white;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: normal; /* Menghapus efek bold */
+  font-size: 10px; /* Ukuran font tombol disesuaikan */
 }
 
 .btn-show:hover {
-  background-color: #5a6268;
+  background-color: #0056b3;
 }
 
+/* Pembahasan */
 .explanation {
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 10px;
-  background-color: #f1f3f5;
-  border-radius: 5px;
-  color: #212529;
-  font-style: italic;
-  text-align: left;
+  background-color: #fff3cd; /* Kuning lembut */
+  border: 1px solid #ffeeba;
+  border-radius: 6px;
+  color: #856404;
+  font-size: 10px; /* Ukuran font pembahasan */
+  font-weight: normal; /* Menghapus efek bold */
 }

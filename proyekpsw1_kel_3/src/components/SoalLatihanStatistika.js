@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./SoalLatihanStatistika.css";
 
 const SoalLatihanStatistika = () => {
@@ -135,14 +135,28 @@ const SoalLatihanStatistika = () => {
 
   ];
 
+
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [showExplanation, setShowExplanation] = useState({});
+  const questionRefs = useRef([]);
 
   const handleAnswerClick = (questionIndex, optionIndex) => {
+    const isCorrect = optionIndex === questions[questionIndex].correctAnswer;
+
+    // Simpan jawaban yang dipilih
     setSelectedAnswers({
       ...selectedAnswers,
       [questionIndex]: optionIndex,
     });
+
+    // Tambahkan kelas bayangan hijau (benar) atau merah (salah)
+    const questionCard = questionRefs.current[questionIndex];
+    if (questionCard) {
+      questionCard.classList.remove("correct", "incorrect");
+      questionCard.classList.add(isCorrect ? "correct" : "incorrect");
+    }
+
+    // Sembunyikan pembahasan ketika opsi dipilih
     setShowExplanation({
       ...showExplanation,
       [questionIndex]: false,
@@ -157,41 +171,54 @@ const SoalLatihanStatistika = () => {
   };
 
   return (
-    <div className="container">
-      <h1>Soal Latihan Statistika</h1>
-      {questions.map((q, questionIndex) => (
-        <div key={questionIndex} className="question-card">
-          <h2>{q.question}</h2>
-          <div className="options-container">
-            {q.options.map((option, optionIndex) => {
-              const isSelected = selectedAnswers[questionIndex] === optionIndex;
-              const isCorrect = optionIndex === q.correctAnswer;
-              const optionClass = isSelected
-                ? isCorrect
-                  ? "option correct"
-                  : "option incorrect"
-                : "option";
-              return (
-                <div
-                  key={optionIndex}
-                  className={optionClass}
-                  onClick={() => handleAnswerClick(questionIndex, optionIndex)}
-                >
-                  {option}
-                </div>
-              );
-            })}
+    <div className="container_latihan">
+      <h1>Latihan Soal Statistika</h1>
+      <div className="navigation">
+        {questions.map((_, index) => (
+          <div
+            key={index}
+            className={`nav-item ${
+              selectedAnswers[index] !== undefined ? "active" : ""
+            }`}
+          >
+            {index + 1}
           </div>
-          {selectedAnswers[questionIndex] !== undefined && (
+        ))}
+      </div>
+      {questions.map((question, index) => (
+        <div
+          key={index}
+          ref={(el) => (questionRefs.current[index] = el)}
+          className="question-card"
+        >
+          <h2>{question.question}</h2>
+          <div className="options-container">
+            {question.options.map((option, optionIndex) => (
+              <div
+                key={optionIndex}
+                className={`option ${
+                  selectedAnswers[index] === optionIndex
+                    ? optionIndex === question.correctAnswer
+                      ? "correct"
+                      : "incorrect"
+                    : ""
+                }`}
+                onClick={() => handleAnswerClick(index, optionIndex)}
+              >
+                {option}
+              </div>
+            ))}
+          </div>
+          {selectedAnswers[index] !== undefined && (
             <button
               className="btn-show"
-              onClick={() => handleShowExplanation(questionIndex)}
+              onClick={() => handleShowExplanation(index)}
             >
-              Lihat Pembahasan
+              Tampilkan Pembahasan
             </button>
           )}
-          {showExplanation[questionIndex] && (
-            <p className="explanation">{q.explanation}</p>
+          {showExplanation[index] && (
+            <div className="explanation">{question.explanation}</div>
           )}
         </div>
       ))}
