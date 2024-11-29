@@ -8,79 +8,74 @@ const QuestionPage = () => {
 
   const questions = [
     {
-      question: "Berapa peluang muncul angka genap pada pelemparan sebuah dadu?",
-      options: ["1/2", "1/3", "1/6", "1"],
-      correctOption: "1/2",
+      question: "Berapa banyak cara menyusun 3 buku dari 5 buku yang berbeda?",
+      options: ["60", "120", "20", "10"],
+      correctOption: "60",
       explanation:
-        "Dadu memiliki 6 sisi: {2, 4, 6} adalah angka genap. Jadi peluangnya adalah 3/6 = 1/2.",
+        "Aturan permutasi digunakan: P(5,3) = 5! / (5-3)! = (5 × 4 × 3) = 60. Jadi ada 60 cara menyusun 3 buku dari 5 buku yang berbeda.",
     },
     {
-      question: "Sebuah kantong berisi 3 bola merah dan 2 bola biru. Berapa peluang terambil bola merah?",
-      options: ["3/5", "1/2", "2/5", "1"],
-      correctOption: "3/5",
+      question: "Berapa banyak susunan huruf dari kata 'MAJU' tanpa pengulangan?",
+      options: ["12", "24", "36", "48"],
+      correctOption: "24",
       explanation:
-        "Total bola ada 5. Bola merah ada 3, jadi peluangnya adalah 3/5.",
+        "Jumlah huruf = 4. Susunan semua huruf dihitung dengan faktorial: 4! = 4 × 3 × 2 × 1 = 24. Jadi ada 24 susunan huruf dari kata 'MAJU'.",
     },
     {
-      question: "Berapa peluang mendapatkan angka kurang dari 5 saat melempar dadu?",
-      options: ["2/3", "1/3", "5/6", "1/2"],
-      correctOption: "2/3",
+      question: "Berapa banyak cara memilih 2 siswa dari 5 siswa?",
+      options: ["5", "10", "20", "15"],
+      correctOption: "10",
       explanation:
-        "Angka kurang dari 5 adalah {1, 2, 3, 4}. Totalnya 4 dari 6, sehingga peluangnya 4/6 = 2/3.",
+        "Aturan kombinasi digunakan: C(5,2) = 5! / (2!(5-2)!) = (5 × 4) / 2 = 10. Jadi ada 10 cara memilih 2 siswa dari 5 siswa.",
     },
     {
-      question: "Jika dua koin dilempar, berapa peluang kedua koin menunjukkan sisi gambar?",
-      options: ["1/4", "1/2", "3/4", "1/3"],
-      correctOption: "1/4",
+      question: "Berapa banyak susunan berbeda dari kata 'ANNA'?",
+      options: ["4", "6", "12", "24"],
+      correctOption: "12",
       explanation:
-        "Ada 4 kemungkinan: (HH, HT, TH, TT). Hanya 1 (HH) yang memenuhi syarat, jadi peluangnya 1/4.",
+        "Kata 'ANNA' memiliki 4 huruf dengan huruf A muncul 2 kali. Aturan permutasi untuk objek dengan pengulangan digunakan: 4! / 2! = (24 / 2) = 12. Jadi ada 12 susunan berbeda.",
     },
     {
-      question:
-        "Sebuah kotak berisi 4 bola merah dan 6 bola hijau. Jika satu bola diambil, berapa peluang terambil bola hijau?",
-      options: ["2/5", "3/5", "4/5", "1/2"],
-      correctOption: "3/5",
+      question: "Berapa banyak cara menyusun 3 bola merah dan 2 bola biru dalam satu baris?",
+      options: ["10", "30", "60", "120"],
+      correctOption: "10",
       explanation:
-        "Total bola = 10. Bola hijau = 6. Jadi peluangnya adalah 6/10 = 3/5.",
+        "Aturan permutasi dengan pengelompokan digunakan: 5! / (3! × 2!) = (120 / (6 × 2)) = 10. Jadi ada 10 cara menyusun 3 bola merah dan 2 bola biru.",
     },
     {
-      question:
-        "Berapa peluang mendapatkan angka prima saat melempar dadu?",
-      options: ["1/3", "1/2", "1/6", "2/3"],
-      correctOption: "1/2",
+      question: "Berapa banyak cara menyusun 4 huruf dari 6 huruf yang berbeda?",
+      options: ["24", "120", "360", "720"],
+      correctOption: "360",
       explanation:
-        "Angka prima dari dadu adalah {2, 3, 5}. Ada 3 dari 6 sisi, jadi peluangnya adalah 3/6 = 1/2.",
+        "Aturan permutasi digunakan: P(6,4) = 6! / (6-4)! = 6 × 5 × 4 × 3 = 360. Jadi ada 360 cara menyusun 4 huruf dari 6 huruf.",
     },
     {
-      question:
-        "Jika sebuah kartu diambil dari setumpuk kartu remi, berapa peluang mendapatkan kartu As?",
-      options: ["1/13", "1/26", "1/52", "4/52"],
-      correctOption: "1/13",
+      question: "Berapa banyak cara memilih 3 siswa dari 7 siswa?",
+      options: ["21", "35", "42", "56"],
+      correctOption: "35",
       explanation:
-        "Ada 4 kartu As dalam 52 kartu. Jadi peluangnya adalah 4/52 = 1/13.",
+        "Aturan kombinasi digunakan: C(7,3) = 7! / (3!(7-3)!) = (7 × 6 × 5) / (3 × 2 × 1) = 35. Jadi ada 35 cara memilih 3 siswa dari 7 siswa.",
     },
     {
-      question: "Jika 3 koin dilempar sebanyak 1 kali, berapa peluang muncul tepat dua sisi gambar?",
-      options: ["3/8", "1/2", "1/4", "5/8"],
-      correctOption: "3/8",
+      question: "Berapa banyak cara menyusun huruf 'LEVEL'?",
+      options: ["10", "20", "30", "60"],
+      correctOption: "30",
       explanation:
-        "Kemungkinan: GGG, GGT, GTG, TGG, TTT, TTG, TGT, GTT. Hanya 3 yang memenuhi syarat (GGT, GTG, TGG). Peluangnya adalah 3/8.",
+        "Kata 'LEVEL' memiliki 5 huruf, dengan L dan E masing-masing muncul 2 kali. Aturan permutasi untuk objek dengan pengulangan digunakan: 5! / (2! × 2!) = (120 / 4) = 30. Jadi ada 30 susunan berbeda.",
     },
     {
-      question:
-        "Berapa peluang muncul jumlah 7 saat dua dadu dilempar bersamaan?",
-      options: ["1/6", "1/12", "1/9", "1/36"],
-      correctOption: "1/6",
+      question: "Berapa banyak cara menyusun 2 buku dari 4 buku yang berbeda?",
+      options: ["6", "8", "12", "24"],
+      correctOption: "12",
       explanation:
-        "Kombinasi menghasilkan jumlah 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Ada 6 dari total 36 kombinasi, sehingga peluangnya adalah 6/36 = 1/6.",
+        "Aturan permutasi digunakan: P(4,2) = 4! / (4-2)! = (4 × 3) = 12. Jadi ada 12 cara menyusun 2 buku dari 4 buku.",
     },
     {
-      question:
-        "Jika sebuah kotak berisi 5 bola merah dan 3 bola biru, dua bola diambil tanpa pengembalian. Berapa peluang keduanya merah?",
-      options: ["5/8", "10/28", "10/56", "5/14"],
-      correctOption: "10/28",
+      question: "Berapa banyak cara memilih 2 bola dari 5 bola merah dan 3 bola biru?",
+      options: ["28", "20", "15", "10"],
+      correctOption: "28",
       explanation:
-        "Peluang bola pertama merah: 5/8. Peluang bola kedua merah setelah yang pertama merah: 4/7. Jadi, peluangnya adalah (5/8) * (4/7) = 20/56 = 10/28.",
+        "Aturan kombinasi digunakan: Total bola = 8. C(8,2) = 8! / (2!(8-2)!) = (8 × 7) / 2 = 28. Jadi ada 28 cara memilih 2 bola dari 8 bola.",
     },
   ];
 
