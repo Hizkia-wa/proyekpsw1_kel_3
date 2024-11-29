@@ -17,7 +17,7 @@ function Brilian() {
         { nama: 'Kongruen dan Kesebangunan', deskripsi: "berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.", gambar: gbrimages},
         { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages, path: '/BrilianStatistika'},
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages },
-        { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpssimages },
+        { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpssimages, path: '/Brilianpeluang' },
         { nama: 'Limit', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: lmtssimages, path: '/BrilianLimit' },
         { nama: 'Turunan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: trnssimages },
         { nama: 'Distribusi Binomial', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: dblssimages, path: '/BrillianBinomial'},

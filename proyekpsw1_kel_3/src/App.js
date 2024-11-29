@@ -15,6 +15,7 @@ import MateriLimitTrigonometri from "./components/MateriLimitTrigonometri";
 import MateriTurunan from "./components/MateriTurunan";
 import MateriGeometri from "./components/MateriGeometri";
 import BrilianStatistika from "./components/BrilianStatistika";
+import Brilianpeluang from "./components/Brilianpeluang";
 import BrilianLimit from "./components/BrilianLimit";
 import Footer from "./components/Footer";
 import Testimoni from "./components/Testimoni";
@@ -37,7 +38,6 @@ import Latihansoalap from "./components/Latihansoalap";
 import LatihanSoalBinomial from "./components/LatihanSoalBinomial";
 import Soallatihanpeluang from "./components/Soallatihanpeluang";
 import SoallatihanAp from "./components/SoallatihanAp";
-import Latihansoalap from "./components/Latihansoalap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -99,6 +99,7 @@ function App() {
           <Route path="/LatihanSoalLimit" element={<LatihanSoalLimit />} />
           <Route path="/MateriBinomial" element={<MateriBinomial />} />
           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
+          <Route path="/Brilianpeluang" element={<Brilianpeluang />} />
           <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
           <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/latihangeometri" element={<LatihanGeometri />} />
@@ -109,7 +110,6 @@ function App() {
           <Route path="/SoalLatihanTurunan" element={<SoalLatihanTurunan />} />
           <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/MateriAp" element={<MateriAp />} />
-          <Route path="/Latihansoalap" element={<Latihansoalap />} />
           <Route path="/LatihanSoalBinomial" element={<LatihanSoalBinomial />} />
           <Route path="/Soallatihanpeluang" element={<Soallatihanpeluang />} />
           <Route path="/SoallatihanAp" element={<SoallatihanAp />} />
