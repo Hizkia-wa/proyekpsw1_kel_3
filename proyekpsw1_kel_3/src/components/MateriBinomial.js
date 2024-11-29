@@ -8,7 +8,7 @@ import Binomial5 from "../images/Binomial5.png";
 import Binomial6 from "../images/Binomial6.png";
 
 
-const MateriStatistika = () => {
+const MateriBinomial = () => {
   return (
     <div>
       <header className="header">
@@ -199,4 +199,4 @@ const MateriStatistika = () => {
   );
 };
 
-export default MateriStatistika;
+export default MateriBinomial;
