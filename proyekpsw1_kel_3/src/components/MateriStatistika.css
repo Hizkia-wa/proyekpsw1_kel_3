@@ -127,6 +127,26 @@ p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.news-image-geometri {
+  text-align: center;
+  padding: 20px;
+}
+
+.news-image-geometri img {
+  width: 500px; 
+  height: auto; 
+  object-fit: contain; 
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  filter: blur(5px);
+  transition:filter 0.3s ease-in-out, transform 0.3s ease-in-out ;
+}
+.news-image-geometri img:hover {
+  filter: blur(0);
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 .future-work {
   padding: 40px;
   background-color: #ffffff;
@@ -173,3 +193,4 @@ p {
 .card p {
   color: #333;
 }
+

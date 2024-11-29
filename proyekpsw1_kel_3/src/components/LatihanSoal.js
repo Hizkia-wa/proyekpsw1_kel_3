@@ -16,7 +16,7 @@ function Latihansoal() {
       nama: 'Geometri Bangun D2 & D3',
       deskripsi: "Mempelajari bentuk dan sifat geometri datar.",
       gambar: gbdimages,
-      path: "/materigeometridatar",
+      path: "/LatihanGeometri",
     },
     {
       nama: 'Kongruen dan Kesebangunan',
