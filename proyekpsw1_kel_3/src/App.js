@@ -24,13 +24,13 @@ import Mission from "./components/Mission";
 import Latihansoalbangunruang from "./components/Latihansoalbangunruang";
 import QuestionPage from "./components/QuestionPage";
 import MateriBinomial from "./components/MateriBinomial";
-import SoalLatihanStatistika from "./components/LatihanSaolStatistika";
+import LatihanSaolStatistika from "./components/LatihanSaolStatistika";
 import LatihanTurunan from "./components/LatihanTurunan";
 import LatihanSoalStatistika from "./components/LatihanSaolStatistika";
 import LatihanSoalLimit from "./components/LatihanSoalLimit";
 import BrillianBinomial from "./components/BrillianBinomial";
 import MateriKongruen from "./components/MateriKongruen";
-
+import SoalLatihanStatistika from "./components/SoalLatihanStatistika";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -88,12 +88,13 @@ function App() {
           <Route path="/mission" element={<Mission />} />
           <Route path="/geometribangunruang" element={<Latihansoalbangunruang />} />
           <Route path="/QuestionPage" element={<QuestionPage />} />
-          <Route path="/LatihanSoalStatistika" element={<LatihanSoalStatistika />} />
+          <Route path="/LatihanSoalStatistika" element={<LatihanSaolStatistika />} />
           <Route path="/LatihanSoalLimit" element={<LatihanSoalLimit />} />
-           <Route path="/MateriBinomial" element={<MateriBinomial />} />
-           <Route path="/LatihanTurunan" element={<LatihanTurunan /> } />
-           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
-           <Route path="/MateriKongruen" element={<MateriKongruen />} />
+          <Route path="/MateriBinomial" element={<MateriBinomial />} />
+          <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
+          <Route path="/MateriKongruen" element={<MateriKongruen />} />
+          <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
+          <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route
             path="*"
             element={
