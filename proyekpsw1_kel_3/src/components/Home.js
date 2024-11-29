@@ -59,6 +59,15 @@ function Home() {
         </p>
       </header>
 
+      <footer className="mt-5">
+        <button
+          className="btn btn-primary btn-lg px-5 py-2 shadow"
+          onClick={() => (window.location.href = "/materi")}
+        >
+          Mulai Belajar
+        </button>
+      </footer>
+
       <section className="container text-center">
         <div className="row g-4">
           <div className="col-md-4">
@@ -95,15 +104,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="mt-5">
-        <button
-          className="btn btn-primary btn-lg px-5 py-2 shadow"
-          onClick={() => (window.location.href = "/materi")}
-        >
-          Mulai Belajar
-        </button>
-      </footer>
     </div>
   );
 }
