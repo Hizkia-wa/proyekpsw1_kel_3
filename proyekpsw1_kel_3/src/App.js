@@ -37,6 +37,7 @@ import SoalLatihanTurunan from "./components/SoalLatihanTurunan";
 import MateriAp from "./components/MateriAp";
 import Latihansoalap from "./components/Latihansoalap";
 import LatihanSoalBinomial from "./components/LatihanSoalBinomial";
+import LatihanSoalKesebangunan from "./components/LatihanSoalKesebangunan";
 import Soallatihanpeluang from "./components/Soallatihanpeluang";
 import SoallatihanAp from "./components/SoallatihanAp";
 import SoalLatihanGeometri from "./components/SoalLatihanGeometri";
@@ -120,6 +121,8 @@ function App() {
           <Route path="/Latihansoalap" element={<Latihansoalap />} />
           <Route path="/SoalLatihanGeometri" element={<SoalLatihanGeometri />} />
           <Route path="/BrilianTurunan" element={<BrilianTurunan />} />
+          <Route path="/latihansoalkesebangunan"  element={<LatihanSoalKesebangunan />} />
+
           <Route
             path="*"
             element={
