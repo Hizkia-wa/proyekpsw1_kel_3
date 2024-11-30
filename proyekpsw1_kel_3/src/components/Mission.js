@@ -1,5 +1,5 @@
-import React from 'react';
-import './Mission.css';
+import React from "react";
+import "./Mission.css";
 
 const BusinessSection = () => {
   return (
@@ -7,36 +7,45 @@ const BusinessSection = () => {
       <div className="content">
         {/* Bagian Kiri: Teks */}
         <div className="text-section">
-          <h2 className="title">We are serious about your business.</h2>
+          <h2 className="title">Kami Dari Team RUMAPI</h2>
           <p className="description">
-            Present ac massa at ligula laoreet luctus. Vivamus aliquet elit ac nisl.
+            Bertujuan untuk menciptakan platform pembelajaran matematika yang
+            mendukung siswa dalam meraih prestasi akademik terbaik
+            melalui pemahaman konsep dan rumus secara inovatif, interaktif, dan
+            menyenangkan.
           </p>
         </div>
 
         {/* Bagian Kanan: Kartu */}
         <div className="card-section">
-          <div className="card card-management">
-            <h3>Management</h3>
+          <div className="card card-vision">
+            <h3>Visi</h3>
             <p>
-              Present ac massa at ligula laoreet luctus. Vivamus aliquet elit ac nisl. Sed aliquam ultrices.
+              Menjadi platform pembelajaran matematika terbaik yang mampu
+              menginspirasi generasi muda untuk berpikir kritis, kreatif, dan
+              siap menghadapi tantangan dunia pendidikan masa depan.
             </p>
           </div>
-          <div className="card">
-            <h3>Digital</h3>
+          <div className="card card-mission">
+            <h3>Misi</h3>
             <p>
-              Present ac massa at ligula laoreet luctus. Vivamus aliquet elit ac nisl. Sed aliquam ultrices.
+              Menghadirkan materi yang terstruktur dan mudah dipahami untuk
+              membantu siswa menguasai matematika, serta menyediakan fitur
+              latihan interaktif yang mendorong eksplorasi dan pemahaman
+              mendalam. RUMAPI juga mendukung siswa dalam persiapan ujian
+              melalui soal-soal yang relevan dan analisis hasil belajar,
+              sekaligus mengintegrasikan teknologi terkini untuk menciptakan
+              pengalaman belajar modern dan efektif. Selain itu, kami
+              berkomitmen membentuk komunitas belajar yang kolaboratif dan
+              saling mendukung demi keberhasilan bersama.
             </p>
           </div>
-          <div className="card">
-            <h3>Design</h3>
+          <div className="card card-values">
+            <h3>Nilai Kami</h3>
             <p>
-              Present ac massa at ligula laoreet luctus. Vivamus aliquet elit ac nisl. Sed aliquam ultrices.
-            </p>
-          </div>
-          <div className="card">
-            <h3>Scrum</h3>
-            <p>
-              Present ac massa at ligula laoreet luctus. Vivamus aliquet elit ac nisl. Sed aliquam ultrices.
+              Dedikasi, Inovasi, Kolaborasi, dan Keunggulan adalah nilai-nilai
+              yang menjadi dasar dalam setiap langkah kami untuk membantu siswa
+              mencapai potensi terbaik mereka.
             </p>
           </div>
         </div>

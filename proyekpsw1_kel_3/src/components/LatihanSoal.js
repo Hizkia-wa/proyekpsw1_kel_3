@@ -22,7 +22,7 @@ function Latihansoal() {
       nama: 'Kongruen dan Kesebangunan',
       deskripsi:"berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.",
       gambar: gbrimages,
-      path: "/geometribangunruang",
+      path: "/LatiihanSoalKongruen",
     },
     {
       nama: "Statistika",

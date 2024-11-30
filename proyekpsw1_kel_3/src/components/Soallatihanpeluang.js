@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./SoalLatihanStatistika.css";
 
-const SoalLatihanStatistika = () => {
+const SoalLatihanpeluang = () => {
   const questions = [
     {
       question: "1. Berapa peluang muncul angka genap pada pelemparan sebuah dadu?",
@@ -174,4 +174,4 @@ const SoalLatihanStatistika = () => {
   );
 };
 
-export default SoalLatihanStatistika;
+export default SoalLatihanpeluang;
