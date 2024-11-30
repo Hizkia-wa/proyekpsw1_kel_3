@@ -42,6 +42,7 @@ import SoallatihanAp from "./components/SoallatihanAp";
 import LatiihanSoalKongruen from "./components/LatiihanSoalKongruen"
 import SoalLatihanGeometri from "./components/SoalLatihanGeometri";
 import BrilianTurunan from "./components/BrilianTurunan";
+import BrilianKongruen from "./components/BrilianKongruen"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -122,6 +123,7 @@ function App() {
           <Route path="/LatiihanSoalKongruen" element={<LatiihanSoalKongruen />} />
           <Route path="/SoalLatihanGeometri" element={<SoalLatihanGeometri />} />
           <Route path="/BrilianTurunan" element={<BrilianTurunan />} />
+          <Route path="/BrilianKongruen" element={<BrilianKongruen />} />
           <Route
             path="*"
             element={
