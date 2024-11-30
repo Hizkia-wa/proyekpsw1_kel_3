@@ -1,0 +1,130 @@
+/* Styling untuk kontainer utama */
+.soal-latihan-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1200px;
+    background-color: #f0f4f8;
+}
+
+.soal-latihan-header {
+    text-align: center;
+    background-color: #5b6c79; 
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.soal-latihan-header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.soal-latihan-slides {
+    display: block;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Styling untuk tiap slide */
+.soal-latihan-slide-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 1200px; 
+    margin-bottom: 25px; 
+    text-align: left; 
+    border: 1px solid #e0e5ec; 
+}
+
+.soal-latihan-slide-container:hover {
+    transform: translateY(-10px); /
+}
+
+/* Judul slide */
+.soal-latihan-title {
+    font-size: 1.9rem;
+    color: #5b6c79; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Styling untuk rumus */
+.soal-latihan-formula {
+    font-size: 1.3rem;
+    color: #4f5b62;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Styling untuk input */
+.soal-latihan-input-container {
+    margin-bottom: 25px;
+}
+
+/* Label untuk input */
+.soal-latihan-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #5b6c79; 
+}
+
+/* Input field styling */
+.soal-latihan-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #ccd5e0;
+    background-color: #f6f8fa;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.soal-latihan-input:focus {
+    border-color: #5b6c79;
+    outline: none;
+}
+
+/* Button perhitungan */
+.soal-latihan-calculate-btn {
+    padding: 12px 30px;
+    background-color: #5b6c79; 
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.soal-latihan-calculate-btn:hover {
+    background-color: #4a5a64; 
+}
+
+/* Styling untuk hasil */
+.soal-latihan-result-container {
+    margin-top: 30px;
+}
+
+.soal-latihan-result-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.soal-latihan-result {
+    font-size: 1.6rem;
+    color: #3b9f84; 
+    font-weight: bold;
+}
+
+.soal-latihan-explanation {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-top: 15px;
+    line-height: 1.6;
+}
