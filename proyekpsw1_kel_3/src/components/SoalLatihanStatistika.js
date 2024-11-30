@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import "./SoalLatihanStatistika.css";
 
 const SoalLatihanStatistika = () => {
@@ -132,47 +132,36 @@ const SoalLatihanStatistika = () => {
    L = 40, n = 20, Fk = 10, f = 8, p = 10
    Median = 40 + [(10 - 10) / 8] × 10 = 40 + 0 = 42.5.`,
     },
-
   ];
-
 
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [showExplanation, setShowExplanation] = useState({});
   const questionRefs = useRef([]);
 
   const handleAnswerClick = (questionIndex, optionIndex) => {
-    const isCorrect = optionIndex === questions[questionIndex].correctAnswer;
-
-    // Simpan jawaban yang dipilih
-    setSelectedAnswers({
-      ...selectedAnswers,
+    setSelectedAnswers((prev) => ({
+      ...prev,
       [questionIndex]: optionIndex,
-    });
-
-    // Tambahkan kelas bayangan hijau (benar) atau merah (salah)
-    const questionCard = questionRefs.current[questionIndex];
-    if (questionCard) {
-      questionCard.classList.remove("correct", "incorrect");
-      questionCard.classList.add(isCorrect ? "correct" : "incorrect");
-    }
-
-    // Sembunyikan pembahasan ketika opsi dipilih
-    setShowExplanation({
-      ...showExplanation,
-      [questionIndex]: false,
-    });
+    }));
   };
 
   const handleShowExplanation = (questionIndex) => {
-    setShowExplanation({
-      ...showExplanation,
+    setShowExplanation((prev) => ({
+      ...prev,
       [questionIndex]: true,
+    }));
+
+    // Scroll ke penjelasan jika dibuka
+    questionRefs.current[questionIndex]?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
   };
 
   return (
     <div className="container_latihan">
-      <h1>Latihan Soal Statistika</h1>
+      <h1>Soal Latihan Statistika</h1>
+
       <div className="navigation">
         {questions.map((_, index) => (
           <div
@@ -180,43 +169,55 @@ const SoalLatihanStatistika = () => {
             className={`nav-item ${
               selectedAnswers[index] !== undefined ? "active" : ""
             }`}
+            onClick={() =>
+              questionRefs.current[index]?.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              })
+            }
           >
             {index + 1}
           </div>
         ))}
       </div>
+
       {questions.map((question, index) => (
         <div
           key={index}
           ref={(el) => (questionRefs.current[index] = el)}
           className="question-card"
         >
-          <h2>{question.question}</h2>
-          <div className="options-container">
-            {question.options.map((option, optionIndex) => (
-              <div
-                key={optionIndex}
-                className={`option ${
-                  selectedAnswers[index] === optionIndex
-                    ? optionIndex === question.correctAnswer
-                      ? "correct"
-                      : "incorrect"
-                    : ""
-                }`}
-                onClick={() => handleAnswerClick(index, optionIndex)}
+          {/* Bagian Soal */}
+          <div>
+            <h2>{question.question}</h2>
+            <div className="options-container1">
+              {question.options.map((option, optionIndex) => (
+                <div
+                  key={optionIndex}
+                  className={`option ${
+                    selectedAnswers[index] === optionIndex
+                      ? optionIndex === question.correctAnswer
+                        ? "correct"
+                        : "incorrect"
+                      : ""
+                  }`}
+                  onClick={() => handleAnswerClick(index, optionIndex)}
+                >
+                  {option}
+                </div>
+              ))}
+            </div>
+            {selectedAnswers[index] !== undefined && (
+              <button
+                className="btn-show"
+                onClick={() => handleShowExplanation(index)}
               >
-                {option}
-              </div>
-            ))}
+                Tampilkan Pembahasan
+              </button>
+            )}
           </div>
-          {selectedAnswers[index] !== undefined && (
-            <button
-              className="btn-show"
-              onClick={() => handleShowExplanation(index)}
-            >
-              Tampilkan Pembahasan
-            </button>
-          )}
+
+          {/* Bagian Pembahasan */}
           {showExplanation[index] && (
             <div className="explanation">{question.explanation}</div>
           )}
@@ -227,3 +228,4 @@ const SoalLatihanStatistika = () => {
 };
 
 export default SoalLatihanStatistika;
+
