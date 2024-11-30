@@ -37,9 +37,9 @@ import SoalLatihanTurunan from "./components/SoalLatihanTurunan";
 import MateriAp from "./components/MateriAp";
 import Latihansoalap from "./components/Latihansoalap";
 import LatihanSoalBinomial from "./components/LatihanSoalBinomial";
+import LatihanSoalKesebangunan from "./components/LatihanSoalKesebangunan";
 import Soallatihanpeluang from "./components/Soallatihanpeluang";
 import SoallatihanAp from "./components/SoallatihanAp";
-import LatiihanSoalKongruen from "./components/LatiihanSoalKongruen"
 import SoalLatihanGeometri from "./components/SoalLatihanGeometri";
 import BrilianTurunan from "./components/BrilianTurunan";
 import BrilianKongruen from "./components/BrilianKongruen"
@@ -120,10 +120,12 @@ function App() {
           <Route path="/Soallatihanpeluang" element={<Soallatihanpeluang />} />
           <Route path="/SoallatihanAp" element={<SoallatihanAp />} />
           <Route path="/Latihansoalap" element={<Latihansoalap />} />
-          <Route path="/LatiihanSoalKongruen" element={<LatiihanSoalKongruen />} />
           <Route path="/SoalLatihanGeometri" element={<SoalLatihanGeometri />} />
           <Route path="/BrilianTurunan" element={<BrilianTurunan />} />
           <Route path="/BrilianKongruen" element={<BrilianKongruen />} />
+          <Route path="/latihansoalkesebangunan"  element={<LatihanSoalKesebangunan />} />
+
+
           <Route
             path="*"
             element={

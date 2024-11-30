@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./SoalLatihanStatistika.css";
 
 const SoalLatihanStatistika = () => {
@@ -6,7 +6,7 @@ const SoalLatihanStatistika = () => {
     {
       question:
         "1. Diketahui data: 5, 7, 3, 10, dan 8. Berapakah rata-rata (mean) dari data tersebut?",
-      options: ["6", "7", "8", "9", "10"],
+      options: ["6", "7", "8", "10"],
       correctAnswer: 1,
       explanation: `Penyelesaian:
 1. Jumlahkan semua data:
@@ -18,7 +18,7 @@ const SoalLatihanStatistika = () => {
     {
       question:
         "2. Jika modus dari data berikut: 3, 5, 5, 7, 8, 8, 8 adalah?",
-      options: ["3", "5", "7", "8", "Tidak ada modus"],
+      options: ["3", "7", "8", "Tidak ada modus"],
       correctAnswer: 3,
       explanation: `Penyelesaian:
 1. Perhatikan data yang paling sering muncul:
@@ -30,7 +30,7 @@ const SoalLatihanStatistika = () => {
     {
       question:
         "3. Diketahui data berkelompok dengan kelas interval sebagai berikut:\n\nKelas: 10-19, 20-29, 30-39, 40-49\nFrekuensi: 5, 8, 12, 10\n\nBerapakah nilai median dari data tersebut?",
-      options: ["24.5", "32.5", "34", "30", "25"],
+      options: ["24.5", "32.5", "30", "25"],
       correctAnswer: 1,
       explanation: `Penyelesaian:
 1. Tentukan frekuensi kumulatif:
@@ -44,7 +44,7 @@ const SoalLatihanStatistika = () => {
     {
       question:
         "4. Berapakah simpangan rata-rata dari data berikut: 4, 8, 6, 10, 12?",
-      options: ["2.4", "3.2", "4.6", "5.0", "3.8"],
+      options: ["2.4", "3.2", "4.6", "3.8"],
       correctAnswer: 0,
       explanation: `Penyelesaian:
 1. Hitung rata-rata data: Mean = (4 + 8 + 6 + 10 + 12) ÷ 5 = 40 ÷ 5 = 8.
@@ -59,7 +59,7 @@ const SoalLatihanStatistika = () => {
     {
       question:
         "5. Dalam data berkelompok dengan kelas interval sebagai berikut:\n\nKelas: 50-59, 60-69, 70-79, 80-89\nFrekuensi: 3, 7, 5, 10\n\nBerapakah nilai mean dari data tersebut?",
-      options: ["70.2", "72.5", "74.0", "75.8", "78.5"],
+      options: ["72.5", "74.0", "75.8", "78.5"],
       correctAnswer: 1,
       explanation: `Penyelesaian:
 1. Hitung nilai tengah tiap kelas interval:
@@ -71,7 +71,7 @@ const SoalLatihanStatistika = () => {
     },
     {
       question: "6. Diketahui data berikut: 2, 4, 6, 8, 10. Berapakah nilai varians dari data tersebut?",
-      options: ["8", "6", "10", "12", "14"],
+      options: ["8", "6", "10", "14"],
       correctAnswer: 0,
       explanation: `Penyelesaian:
 1. Hitung rata-rata data: Mean = (2 + 4 + 6 + 8 + 10) ÷ 5 = 30 ÷ 5 = 6.
@@ -85,7 +85,7 @@ const SoalLatihanStatistika = () => {
     },
     {
       question: "7. Dalam data berkelompok dengan kelas interval berikut:\n\nKelas: 1-10, 11-20, 21-30, 31-40\nFrekuensi: 2, 4, 3, 1\n\nBerapakah modus dari data tersebut?",
-      options: ["15.5", "12.5", "18.5", "22.5", "11.5"],
+      options: ["15.5", "12.5", "18.5", "22.5"],
       correctAnswer: 1,
       explanation: `Penyelesaian:
 1. Modus terletak pada kelas dengan frekuensi tertinggi, yaitu kelas 11-20 (f = 4).
@@ -96,7 +96,7 @@ const SoalLatihanStatistika = () => {
     },
     {
       question: "8. Berapakah rata-rata tertimbang dari data berikut:\n\nNilai: 60, 70, 80\nBobot: 2, 3, 5?",
-      options: ["70", "72", "74", "76", "78"],
+      options: ["70", "72", "74", "78"],
       correctAnswer: 2,
       explanation: `Penyelesaian:
 1. Kalikan setiap nilai dengan bobotnya:
@@ -106,7 +106,7 @@ const SoalLatihanStatistika = () => {
     },
     {
       question: "9. Diketahui data populasi: 10, 12, 14, 16, 18. Berapakah simpangan baku dari data tersebut?",
-      options: ["2.83", "4.47", "3.16", "5.0", "2.5"],
+      options: ["2.83", "4.47", "3.16", "2.5"],
       correctAnswer: 2,
       explanation: `Penyelesaian:
 1. Hitung rata-rata: Mean = (10 + 12 + 14 + 16 + 18) ÷ 5 = 70 ÷ 5 = 14.
@@ -121,7 +121,7 @@ const SoalLatihanStatistika = () => {
     },
     {
       question: "10. Dalam data berkelompok dengan kelas interval berikut:\n\nKelas: 20-29, 30-39, 40-49, 50-59\nFrekuensi: 4, 6, 8, 2\n\nBerapakah nilai median dari data tersebut?",
-      options: ["35.5", "37.5", "42.5", "45.5", "40.0"],
+      options: [ "37.5", "42.5", "45.5", "40.0"],
       correctAnswer: 2,
       explanation: `Penyelesaian:
 1. Tentukan frekuensi kumulatif:
@@ -139,29 +139,35 @@ const SoalLatihanStatistika = () => {
   const questionRefs = useRef([]);
 
   const handleAnswerClick = (questionIndex, optionIndex) => {
-    setSelectedAnswers((prev) => ({
-      ...prev,
+    const isCorrect = optionIndex === questions[questionIndex].correctAnswer;
+
+    setSelectedAnswers({
+      ...selectedAnswers,
       [questionIndex]: optionIndex,
-    }));
+    });
+
+    const questionCard = questionRefs.current[questionIndex];
+    if (questionCard) {
+      questionCard.classList.remove("correct", "incorrect");
+      questionCard.classList.add(isCorrect ? "correct" : "incorrect");
+    }
+
+    setShowExplanation({
+      ...showExplanation,
+      [questionIndex]: false,
+    });
   };
 
   const handleShowExplanation = (questionIndex) => {
-    setShowExplanation((prev) => ({
-      ...prev,
+    setShowExplanation({
+      ...showExplanation,
       [questionIndex]: true,
-    }));
-
-    // Scroll ke penjelasan jika dibuka
-    questionRefs.current[questionIndex]?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
     });
   };
 
   return (
     <div className="container_latihan">
-      <h1>Soal Latihan Statistika</h1>
-
+      <h1>Latihan Soal Peluang</h1>
       <div className="navigation">
         {questions.map((_, index) => (
           <div
@@ -169,55 +175,43 @@ const SoalLatihanStatistika = () => {
             className={`nav-item ${
               selectedAnswers[index] !== undefined ? "active" : ""
             }`}
-            onClick={() =>
-              questionRefs.current[index]?.scrollIntoView({
-                behavior: "smooth",
-                block: "center",
-              })
-            }
           >
             {index + 1}
           </div>
         ))}
       </div>
-
       {questions.map((question, index) => (
         <div
           key={index}
           ref={(el) => (questionRefs.current[index] = el)}
           className="question-card"
         >
-          {/* Bagian Soal */}
-          <div>
-            <h2>{question.question}</h2>
-            <div className="options-container1">
-              {question.options.map((option, optionIndex) => (
-                <div
-                  key={optionIndex}
-                  className={`option ${
-                    selectedAnswers[index] === optionIndex
-                      ? optionIndex === question.correctAnswer
-                        ? "correct"
-                        : "incorrect"
-                      : ""
-                  }`}
-                  onClick={() => handleAnswerClick(index, optionIndex)}
-                >
-                  {option}
-                </div>
-              ))}
-            </div>
-            {selectedAnswers[index] !== undefined && (
-              <button
-                className="btn-show"
-                onClick={() => handleShowExplanation(index)}
+          <h2>{question.question}</h2>
+          <div className="options-container">
+            {question.options.map((option, optionIndex) => (
+              <div
+                key={optionIndex}
+                className={`option ${
+                  selectedAnswers[index] === optionIndex
+                    ? optionIndex === question.correctAnswer
+                      ? "correct"
+                      : "incorrect"
+                    : ""
+                }`}
+                onClick={() => handleAnswerClick(index, optionIndex)}
               >
-                Tampilkan Pembahasan
-              </button>
-            )}
+                {option}
+              </div>
+            ))}
           </div>
-
-          {/* Bagian Pembahasan */}
+          {selectedAnswers[index] !== undefined && (
+            <button
+              className="btn-show"
+              onClick={() => handleShowExplanation(index)}
+            >
+              Tampilkan Pembahasan
+            </button>
+          )}
           {showExplanation[index] && (
             <div className="explanation">{question.explanation}</div>
           )}
@@ -228,4 +222,3 @@ const SoalLatihanStatistika = () => {
 };
 
 export default SoalLatihanStatistika;
-
