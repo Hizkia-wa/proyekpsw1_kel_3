@@ -19,7 +19,7 @@ function Brilian() {
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages, path: '/BrilianAp' },
         { nama: 'Peluang Kejadian', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpssimages, path: '/Brilianpeluang' },
         { nama: 'Limit', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: lmtssimages, path: '/BrilianLimit' },
-        { nama: 'Turunan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: trnssimages },
+        { nama: 'Turunan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: trnssimages, path: '/BrilianTurunan'},
         { nama: 'Distribusi Binomial', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: dblssimages, path: '/BrillianBinomial'},
     ];
 

@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 function SoalLatihan() {
     const Latihandata = [
-        { nama: 'Geometri Bangun D2 & D3', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/materigeometridatar'},
+        { nama: 'Geometri Bangun D2 & D3', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/SoalLatihanGeometri'},
         { nama: 'Kongruen dan Kesebangunan', deskripsi: "Berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.", gambar: gbrimages, path: '/kongruen' },
         { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages, path:'/soallatihanstatistika' },
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: atpsimages, path: '/SoallatihanAp' },
