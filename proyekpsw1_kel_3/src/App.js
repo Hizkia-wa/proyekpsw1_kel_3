@@ -38,11 +38,13 @@ import MateriAp from "./components/MateriAp";
 import Latihansoalap from "./components/Latihansoalap";
 import LatihanSoalBinomial from "./components/LatihanSoalBinomial";
 import LatihanSoalKesebangunan from "./components/LatihanSoalKesebangunan";
-import Soallatihanpeluang from "./components/Soallatihanpeluang";
-import SoallatihanAp from "./components/SoallatihanAp";
+import SoalLatihanpeluang from "./components/SoalLatihanpeluang";
+import SoalLatihanAp from "./components/SoalLatihanAp";
 import SoalLatihanGeometri from "./components/SoalLatihanGeometri";
 import BrilianTurunan from "./components/BrilianTurunan";
-import BrilianKongruen from "./components/BrilianKongruen"
+import BrilianKongruen from "./components/BrilianKongruen";
+import SoalLatihanKesebangunan from "./components/SoalLatihanKesebangunan";
+import SoalLatihanLimit from "./components/SoalLatihanLimit";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -117,13 +119,15 @@ function App() {
           <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/MateriAp" element={<MateriAp />} />
           <Route path="/LatihanSoalBinomial" element={<LatihanSoalBinomial />} />
-          <Route path="/Soallatihanpeluang" element={<Soallatihanpeluang />} />
-          <Route path="/SoallatihanAp" element={<SoallatihanAp />} />
+          <Route path="/Soallatihanpeluang" element={<SoalLatihanpeluang />} />
+          <Route path="/SoallatihanAp" element={<SoalLatihanAp />} />
           <Route path="/Latihansoalap" element={<Latihansoalap />} />
           <Route path="/SoalLatihanGeometri" element={<SoalLatihanGeometri />} />
           <Route path="/BrilianTurunan" element={<BrilianTurunan />} />
           <Route path="/BrilianKongruen" element={<BrilianKongruen />} />
           <Route path="/latihansoalkesebangunan"  element={<LatihanSoalKesebangunan />} />
+          <Route path="/Soallatihankesebangunan" element={<SoalLatihanKesebangunan />} />
+          <Route path="/Soallatihanlimit" element={<SoalLatihanLimit />} />
 
 
           <Route
