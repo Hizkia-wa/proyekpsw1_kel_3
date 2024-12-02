@@ -167,7 +167,7 @@ const SoalLatihanStatistika = () => {
 
   return (
     <div className="container_latihan">
-      <h1>Latihan Soal Peluang</h1>
+      <h1>Soal Latihan Statistika</h1>
       <div className="navigation">
         {questions.map((_, index) => (
           <div
