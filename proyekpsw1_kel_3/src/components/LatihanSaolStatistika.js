@@ -5,6 +5,7 @@ const LatihanSoalStatistika = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const questions = [
     {
@@ -129,6 +130,23 @@ const LatihanSoalStatistika = () => {
     resetSelection();
   };
 
+  const handleExplanationClick = () => {
+    if (showExplanation) {
+      setShowExplanation(false); // Sembunyikan pembahasan tanpa pesan
+    } else if (!selectedOption) {
+      setShowConfirmation(true); // Tampilkan pesan jika opsi belum dipilih
+    } else {
+      setShowExplanation(true); // Langsung tampilkan pembahasan jika opsi sudah dipilih
+    }
+  };
+
+  const handleConfirmationResponse = (response) => {
+    if (response === "yes") {
+      setShowExplanation(true); // Tampilkan pembahasan
+    }
+    setShowConfirmation(false); // Hilangkan pesan
+  };
+
   return (
     <div className="question-page">
       <div className="question-container">
@@ -189,7 +207,7 @@ const LatihanSoalStatistika = () => {
         <div className="explanation-container">
           <button
             className="explanation-toggle"
-            onClick={() => setShowExplanation(!showExplanation)}
+            onClick={handleExplanationClick}
           >
             {showExplanation ? "Sembunyikan Pembahasan" : "Lihat Pembahasan"}
           </button>
@@ -200,6 +218,28 @@ const LatihanSoalStatistika = () => {
           )}
         </div>
       </div>
+
+      {showConfirmation && (
+        <div className="confirmation-popup">
+          <div className="popup-content">
+            <p>Yakin mau melihat pembahasan sekarang?</p>
+            <div className="popup-buttons">
+              <button
+                className="popup-button no-button"
+                onClick={() => handleConfirmationResponse("no")}
+              >
+                Tidak
+              </button>
+              <button
+                className="popup-button yes-button"
+                onClick={() => handleConfirmationResponse("yes")}
+              >
+                Iya
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
