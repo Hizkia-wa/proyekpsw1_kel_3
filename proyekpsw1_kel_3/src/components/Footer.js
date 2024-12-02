@@ -1,6 +1,6 @@
 import React from "react";
 import { FaUsers, FaEnvelope, FaCommentDots, FaBullseye } from "react-icons/fa"; 
-import "./Navbar.css"; 
+import "./Footer.css"; 
 
 const Footer = () => {
   return (

@@ -20,7 +20,7 @@ function SoalLatihan() {
         { nama: 'Peluang Kejadian', deskripsi: "Menghitung peluang kejadian berdasarkan data.", gambar: pksimages, path: '/Soallatihanpeluang' },
         { nama: 'Limit', deskripsi: "Memahami konsep limit pada fungsi matematika.", gambar: lmtsimages, path: '/soallatihanlimit' },
         { nama: 'Turunan', deskripsi: "Mempelajari konsep turunan fungsi.", gambar: trnsimages, path: '/SoalLatihanTurunan' },
-        { nama: 'Distribusi Binomial', deskripsi: "Menghitung probabilitas menggunakan distribusi binomial.", gambar: dblsimages, path: '/distribusibinomial' },
+        { nama: 'Distribusi Binomial', deskripsi: "Menghitung probabilitas menggunakan distribusi binomial.", gambar: dblsimages, path: '/SoallatihanBinomial' },
     ];
 
     return (
