@@ -138,6 +138,13 @@ const MateriBinomial = () => {
       <section className="tech-news4">
         <div className="news-content">
           <h2>Rumus dan Penjelasan Distribusi Binomial</h2>
+          <p>
+            <strong>Distribusi Binomial</strong> yaitu salah satu konsep dalam
+            statistik yang digunakan untuk menghitung probabilitas sejumlah
+            keberhasilan dalam suatu rangkaian percobaan independen yang
+            masing-masing memiliki dua kemungkinan hasil (misalnya sukses atau
+            gagal){" "}
+          </p>
         </div>
         <div className="news-image">
           <img src={Binomial1} alt="Binomial1" />
@@ -147,6 +154,14 @@ const MateriBinomial = () => {
       <section className="tech-news5">
         <div className="news-content">
           <h2>Fungsi Distribusi Probabilitas Binomial</h2>
+          <p>
+            <strong>Distribusi binomial</strong> menghitung probabilitas dengan
+            mempertimbangkan bahwa setiap percobaan bersifat independen (hasil
+            satu percobaan tidak memengaruhi hasil percobaan lainnya). Rumus ini
+            sering digunakan dalam berbagai situasi, seperti memprediksi
+            keberhasilan produk di pasar, hasil tes, atau eksperimen dengan dua
+            kemungkinan hasil (misalnya sukses atau gagal, hidup atau mati).
+          </p>
         </div>
         <div className="news-image">
           <img src={Binomial2} alt="Binomial2" />
@@ -156,7 +171,14 @@ const MateriBinomial = () => {
       <section className="tech-news6">
         <div className="news-content">
           <h2>Rumus Lengkap Distribusi Binomial</h2>
-   
+          <p>
+            <strong>Distribusi binomial</strong> adalah salah satu alat
+            probabilitas yang sangat berguna dalam mengukur peluang suatu
+            kejadian dengan dua hasil (sukses/gagal) dalam sejumlah percobaan.
+            Rumus lengkap ini memungkinkan kita menghitung peluang untuk
+            berbagai kondisi, baik individu, kumulatif, maupun mendekati
+            distribusi Poisson.
+          </p>
         </div>
         <div className="news-image">
           <img src={Binomial3} alt="Binomial3" />
@@ -167,9 +189,10 @@ const MateriBinomial = () => {
         <div className="news-content">
           <h2>Peluang Distribusi Binomial</h2>
           <p>
-            Dilengkapi dengan Keterangan
+            Rumus ini digunakan untuk menghitung peluang suatu peristiwa terjadi
+            𝑥 x kali dalam 𝑁 N percobaan yang independen, di mana tiap percobaan
+            memiliki dua hasil (sukses atau gagal).
           </p>
-
         </div>
         <div className="news-image">
           <img src={Binomial4} alt="Binomial4" />
@@ -179,7 +202,12 @@ const MateriBinomial = () => {
       <section className="tech-news8">
         <div className="news-content">
           <h2>Percobaan Rumus</h2>
-
+          <p>
+            bagaimana menghitung peluang dalam suatu percobaan yang mengikuti
+            distribusi binomial. Konsep ini sangat berguna dalam berbagai
+            bidang, seperti statistika, ilmu komputer, dan bahkan dalam
+            kehidupan sehari-hari.
+          </p>
         </div>
         <div className="news-image">
           <img src={Binomial5} alt="Binomial5" />
@@ -189,7 +217,12 @@ const MateriBinomial = () => {
       <section className="tech-news9">
         <div className="news-content">
           <h2>Distribusi Binomial</h2>
-
+          <p>
+            salah satu konsep penting dalam statistika yang digunakan untuk
+            memodelkan situasi di mana kita melakukan sejumlah percobaan yang
+            identik dan independen, dan setiap percobaan hanya memiliki dua
+            kemungkinan hasil: sukses atau gagal.
+          </p>
         </div>
         <div className="news-image">
           <img src={Binomial6} alt="Binomial6" />
