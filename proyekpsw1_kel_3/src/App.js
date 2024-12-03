@@ -36,17 +36,15 @@ import SoalLatihanStatistika from "./components/SoalLatihanStatistika";
 import SoalLatihanTurunan from "./components/SoalLatihanTurunan";
 import MateriAp from "./components/MateriAp";
 import Latihansoalap from "./components/Latihansoalap";
-import LatihanSoalBinomial from "./components/LatihanSoalBinomial.js";
+import LatihanSoalBinomial from "./components/LatihanSoalBinomial";
 import LatihanSoalKesebangunan from "./components/LatihanSoalKesebangunan";
-import SoalLatihanpeluang from "./components/SoalLatihanpeluang";
-import SoalLatihanAp from "./components/SoalLatihanAp";
+import SoalLatihanpeluang from "./components/Soallatihanpeluang";
+import SoalLatihanAp from "./components/SoallatihanAp";
 import SoalLatihanGeometri from "./components/SoalLatihanGeometri";
 import BrilianTurunan from "./components/BrilianTurunan";
 import BrilianKongruen from "./components/BrilianKongruen";
 import SoalLatihanKesebangunan from "./components/SoalLatihanKesebangunan";
 import SoalLatihanLimit from "./components/SoalLatihanLimit";
-import SoalLatihanBinomial from "./components/SoalLatihanBinomial.js";
-import SoallatihanBinomial from "./components/SoallatihanBinomial";
 import SoalLatihanBinomial from "./components/SoalLatihanBinomial";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -132,7 +130,7 @@ function App() {
           <Route path="/Soallatihankesebangunan" element={<SoalLatihanKesebangunan />} />
           <Route path="/Soallatihanlimit" element={<SoalLatihanLimit />} />
           <Route path="/Soallatihanbinomial" element={<SoalLatihanBinomial />} />
-          <Route path="/SoallatihanBinomial" element={< SoallatihanBinomial />} />
+          <Route path="/SoallatihanBinomial" element={< SoalLatihanBinomial />} />
 
 
 
