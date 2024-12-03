@@ -47,6 +47,7 @@ import SoalLatihanKesebangunan from "./components/SoalLatihanKesebangunan";
 import SoalLatihanLimit from "./components/SoalLatihanLimit";
 import SoalLatihanBinomial from "./components/SoalLatihanBinomial.js";
 import SoallatihanBinomial from "./components/SoallatihanBinomial";
+import SoalLatihanBinomial from "./components/SoalLatihanBinomial";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -132,6 +133,8 @@ function App() {
           <Route path="/Soallatihanlimit" element={<SoalLatihanLimit />} />
           <Route path="/Soallatihanbinomial" element={<SoalLatihanBinomial />} />
           <Route path="/SoallatihanBinomial" element={< SoallatihanBinomial />} />
+
+
 
           <Route
             path="*"
