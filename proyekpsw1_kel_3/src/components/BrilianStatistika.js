@@ -1,17 +1,11 @@
 import React, { useState } from "react";
-import "./MateriStatistika.css";
-import stat1 from "../images/STK1.png";
-import stat2 from "../images/STK2.png";
-import stat3 from "../images/STK3.png";
-import stat4 from "../images/STK5.png";
-import stat5 from "../images/STK6.png";
+import "./BrillianBinomial.css";
 
-const slidesTunggal = [
+const slides = [
     {
         title: "Mean (Rata-Rata) - Data Tunggal",
         formulaArea: "Mean = Σx / n",
         inputs: ["Data"],
-        background: stat1,
         calculate: ({ Data }) => {
             try {
                 const numbers = Data.split(",").map(Number);
@@ -34,7 +28,6 @@ const slidesTunggal = [
         title: "Median - Data Tunggal",
         formulaArea: "Median = (n + 1) / 2",
         inputs: ["Data"],
-        background: stat2,
         calculate: ({ Data }) => {
             try {
                 const numbers = Data.split(",").map(Number);
@@ -63,7 +56,6 @@ const slidesTunggal = [
         title: "Modus - Data Tunggal",
         formulaArea: "Modus = Nilai yang paling sering muncul",
         inputs: ["Data"],
-        background: stat3,
         calculate: ({ Data }) => {
             try {
                 const numbers = Data.split(",").map(Number);
@@ -96,7 +88,6 @@ const slidesTunggal = [
         title: "Kuartil - Data Tunggal",
         formulaArea: "Q1 = P25, Q2 = Median, Q3 = P75",
         inputs: ["Data"],
-        background: stat4,
         calculate: ({ Data }) => {
             try {
                 const numbers = Data.split(",").map(Number);
@@ -134,7 +125,6 @@ const slidesTunggal = [
         title: "Persentil - Data Tunggal",
         formulaArea: "P = (n + 1) * p / 100",
         inputs: ["Data", "Persentil"],
-        background: stat5,
         calculate: ({ Data, Persentil }) => {
             try {
                 const numbers = Data.split(",").map(Number);
@@ -169,7 +159,6 @@ const slidesBerkelompok = [
         title: "Mean (Rata-Rata) - Data Berkelompok",
         formulaArea: "Mean = Σ(f * x̄) / Σf",
         inputs: ["Data", "Frekuensi"],
-        background: stat1,
         calculate: ({ Data, Frekuensi }) => {
             try {
                 const classes = Data.split(";").map((range) =>
@@ -200,7 +189,6 @@ const slidesBerkelompok = [
         title: "Median - Data Berkelompok",
         formulaArea: "Median = L + [(N/2 − F) / f] * w",
         inputs: ["Data", "Frekuensi"],
-        background: stat2,
         calculate: ({ Data, Frekuensi }) => {
             try {
                 const classes = Data.split(";").map((range) =>
@@ -243,7 +231,6 @@ const slidesBerkelompok = [
         title: "Modus - Data Berkelompok",
         formulaArea: "Modus = L + [(fm - f1) / (2fm - f1 - f2)] * h",
         inputs: ["Data", "Frekuensi"],
-        background: stat3,
         calculate: ({ Data, Frekuensi }) => {
             try {
                 const classes = Data.split(";").map((range) =>
@@ -276,7 +263,6 @@ const slidesBerkelompok = [
         title: "Kuartil - Data Berkelompok",
         formulaArea: "Q1 = L + [(N/4 − F) / f] * w, Q3 = L + [(3N/4 − F) / f] * w",
         inputs: ["Data", "Frekuensi"],
-        background: stat4,
         calculate: ({ Data, Frekuensi }) => {
             try {
                 const classes = Data.split(";").map((range) =>
@@ -321,7 +307,6 @@ const slidesBerkelompok = [
         title: "Persentil - Data Berkelompok",
         formulaArea: "P = L + [(N / 100) * P − F) / f] * w",
         inputs: ["Data", "Frekuensi", "Persentil"],
-        background: stat5,
         calculate: ({ Data, Frekuensi, Persentil }) => {
             try {
                 const classes = Data.split(";").map((range) =>
@@ -360,121 +345,77 @@ const slidesBerkelompok = [
     },
 ];
 
-const MateriStatistika = () => {
-    const [inputValues, setInputValues] = useState({});
-    const [results, setResults] = useState({});
-    
-    const handleInputChange = (e, slideTitle) => {
-        const { name, value } = e.target;
-        setInputValues((prev) => ({
-            ...prev,
-            [slideTitle]: {
-                ...prev[slideTitle],
-                [name]: value,
-            },
-        }));
-    };
+const BrilianStatistika = () => {
+  const [inputValues, setInputValues] = useState({});
+  const [results, setResults] = useState({});
 
-    const calculateResult = (slide) => {
-        const inputs = inputValues[slide.title] || {};
-        const resultsForSlide = slide.calculate(inputs);
-        setResults((prev) => ({
-            ...prev,
-            [slide.title]: resultsForSlide,
-        }));
-    };
+  const handleInputChange = (e, slideTitle) => {
+    const { name, value } = e.target;
+    setInputValues((prev) => ({
+      ...prev,
+      [slideTitle]: {
+        ...prev[slideTitle],
+        [name]: value,
+      },
+    }));
+  };
 
-    return (
-        <div className="slides-container">
-            <h1>Materi Statistika</h1>
+  const calculateResult = (slide) => {
+    const inputs = inputValues[slide.title] || {};
+    const resultsForSlide = slide.calculate(inputs);
+    setResults((prev) => ({
+      ...prev,
+      [slide.title]: resultsForSlide,
+    }));
+  };
 
-            <section className="data-tunggal">
-                {slidesTunggal.map((slide, index) => (
-                    <div
-                        className="slide"
-                        key={index}
-                        style={{
-                            backgroundImage: `url(${slide.background})`,
-                        }}
-                    >
-                        <h3>{slide.title}</h3>
-                        <p>
-                            <strong>Rumus:</strong> {slide.formulaArea}
-                        </p>
-                        <div className="inputs">
-                            {slide.inputs.map((inputName) => (
-                                <div key={inputName}>
-                                    <label>
-                                        {inputName}:
-                                        <input
-                                            type="text"
-                                            name={inputName}
-                                            value={inputValues[slide.title]?.[inputName] || ""}
-                                            onChange={(e) => handleInputChange(e, slide.title)}
-                                        />
-                                    </label>
-                                </div>
-                            ))}
-                        </div>
-                        <button onClick={() => calculateResult(slide)}>Hitung</button>
-                        {results[slide.title] && (
-                            <div className="result">
-                                <p>
-                                    <strong>Hasil:</strong> {results[slide.title].result}
-                                </p>
-                                <pre className="explanation">
-                                    {results[slide.title].explanation}
-                                </pre>
-                            </div>
-                        )}
-                    </div>
-                ))}
-            </section>
-
-            <section className="data-berkelompok">
-                {slidesBerkelompok.map((slide, index) => (
-                    <div
-                        className="slide"
-                        key={index}
-                        style={{
-                            backgroundImage: `url(${slide.background})`,
-                        }}
-                    >
-                        <h3>{slide.title}</h3>
-                        <p>
-                            <strong>Rumus:</strong> {slide.formulaArea}
-                        </p>
-                        <div className="inputs">
-                            {slide.inputs.map((inputName) => (
-                                <div key={inputName}>
-                                    <label>
-                                        {inputName}:
-                                        <input
-                                            type="text"
-                                            name={inputName}
-                                            value={inputValues[slide.title]?.[inputName] || ""}
-                                            onChange={(e) => handleInputChange(e, slide.title)}
-                                        />
-                                    </label>
-                                </div>
-                            ))}
-                        </div>
-                        <button onClick={() => calculateResult(slide)}>Hitung</button>
-                        {results[slide.title] && (
-                            <div className="result">
-                                <p>
-                                    <strong>Hasil:</strong> {results[slide.title].result}
-                                </p>
-                                <pre className="explanation">
-                                    {results[slide.title].explanation}
-                                </pre>
-                            </div>
-                        )}
-                    </div>
-                ))}
-            </section>
-        </div>
-    );
+  return (
+    <div className="slides-container">
+      <h1 className="main-title">Distribusi Binomial</h1>
+      {slides.map((slide, index) => (
+        <section className="slide" key={index}>
+          <h2>{slide.title}</h2>
+          <p>
+            <strong>Soal:</strong> {slide.question}
+          </p>
+          <p>
+            <strong>Rumus:</strong> {slide.formulaArea}
+          </p>
+          <div className="inputs">
+            {slide.inputs.map((inputName) => (
+              <div key={inputName}>
+                <label>
+                  {inputName[0].toUpperCase() + inputName.slice(1)}:
+                  <input
+                    type="text"
+                    name={inputName}
+                    value={inputValues[slide.title]?.[inputName] || ""}
+                    onChange={(e) => handleInputChange(e, slide.title)}
+                  />
+                </label>
+              </div>
+            ))}
+          </div>
+          <button
+            className="calculate-btn"
+            onClick={() => calculateResult(slide)}
+          >
+            Hitung
+          </button>
+          {results[slide.title] && (
+            <div className="result">
+              <p>
+                <strong>Hasil:</strong> {results[slide.title].result}
+              </p>
+              <pre className="explanation">
+                {results[slide.title].explanation}
+              </pre>
+            </div>
+          )}
+        </section>
+      ))}
+    </div>
+  );
 };
 
-export default MateriStatistika;
+export default BrilianStatistika;

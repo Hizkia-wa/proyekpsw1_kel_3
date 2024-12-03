@@ -1,18 +1,10 @@
 import React, { useState } from "react";
-import "./MateriGeometriDatar.css";
-import lim1 from "../images/STK1.png";
-import lim2 from "../images/STK2.png";
-import lim3 from "../images/STK3.png";
-import lim4 from "../images/STK4.png";
-import lim5 from "../images/STK5.png";
-import lim6 from "../images/STK6.png";
-
+import "./BrillianBinomial.css";
 const slides = [
     {
         title: "Limit Fungsi Aljabar (x → a)",
         formulaArea: "lim (x → a) f(x) = f(a)",
         inputs: ["Fungsi", "NilaiX"],
-        background: lim1,
         calculate: ({ Fungsi, NilaiX }) => {
             try {
                 const x = parseFloat(NilaiX);
@@ -35,7 +27,6 @@ const slides = [
         title: "Limit Fungsi dengan Pembagian (x → a)",
         formulaArea: "lim (x → a) [f(x)/g(x)]",
         inputs: ["Pembilang", "Penyebut", "NilaiX"],
-        background: lim2,
         calculate: ({ Pembilang, Penyebut, NilaiX }) => {
             try {
                 const x = parseFloat(NilaiX);
@@ -72,7 +63,6 @@ const slides = [
         title: "Limit Tak Hingga (x → ∞)",
         formulaArea: "lim (x → ∞) f(x)",
         inputs: ["Fungsi"],
-        background: lim3,
         calculate: ({ Fungsi }) => {
             try {
                 if (!Fungsi) {
@@ -95,7 +85,6 @@ const slides = [
         title: "Limit Trigonometri",
         formulaArea: "lim (x → a) [trigonometri]",
         inputs: ["Fungsi", "NilaiX"],
-        background: lim4,
         calculate: ({ Fungsi, NilaiX }) => {
             try {
                 const x = parseFloat(NilaiX);
@@ -111,7 +100,6 @@ const slides = [
                 );
                 const limit = evaluatedFunction(x);
 
-                // Identitas khusus untuk kasus tertentu
                 if (Fungsi.includes("sin(x)/x") && x === 0) {
                     return {
                         result: 1,
@@ -143,7 +131,6 @@ const slides = [
         title: "Limit dengan L'Hôpital",
         formulaArea: "lim (x → a) [f(x)/g(x)] untuk bentuk tak tentu",
         inputs: ["Pembilang", "Penyebut", "NilaiX"],
-        background: lim5,
         calculate: ({ Pembilang, Penyebut, NilaiX }) => {
             try {
                 const x = parseFloat(NilaiX);
@@ -164,7 +151,6 @@ const slides = [
         title: "Limit Deret Tak Hingga",
         formulaArea: "lim (n → ∞) Σ a_n",
         inputs: ["Rumus Deret", "Suku Awal"],
-        background: lim6,
         calculate: ({ RumusDeret, SukuAwal }) => {
             try {
                 const n = Number.MAX_SAFE_INTEGER;
@@ -180,77 +166,79 @@ const slides = [
             }
         },
     },
-];
-
-const BrilianLimit = () => {
+  ];
+  
+  const BrilianLimit = () => {
     const [inputValues, setInputValues] = useState({});
     const [results, setResults] = useState({});
-
+  
     const handleInputChange = (e, slideTitle) => {
-        const { name, value } = e.target;
-        setInputValues((prev) => ({
-            ...prev,
-            [slideTitle]: {
-                ...prev[slideTitle],
-                [name]: value,
-            },
-        }));
+      const { name, value } = e.target;
+      setInputValues((prev) => ({
+        ...prev,
+        [slideTitle]: {
+          ...prev[slideTitle],
+          [name]: value,
+        },
+      }));
     };
-
+  
     const calculateResult = (slide) => {
-        const inputs = inputValues[slide.title] || {};
-        const resultsForSlide = slide.calculate(inputs);
-        setResults((prev) => ({
-            ...prev,
-            [slide.title]: resultsForSlide,
-        }));
+      const inputs = inputValues[slide.title] || {};
+      const resultsForSlide = slide.calculate(inputs);
+      setResults((prev) => ({
+        ...prev,
+        [slide.title]: resultsForSlide,
+      }));
     };
-
+  
     return (
-        <div className="slides-container">
-            <h1>Materi Limit</h1>
-            {slides.map((slide, index) => (
-                <section
-                    className="slide"
-                    key={index}
-                    style={{
-                        backgroundImage: `url(${slide.background})`,
-                    }}
-                >
-                    <h2>{slide.title}</h2>
-                    <p>
-                        <strong>Rumus:</strong> {slide.formulaArea}
-                    </p>
-                    <div className="inputs">
-                        {slide.inputs.map((inputName) => (
-                            <div key={inputName}>
-                                <label>
-                                    {inputName[0].toUpperCase() + inputName.slice(1)}:
-                                    <input
-                                        type="text"
-                                        name={inputName}
-                                        value={inputValues[slide.title]?.[inputName] || ""}
-                                        onChange={(e) => handleInputChange(e, slide.title)}
-                                    />
-                                </label>
-                            </div>
-                        ))}
-                    </div>
-                    <button onClick={() => calculateResult(slide)}>Hitung</button>
-                    {results[slide.title] && (
-                        <div className="result">
-                            <p>
-                                <strong>Hasil:</strong> {results[slide.title].result}
-                            </p>
-                            <pre className="explanation">
-                                {results[slide.title].explanation}
-                            </pre>
-                        </div>
-                    )}
-                </section>
-            ))}
-        </div>
+      <div className="slides-container">
+        <h1 className="main-title">Materi Peluang</h1>
+        {slides.map((slide, index) => (
+          <section className="slide" key={index}>
+            <h2>{slide.title}</h2>
+            <p>
+              <strong>Soal:</strong> {slide.question}
+            </p>
+            <p>
+              <strong>Rumus:</strong> {slide.formulaArea}
+            </p>
+            <div className="inputs">
+              {slide.inputs.map((inputName) => (
+                <div key={inputName}>
+                  <label>
+                    {inputName[0].toUpperCase() + inputName.slice(1)}:
+                    <input
+                      type="text"
+                      name={inputName}
+                      value={inputValues[slide.title]?.[inputName] || ""}
+                      onChange={(e) => handleInputChange(e, slide.title)}
+                    />
+                  </label>
+                </div>
+              ))}
+            </div>
+            <button
+              className="calculate-btn"
+              onClick={() => calculateResult(slide)}
+            >
+              Hitung
+            </button>
+            {results[slide.title] && (
+              <div className="result">
+                <p>
+                  <strong>Hasil:</strong> {results[slide.title].result}
+                </p>
+                <pre className="explanation">
+                  {results[slide.title].explanation}
+                </pre>
+              </div>
+            )}
+          </section>
+        ))}
+      </div>
     );
-};
+  };
 
 export default BrilianLimit;
