@@ -45,11 +45,7 @@ import BrilianTurunan from "./components/BrilianTurunan";
 import BrilianKongruen from "./components/BrilianKongruen";
 import SoalLatihanKesebangunan from "./components/SoalLatihanKesebangunan";
 import SoalLatihanLimit from "./components/SoalLatihanLimit";
-<<<<<<< HEAD
-import SoalLatihanBinomial from "./components/SoalLatihanBinomial.js";
-=======
-import SoallatihanBinomial from "./components/SoallatihanBinomial";
->>>>>>> 062d21dc3472a7af1f94646eaf651fc9200cc905
+import SoalLatihanBinomial from "./components/SoalLatihanBinomial";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CenteredLayout({ children }) {
@@ -133,12 +129,8 @@ function App() {
           <Route path="/latihansoalkesebangunan"  element={<LatihanSoalKesebangunan />} />
           <Route path="/Soallatihankesebangunan" element={<SoalLatihanKesebangunan />} />
           <Route path="/Soallatihanlimit" element={<SoalLatihanLimit />} />
-<<<<<<< HEAD
           <Route path="/Soallatihanbinomial" element={<SoalLatihanBinomial />} />
-=======
-          <Route path="/SoallatihanBinomial" element={< SoallatihanBinomial />} />
 
->>>>>>> 062d21dc3472a7af1f94646eaf651fc9200cc905
 
           <Route
             path="*"
