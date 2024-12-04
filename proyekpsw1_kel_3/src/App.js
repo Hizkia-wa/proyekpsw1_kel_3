@@ -38,8 +38,8 @@ import MateriAp from "./components/MateriAp";
 import Latihansoalap from "./components/Latihansoalap";
 import LatihanSoalBinomial from "./components/LatihanSoalBinomial";
 import LatihanSoalKesebangunan from "./components/LatihanSoalKesebangunan";
-import SoalLatihanpeluang from "./components/Soallatihanpeluang";
-import SoalLatihanAp from "./components/SoallatihanAp";
+import SoalLatihanpeluang from "./components/SoalLatihanpeluang";
+import SoalLatihanAp from "./components/SoalLatihanAp";
 import SoalLatihanGeometri from "./components/SoalLatihanGeometri";
 import BrilianTurunan from "./components/BrilianTurunan";
 import BrilianKongruen from "./components/BrilianKongruen";
@@ -63,7 +63,7 @@ function App() {
   return (
     <div className="app-container d-flex flex-column min-vh-100">
       {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
-      {!hideNavbarPaths.includes(location.pathname) && <Footer />}
+      {/* {!hideNavbarPaths.includes(location.pathname) && <Footer />} */}
 
       <div className="flex-grow-1">
         <Routes>
@@ -93,10 +93,7 @@ function App() {
           <Route path="/BrilianGeometri" element={<BrilianGeometri />} />
           <Route path="/materistatistika" element={<MateriStatistika />} />
           <Route path="/materipeluang" element={<MateriPeluang />} />
-          <Route
-            path="/materilimittrigonometri"
-            element={<MateriLimitTrigonometri />}
-          />
+          <Route path="/materilimittrigonometri" element={<MateriLimitTrigonometri />}/>
           <Route path="/brilianstatistika" element={<BrilianStatistika />} />
           <Route path="/brilianlimit" element={<BrilianLimit />} />
           <Route path="/materigeometri" element={<MateriGeometri />} />
@@ -105,66 +102,36 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/mission" element={<Mission />} />
-          <Route
-            path="/geometribangunruang"
-            element={<Latihansoalbangunruang />}
-          />
+          <Route path="/geometribangunruang" element={<Latihansoalbangunruang />} />
           <Route path="/QuestionPage" element={<QuestionPage />} />
-          <Route
-            path="/LatihanSoalStatistika"
-            element={<LatihanSaolStatistika />}
-          />
+          <Route path="/LatihanSoalStatistika" element={<LatihanSaolStatistika />} />
           <Route path="/LatihanSoalLimit" element={<LatihanSoalLimit />} />
           <Route path="/MateriBinomial" element={<MateriBinomial />} />
           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
           <Route path="/Brilianpeluang" element={<Brilianpeluang />} />
           <Route path="/BrilianAp" element={<BrilianAp />} />
-          <Route
-            path="/soallatihanstatistika"
-            element={<SoalLatihanStatistika />}
-          />
+          <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
           <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/latihangeometri" element={<LatihanGeometri />} />
           <Route path="/MateriBinomial" element={<MateriBinomial />} />
           <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
           <Route path="/MateriKongruen" element={<MateriKongruen />} />
-          <Route
-            path="/soallatihanstatistika"
-            element={<SoalLatihanStatistika />}
-          />
+          <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
           <Route path="/SoalLatihanTurunan" element={<SoalLatihanTurunan />} />
           <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/MateriAp" element={<MateriAp />} />
-          <Route
-            path="/LatihanSoalBinomial"
-            element={<LatihanSoalBinomial />}
-          />
+          <Route path="/LatihanSoalBinomial" element={<LatihanSoalBinomial />} />
           <Route path="/Soallatihanpeluang" element={<SoalLatihanpeluang />} />
           <Route path="/SoallatihanAp" element={<SoalLatihanAp />} />
           <Route path="/Latihansoalap" element={<Latihansoalap />} />
-          <Route
-            path="/SoalLatihanGeometri"
-            element={<SoalLatihanGeometri />}
-          />
+          <Route path="/SoalLatihanGeometri" element={<SoalLatihanGeometri />} />
           <Route path="/BrilianTurunan" element={<BrilianTurunan />} />
           <Route path="/BrilianKongruen" element={<BrilianKongruen />} />
-          <Route
-            path="/latihansoalkesebangunan"
-            element={<LatihanSoalKesebangunan />}
-          />
-          <Route
-            path="/Soallatihankesebangunan"
-            element={<SoalLatihanKesebangunan />}
-          />
+          <Route path="/latihansoalkesebangunan" element={<LatihanSoalKesebangunan />} />
+          <Route path="/Soallatihankesebangunan" element={<SoalLatihanKesebangunan />} />
           <Route path="/Soallatihanlimit" element={<SoalLatihanLimit />} />
-          <Route
-            path="/Soallatihanbinomial"
-            element={<SoalLatihanBinomial />}
-          />
-          <Route
-            path="/SoallatihanBinomial"
-            element={<SoalLatihanBinomial />}
-          />
+          <Route path="/Soallatihanbinomial" element={<SoalLatihanBinomial />} />
+          <Route  path="/SoallatihanBinomial" element={<SoalLatihanBinomial />} />
 
           <Route
             path="*"
@@ -178,6 +145,7 @@ function App() {
           />
         </Routes>
       </div>
+      {!hideNavbarPaths.includes(location.pathname) && <Footer />}
     </div>
   );
 }
