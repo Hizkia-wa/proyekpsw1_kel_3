@@ -8,7 +8,7 @@ import Materi from "./components/Materi";
 import LatihanSoal from "./components/LatihanSoal";
 import Brilian from "./components/Brilian";
 import SoalLatihan from "./components/SoalLatihan";
-import MateriGeometriDatar from "./components/MateriGeometriDatar";
+import BrilianGeometri from "./components/BrilianGeometri";
 import MateriStatistika from "./components/MateriStatistika";
 import MateriPeluang from "./components/MateriPeluang";
 import MateriLimitTrigonometri from "./components/MateriLimitTrigonometri";
@@ -89,7 +89,7 @@ function App() {
           <Route path="/latihansoal" element={<LatihanSoal />} />
           <Route path="/brilian" element={<Brilian />} />
           <Route path="/soallatihan" element={<SoalLatihan />} />
-          <Route path="/materigeometridatar" element={<MateriGeometriDatar />} />
+          <Route path="/BrilianGeometri" element={<BrilianGeometri/>} />
           <Route path="/materistatistika" element={<MateriStatistika />} />
           <Route path="/materipeluang" element={<MateriPeluang />} />
           <Route path="/materilimittrigonometri" element={<MateriLimitTrigonometri />} />

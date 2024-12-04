@@ -13,7 +13,7 @@ import dblssimages from '../images/bri8.avif';
 
 function Brilian() {
     const Latihandata = [
-        { nama: 'Geometri Bangun D2 & D3', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/materigeometridatar'},
+        { nama: 'Geometri Bangun D2 & D3', deskripsi: "Mempelajari bentuk dan sifat geometri datar.", gambar: gbdimages, path: '/BrilianGeometri'},
         { nama: 'Kongruen dan Kesebangunan', deskripsi: "berkaitan dengan hubungan antarbangun datar atau ruang berdasarkan bentuk, ukuran, dan proporsi.", gambar: gbrimages, path: '/BrilianKongruen'},
         { nama: 'Statistika', deskripsi: "Analisis data menggunakan statistika.", gambar: stksimages, path: '/BrilianStatistika'},
         { nama: 'Aturan Pencacahan', deskripsi: "Menghitung probabilitas suatu kejadian.", gambar: pksimages, path: '/BrilianAp' },
