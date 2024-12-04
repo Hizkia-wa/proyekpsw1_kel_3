@@ -38,8 +38,8 @@ import MateriAp from "./components/MateriAp";
 import Latihansoalap from "./components/Latihansoalap";
 import LatihanSoalBinomial from "./components/LatihanSoalBinomial";
 import LatihanSoalKesebangunan from "./components/LatihanSoalKesebangunan";
-import SoalLatihanpeluang from "./components/SoalLatihanpeluang";
-import SoalLatihanAp from "./components/SoalLatihanAp";
+import SoalLatihanpeluang from "./components/Soallatihanpeluang";
+import SoalLatihanAp from "./components/SoallatihanAp";
 import SoalLatihanGeometri from "./components/SoalLatihanGeometri";
 import BrilianTurunan from "./components/BrilianTurunan";
 import BrilianKongruen from "./components/BrilianKongruen";
@@ -63,7 +63,6 @@ function App() {
   return (
     <div className="app-container d-flex flex-column min-vh-100">
       {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
-      {/* {!hideNavbarPaths.includes(location.pathname) && <Footer />} */}
 
       <div className="flex-grow-1">
         <Routes>
