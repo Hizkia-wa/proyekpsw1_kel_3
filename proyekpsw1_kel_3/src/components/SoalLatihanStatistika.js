@@ -17,6 +17,7 @@ const SoalLatihanStatistika = () => {
     },
     {
       question:
+      
         "2. Jika modus dari data berikut: 3, 5, 5, 7, 8, 8, 8 adalah?",
       options: ["3", "7", "8", "Tidak ada modus"],
       correctAnswer: 3,

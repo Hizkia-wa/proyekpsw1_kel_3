@@ -26,7 +26,7 @@ function SoalLatihan() {
 
     return (
         <div className="jurusan-container">
-            <h1>Soal Latihan</h1>
+            <h1>QUIZ</h1>
             <div className="jurusan-cards">
                 {Latihandata.map((jurusan, index) => (
                     <Link to={jurusan.path || '#'} key={index} className="jurusan-card">
