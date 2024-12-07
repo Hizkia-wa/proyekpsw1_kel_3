@@ -62,7 +62,7 @@ function RegisterForm() {
   return (
     <div className="d-flex align-items-center justify-content-center vh-100 bg-light">
       <div
-        className="card p-5 shadow-lg"
+        className="card shadow-lg"
         style={{
           width: "500px",
           borderRadius: "60px",

@@ -78,6 +78,66 @@ const questions = [
     explanation:
       "Faktorkan x^3−8 menjadi (x−2)(x^2+2x+4), lalu substitusi x=2.",
   },
+  {
+    question: "Hitung nilai lim x→0 (sin(x)−x)/x^3",
+    options: ["0", "1", "-1", "∞"],
+    correctOption: "0",
+    explanation: "Gunakan ekspansi deret Taylor untuk sin(x) dan sederhanakan.",
+  },
+  {
+    question: "Tentukan nilai lim x→0 (1 - cos(x)) / x^4",
+    options: ["0", "1/2", "∞", "1"],
+    correctOption: "1/2",
+    explanation: "Gunakan identitas trigonometri dan sederhanakan untuk mendapatkan hasil.",
+  },
+  {
+    question: "Hitung nilai lim x→∞ (3x^2 + 5x - 2)/(4x^2 - 7x + 1)",
+    options: ["3/4", "2/5", "1", "∞"],
+    correctOption: "3/4",
+    explanation: "Bagi pembilang dan penyebut dengan x² dan temukan hasilnya.",
+  },
+  {
+    question: "Tentukan nilai lim x→2 (x^3 − 8)/(x^2 − 4)",
+    options: ["0", "1", "2", "4"],
+    correctOption: "2",
+    explanation: "Faktorkan pembilang dan penyebut, kemudian substitusi x = 2.",
+  },
+  {
+    question: "Hitung nilai lim x→∞ (x^4 - 3x^2 + 1)/(2x^4 + 5x - 3)",
+    options: ["1/2", "1", "0", "∞"],
+    correctOption: "1/2",
+    explanation: "Bagi pembilang dan penyebut dengan x⁴, temukan hasilnya.",
+  },
+  {
+    question: "Tentukan nilai lim x→0 (e^x − 1 − x) / x^2",
+    options: ["1/2", "0", "1", "∞"],
+    correctOption: "1/2",
+    explanation: "Gunakan ekspansi deret Taylor untuk e^x dan sederhanakan.",
+  },
+  {
+    question: "Hitung nilai lim x→∞ (x^2 + 5x - 4)/(2x^2 + 3x + 1)",
+    options: ["1/2", "5/3", "1", "∞"],
+    correctOption: "1/2",
+    explanation: "Bagi pembilang dan penyebut dengan x², temukan hasilnya.",
+  },
+  {
+    question: "Tentukan nilai lim x→∞ (4x^3 − x^2 + 3x)/(2x^3 − 3x + 5)",
+    options: ["2", "1", "4/2", "∞"],
+    correctOption: "2",
+    explanation: "Bagi pembilang dan penyebut dengan x³ dan temukan hasilnya.",
+  },
+  {
+    question: "Hitung nilai lim x→0 (x − sin(x)) / x^3",
+    options: ["0", "1", "1/6", "∞"],
+    correctOption: "1/6",
+    explanation: "Gunakan ekspansi deret Taylor untuk sin(x) dan sederhanakan.",
+  },
+  {
+    question: "Tentukan nilai lim x→∞ (3x^2 + x - 5)/(2x^2 + 6x + 7)",
+    options: ["3/2", "1", "∞", "0"],
+    correctOption: "3/2",
+    explanation: "Bagi pembilang dan penyebut dengan x², temukan hasilnya.",
+  },
 ];
 
 const handleNextQuestion = () => {

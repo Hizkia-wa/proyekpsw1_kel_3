@@ -99,6 +99,76 @@ const LatihanSoalStatistika = () => {
       explanation:
         "Jangkauan interkuartil (IQR) dihitung dengan Q3 - Q1 = 75 - 25 = 50.",
     },
+    {
+      question: "Data berikut adalah: 4, 8, 6, 9, 7, 5, 3, 10. Berapakah simpangan bakunya?",
+      options: ["2.5", "2.83", "3.16", "3.5"],
+      correctOption: "2.83",
+      explanation:
+          "Rata-rata = (4 + 8 + 6 + 9 + 7 + 5 + 3 + 10) / 8 = 6.5. Variansi = Σ(xi - mean)² / n = 8. Simpangan baku = √variansi = 2.83.",
+  },
+  {
+      question: "Kuartil kedua dari data: 12, 16, 20, 24, 28, 32 adalah?",
+      options: ["20", "22", "24", "26"],
+      correctOption: "24",
+      explanation:
+          "Kuartil kedua (median) adalah nilai tengah. Data diurutkan: 12, 16, 20, 24, 28, 32. Median = (20 + 24) / 2 = 24.",
+  },
+  {
+      question: "Suatu kelas memiliki data berkelompok berikut: [10-20: 5], [20-30: 10], [30-40: 15], [40-50: 10]. Hitunglah rata-ratanya.",
+      options: ["25", "30", "32.5", "35"],
+      correctOption: "32.5",
+      explanation:
+          "Mean = Σ(f * x̄) / Σf, dengan x̄ adalah nilai tengah kelas. Mean = [(15×5)+(25×10)+(35×15)+(45×10)]/40 = 32.5.",
+  },
+  {
+      question: "Jika simpangan baku suatu data adalah 5, berapakah variansinya?",
+      options: ["10", "20", "25", "50"],
+      correctOption: "25",
+      explanation:
+          "Variansi adalah kuadrat dari simpangan baku. Variansi = (5)² = 25.",
+  },
+  {
+      question: "Jika sebuah data memiliki nilai Q1 = 15 dan Q3 = 45, berapa nilai batas bawah outlier?",
+      options: ["-15", "0", "5", "10"],
+      correctOption: "5",
+      explanation:
+          "Batas bawah = Q1 - 1.5 × (Q3 - Q1) = 15 - 1.5 × (45 - 15) = 15 - 45 = 5.",
+  },
+  {
+      question: "Dari data: 2, 4, 6, 8, 10. Berapakah persentil ke-60?",
+      options: ["6", "7.2", "8", "8.5"],
+      correctOption: "8",
+      explanation:
+          "Persentil ke-60 berada di posisi P60 = 60/100 × (n+1). Posisi = 3.6. Nilainya 8.",
+  },
+  {
+      question: "Data berikut memiliki frekuensi: 2, 4, 6, 8. Median datanya adalah?",
+      options: ["4.5", "5", "5.5", "6"],
+      correctOption: "5",
+      explanation:
+          "Jumlah frekuensi = 20. Median = (N/2) = posisi ke-10. Nilai median ada di kelas ketiga, yaitu 5.",
+  },
+  {
+      question: "Jika data berikut memiliki rata-rata 10 dan simpangan baku 3, berapakah z-score dari data bernilai 16?",
+      options: ["1.5", "2", "2.5", "3"],
+      correctOption: "2",
+      explanation:
+          "z-score = (x - μ) / σ. z = (16 - 10) / 3 = 2.",
+  },
+  {
+      question: "Jika modus data berkelompok terletak pada kelas [10-20], dan data tersebut memiliki frekuensi: [10-20: 12], [20-30: 15], [30-40: 10], hitunglah modusnya!",
+      options: ["15.33", "16.5", "18", "20"],
+      correctOption: "16.5",
+      explanation:
+          "Modus = L + [(d1 / (d1 + d2)) * w], dengan L = 10, d1 = 3, d2 = 5, w = 10. Modus = 10 + [(3/8)×10] = 16.5.",
+  },
+  {
+      question: "Data berikut memiliki 5 kelompok: [10-20: 5], [20-30: 8], [30-40: 12], [40-50: 15], [50-60: 10]. Hitung median data tersebut.",
+      options: ["35", "37.5", "40", "42.5"],
+      correctOption: "37.5",
+      explanation:
+          "Median = L + [(N/2 - F) / f] * w. Median kelas adalah [30-40], L = 30, F = 13, f = 12, w = 10. Median = 30 + [(25-13)/12]*10 = 37.5.",
+  },
   ];
 
   const handleNextQuestion = () => {

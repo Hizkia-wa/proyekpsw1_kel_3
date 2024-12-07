@@ -40,7 +40,136 @@ const questions = [
     explanation:
       "Menggunakan rumus binomial: P(X=7) = C(12, 7) * (0.3)^7 * (0.7)^5. Kombinasi C(12, 7) = 792. Peluang = 792 * (0.3)^7 * (0.7)^5 = 0.0478.",
   },
-];
+  {
+    question:
+      "Dalam 15 kali lemparan dadu bersisi enam, berapa peluang angka 6 muncul tepat 5 kali?",
+    options: ["0.2316", "0.2152", "0.2258", "0.1923"],
+    correctOption: "0.2316",
+    explanation:
+      "Gunakan rumus binomial: P(X=5) = C(15, 5) * (1/6)^5 * (5/6)^10. Kombinasi C(15, 5) = 3003. Peluang = 3003 * (1/6)^5 * (5/6)^10 = 0.2316.",
+  },
+  {
+    question:
+      "Dalam ujian dengan 30 soal, jika peluang menjawab benar tiap soal adalah 0.8, berapa peluang siswa menjawab benar 25 soal?",
+    options: ["0.1328", "0.1689", "0.2024", "0.1153"],
+    correctOption: "0.1689",
+    explanation:
+      "Menggunakan rumus binomial: C(30, 25) * 0.8^25 * 0.2^5. Kombinasi C(30, 25) = 142506. Peluang = 142506 * (0.8)^25 * (0.2)^5 = 0.1689.",
+  },
+  {
+    question:
+      "Dalam 8 kali percobaan, berapa peluang sukses minimal 6 kali jika peluang sukses setiap percobaan adalah 0.7?",
+    options: ["0.3192", "0.4745", "0.5720", "0.4563"],
+    correctOption: "0.3192",
+    explanation:
+      "P(sukses ≥ 6) = P(6) + P(7) + P(8). Hitung menggunakan rumus binomial: P(X=6) + P(X=7) + P(X=8) = 0.3192.",
+  },
+  {
+    question:
+      "Dalam eksperimen dengan 5 dadu dilempar, berapa peluang semua dadu menunjukkan angka berbeda?",
+    options: ["0.0926", "0.1234", "0.1348", "0.1728"],
+    correctOption: "0.0926",
+    explanation:
+      "Total kemungkinan = 6^5. Kemungkinan semua dadu berbeda dihitung: 6 × 5 × 4 × 3 × 2. Peluang = (6 × 5 × 4 × 3 × 2) / 6^5 = 0.0926.",
+  },
+  {
+    question:
+      "Dalam 10 kali lemparan koin tidak seimbang (peluang kepala = 0.3), berapa peluang kepala muncul lebih dari 7 kali?",
+    options: ["0.0017", "0.0043", "0.0087", "0.0121"],
+    correctOption: "0.0017",
+    explanation:
+      "P(kepala > 7) = P(8) + P(9) + P(10). Hitung menggunakan rumus binomial: P(X=8) + P(X=9) + P(X=10) = 0.0017.",
+  },
+  {
+    question:
+      "Dalam lotere dengan 50 bola bernomor, 10 bola diambil tanpa pengembalian. Berapa peluang semua bola yang diambil bernomor ganjil?",
+    options: ["0.0006", "0.0012", "0.0024", "0.0036"],
+    correctOption: "0.0006",
+    explanation:
+      "Ada 25 bola ganjil. Peluang pertama ganjil = 25/50, kedua = 24/49, dan seterusnya. Total peluang = (25/50) × (24/49) × ... × (16/41) = 0.0006.",
+  },
+  {
+    question:
+      "Dalam ujian 20 soal dengan peluang benar 0.6 untuk tiap soal, berapa peluang siswa menjawab benar antara 12 dan 15 soal (inklusif)?",
+    options: ["0.4065", "0.4321", "0.4782", "0.4963"],
+    correctOption: "0.4321",
+    explanation:
+      "P(12 ≤ X ≤ 15) = P(12) + P(13) + P(14) + P(15). Hitung menggunakan rumus binomial, hasilnya = 0.4321.",
+  },
+  {
+    question:
+      "Dalam sebuah undian dengan 10 tiket, 3 tiket adalah pemenang. Jika 5 tiket diambil secara acak, berapa peluang mendapatkan tepat 2 tiket pemenang?",
+    options: ["0.2381", "0.2524", "0.2857", "0.3012"],
+    correctOption: "0.2381",
+    explanation:
+      "Gunakan distribusi hipergeometrik: P(X=2) = C(3, 2) * C(7, 3) / C(10, 5) = 0.2381.",
+  },
+  {
+    question:
+      "Dalam populasi 100 orang, 30 orang memiliki penyakit tertentu. Jika 10 orang dipilih acak, berapa peluang tepat 4 orang memiliki penyakit?",
+    options: ["0.2275", "0.1986", "0.1874", "0.2108"],
+    correctOption: "0.2108",
+    explanation:
+      "Distribusi hipergeometrik digunakan: P(X=4) = C(30, 4) * C(70, 6) / C(100, 10) = 0.2108.",
+  },
+  {
+    question:
+      "Dalam sebuah percobaan, dadu dilempar 7 kali. Berapa peluang angka 3 muncul setidaknya 2 kali?",
+    options: ["0.3236", "0.4412", "0.5356", "0.6123"],
+    correctOption: "0.4412",
+    explanation:
+      "P(X≥2) = 1 - P(X=0) - P(X=1). Hitung menggunakan rumus binomial: 1 - (P(X=0) + P(X=1)) = 0.4412.",
+  },
+  {
+    question:
+      "Dalam sebuah percobaan, 15 siswa dipilih secara acak dari kelas dengan 10 laki-laki dan 20 perempuan. Berapa peluang 10 siswa yang terpilih adalah perempuan?",
+    options: ["0.2451", "0.1987", "0.3564", "0.4123"],
+    correctOption: "0.2451",
+    explanation:
+      "Distribusi hipergeometrik digunakan: P(X=10) = C(20, 10) * C(10, 5) / C(30, 15) = 0.2451.",
+  },
+  {
+    question:
+      "Dalam 12 kali percobaan, peluang sukses adalah 0.4. Berapa peluang sukses lebih dari 8 kali?",
+    options: ["0.0214", "0.0456", "0.0647", "0.0893"],
+    correctOption: "0.0214",
+    explanation:
+      "P(X>8) = P(9) + P(10) + P(11) + P(12). Hitung dengan rumus binomial, hasilnya = 0.0214.",
+  },
+  {
+    question:
+      "Dalam eksperimen dengan 5 kali lemparan koin, berapa peluang muncul kepala paling banyak 2 kali?",
+    options: ["0.1875", "0.3125", "0.4375", "0.6875"],
+    correctOption: "0.6875",
+    explanation:
+      "P(X≤2) = P(0) + P(1) + P(2). Hitung dengan rumus binomial: (1/2)^5 × (kombinasi masing-masing) = 0.6875.",
+  },
+  {
+    question:
+      "Dalam ujian dengan 25 soal, peluang menjawab benar tiap soal adalah 0.7. Berapa peluang siswa menjawab lebih dari 20 soal dengan benar?",
+    options: ["0.1503", "0.1765", "0.2054", "0.2456"],
+    correctOption: "0.1503",
+    explanation:
+      "P(X>20) = P(21) + P(22) + P(23) + P(24) + P(25). Hitung menggunakan rumus binomial, hasilnya = 0.1503.",
+  },
+  {
+    question:
+      "Dalam 8 kali percobaan, berapa peluang sukses tepat 4 kali jika peluang sukses dalam setiap percobaan adalah 0.25?",
+    options: ["0.2076", "0.1465", "0.2258", "0.1784"],
+    correctOption: "0.2076",
+    explanation:
+      "Gunakan rumus binomial: P(X=4) = C(8, 4) * (0.25)^4 * (0.75)^4. Hasil = 0.2076.",
+  },
+  {
+    question:
+      "Dalam 10 kali percobaan, berapa peluang gagal setidaknya 9 kali jika peluang gagal setiap percobaan adalah 0.6?",
+    options: ["0.0467", "0.0702", "0.0912", "0.1043"],
+    correctOption: "0.0702",
+    explanation:
+      "P(X≥9) = P(9) + P(10). Hitung menggunakan rumus binomial, hasilnya = 0.0702.",
+  },
+  ];
+  
 
 const handleNextQuestion = () => {
   if (currentQuestion < questions.length) {

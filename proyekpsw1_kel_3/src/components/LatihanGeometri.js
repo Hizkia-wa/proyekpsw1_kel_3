@@ -122,6 +122,12 @@ const questions = [
     correctOption: "48π cm³",
     explanation: "Volume kerucut = 1/3 × π × r² × tinggi = 1/3 × 3.14 × (4 cm)² × 9 cm = 48π cm³.",
   },
+  {
+    question: "Jika segitiga siku-siku memiliki tinggi 4 mc, alas 3cm. berakah sisi miring nya",
+    options: ["2 cm", "5 cm", "7 cm³", "9 cm"],
+    correctOption: "5 cm",
+    explanation: "c^2=a^2+b^2, 𝑐^2=4^2+3^2, c^2=16+9, c^2=25, 𝑐=5",
+  },
 ];
 
 const handleNextQuestion = () => {

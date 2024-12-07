@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import {FaHome,FaBook,FaQuestionCircle,FaPuzzlePiece,FaStar, FaQuestion, FaRegQuestionCircle,} from "react-icons/fa";
+import {FaHome,FaBook,FaQuestionCircle,FaPuzzlePiece,FaStar, FaUser,} from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -15,8 +15,8 @@ const Navbar = () => {
           <li><Link to="/materi"><FaBook /> Materi</Link></li>
           <li><Link to="/latihansoal"><FaQuestionCircle /> Latihan Soal</Link></li>
           <li><Link to="/soallatihan"><FaPuzzlePiece /> Quizz</Link></li>
-          <li><Link to="/brilian"><FaStar /> Brilian</Link>
-          </li>
+          <li><Link to="/brilian"><FaStar /> Brilian</Link></li>
+          <li><Link to="/login"><FaUser /> Profil</Link></li>
         </ul>
       </div>
     </nav>

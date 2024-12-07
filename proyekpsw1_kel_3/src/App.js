@@ -1,9 +1,15 @@
 import React from "react";
-import {BrowserRouter as Router,Route,Routes,useLocation,} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegistrationForm";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home"; 
+import Home from "./components/Home";
 import Materi from "./components/Materi";
 import LatihanSoal from "./components/LatihanSoal";
 import Brilian from "./components/Brilian";
@@ -58,16 +64,17 @@ function CenteredLayout({ children }) {
 
 function App() {
   const location = useLocation();
-  const hideNavbarPaths = ["/", "/register"];
 
   return (
     <div className="app-container d-flex flex-column min-vh-100">
-      {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
-
+      <Navbar /> {/* Navbar selalu muncul */}
       <div className="flex-grow-1">
         <Routes>
+          {/* Home sebagai halaman utama */}
+          <Route path="/" element={<Home />} />
+
           <Route
-            path="/"
+            path="/login"
             element={
               <CenteredLayout>
                 <LoginForm />
@@ -83,8 +90,7 @@ function App() {
             }
           />
 
-          <Route path="/home" element={<Home />} />
-
+          {/* Rute lainnya */}
           <Route path="/materi" element={<Materi />} />
           <Route path="/latihansoal" element={<LatihanSoal />} />
           <Route path="/brilian" element={<Brilian />} />
@@ -92,7 +98,7 @@ function App() {
           <Route path="/BrilianGeometri" element={<BrilianGeometri />} />
           <Route path="/materistatistika" element={<MateriStatistika />} />
           <Route path="/materipeluang" element={<MateriPeluang />} />
-          <Route path="/materilimittrigonometri" element={<MateriLimitTrigonometri />}/>
+          <Route path="/materilimittrigonometri" element={<MateriLimitTrigonometri />} />
           <Route path="/brilianstatistika" element={<BrilianStatistika />} />
           <Route path="/brilianlimit" element={<BrilianLimit />} />
           <Route path="/materigeometri" element={<MateriGeometri />} />
@@ -113,15 +119,11 @@ function App() {
           <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/latihangeometri" element={<LatihanGeometri />} />
           <Route path="/MateriBinomial" element={<MateriBinomial />} />
-          <Route path="/BrillianBinomial" element={<BrillianBinomial />} />
           <Route path="/MateriKongruen" element={<MateriKongruen />} />
-          <Route path="/soallatihanstatistika" element={<SoalLatihanStatistika />} />
           <Route path="/SoalLatihanTurunan" element={<SoalLatihanTurunan />} />
-          <Route path="/latihanturunan" element={<LatihanTurunan />} />
           <Route path="/MateriAp" element={<MateriAp />} />
           <Route path="/LatihanSoalBinomial" element={<LatihanSoalBinomial />} />
           <Route path="/Soallatihanpeluang" element={<SoalLatihanpeluang />} />
-          <Route path="/SoallatihanAp" element={<SoalLatihanAp />} />
           <Route path="/Latihansoalap" element={<Latihansoalap />} />
           <Route path="/SoalLatihanGeometri" element={<SoalLatihanGeometri />} />
           <Route path="/BrilianTurunan" element={<BrilianTurunan />} />
@@ -130,21 +132,12 @@ function App() {
           <Route path="/Soallatihankesebangunan" element={<SoalLatihanKesebangunan />} />
           <Route path="/Soallatihanlimit" element={<SoalLatihanLimit />} />
           <Route path="/Soallatihanbinomial" element={<SoalLatihanBinomial />} />
-          <Route  path="/SoallatihanBinomial" element={<SoalLatihanBinomial />} />
-
-          <Route
-            path="*"
-            element={
-              <CenteredLayout>
-                <div className="text-center">
-                  <h1>404 - Halaman Tidak Ditemukan</h1>
-                </div>
-              </CenteredLayout>
-            }
-          />
+          <Route path="/SoallatihanAp" element={<SoalLatihanAp />} />
+          {/* Redirect halaman tidak dikenal ke Home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
-      {!hideNavbarPaths.includes(location.pathname) && <Footer />}
+      <Footer />
     </div>
   );
 }

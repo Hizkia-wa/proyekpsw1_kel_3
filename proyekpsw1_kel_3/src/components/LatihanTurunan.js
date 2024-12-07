@@ -92,6 +92,42 @@ const questions = [
       correctOption: "sec^2(x)",
       explanation: "Turunan dari f(x) = tan(x) adalah f'(x) = sec^2(x).",
   },
+    {
+      "question": "Apa turunan dari f(x) = x^2 e^x?",
+      "options": ["2x e^x + x^2 e^x", "2x e^x - x^2 e^x", "x^2 e^x", "2x e^x + e^x"],
+      "correctOption": "2x e^x + x^2 e^x",
+      "explanation": "Menggunakan aturan perkalian, turunan dari f(x) = x^2 e^x adalah f'(x) = 2x e^x + x^2 e^x."
+    },
+    {
+      "question": "Apa turunan dari f(x) = ln(x^2 + 1)?",
+      "options": ["2x / (x^2 + 1)", "x / (x^2 + 1)", "2x / (1 + x^2)", "2x"],
+      "correctOption": "2x / (x^2 + 1)",
+      "explanation": "Turunan dari f(x) = ln(x^2 + 1) menggunakan aturan rantai, yaitu f'(x) = 2x / (x^2 + 1)."
+    },
+    {
+      "question": "Apa turunan dari f(x) = x^3 ln(x)?",
+      "options": ["3x^2 ln(x) + x^2", "3x^2 ln(x) + x^3/x", "3x^2 ln(x) + x^2/x", "3x^2 ln(x) + x^3"],
+      "correctOption": "3x^2 ln(x) + x^2",
+      "explanation": "Menggunakan aturan perkalian, turunan dari f(x) = x^3 ln(x) adalah f'(x) = 3x^2 ln(x) + x^2."
+    },
+    {
+      "question": "Apa turunan dari f(x) = e^(x^2)?",
+      "options": ["2x e^(x^2)", "e^(x^2) + 2x", "e^(x^2) * 2x", "2x e^(x)"],
+      "correctOption": "2x e^(x^2)",
+      "explanation": "Turunan dari f(x) = e^(x^2) menggunakan aturan rantai, yaitu f'(x) = 2x e^(x^2)."
+    },
+    {
+      "question": "Apa turunan dari f(x) = x^2 sin(x^2)?",
+      "options": ["2x cos(x^2) + 2x^2 cos(x^2)", "2x sin(x^2) + 2x^2 cos(x^2)", "2x cos(x^2) + 2x^2 sin(x^2)", "2x cos(x^2) + 2x^3 sin(x^2)"],
+      "correctOption": "2x sin(x^2) + 2x^2 cos(x^2)",
+      "explanation": "Menggunakan aturan perkalian dan rantai, turunan dari f(x) = x^2 sin(x^2) adalah f'(x) = 2x sin(x^2) + 2x^2 cos(x^2)."
+    },
+    {
+      "question": "Apa turunan dari f(x) = tan(x^2)?",
+      "options": ["2x sec^2(x^2)", "2x sec^2(x)", "sec^2(x^2)", "2x sec^2(x^2) + sec(x^2)"],
+      "correctOption": "2x sec^2(x^2)",
+      "explanation": "Turunan dari f(x) = tan(x^2) menggunakan aturan rantai, yaitu f'(x) = 2x sec^2(x^2)."
+    }
 ];
 
 const handleNextQuestion = () => {
