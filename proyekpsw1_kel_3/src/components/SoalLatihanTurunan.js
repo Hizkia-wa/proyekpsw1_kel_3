@@ -172,6 +172,67 @@ const SoalLatihanTurunan = () => {
         "3. Jadi, turunan dari f(x) adalah 6x/(3x^2 + 1).",
       ],
     },
+    {
+      "question": "11. Diketahui f(x) = 2x² + 3x - 4. Tentukan nilai x yang memaksimalkan fungsi f(x).",
+      "options": ["x = -3/4", "x = -3/2", "x = 3/4", "x = 2/3"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Fungsi f(x) adalah fungsi kuadrat, sehingga untuk memaksimalkan atau meminimalkan, kita mencari titik stasioner (turunan pertama = 0).\n2. f'(x) = 4x + 3, jadi f'(x) = 0 => 4x + 3 = 0 => x = -3/4.\n3. Karena koefisien x² positif (2), maka fungsi ini memiliki titik maksimum pada x = -3/4."
+  },
+  {
+      "question": "12. Tentukan integral tak tentu dari f(x) = 6x² - 4x + 2.",
+      "options": ["2x³ - 2x² + 2x + C", "2x³ - 2x² + 3x + C", "3x³ - 2x² + 2x + C", "3x³ - 2x² + x + C"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Integrasi setiap suku: ∫6x² dx = 2x³, ∫-4x dx = -2x², ∫2 dx = 2x.\n2. Jadi, hasil integral adalah 2x³ - 2x² + 2x + C."
+  },
+  {
+      "question": "13. Tentukan turunan pertama dari fungsi f(x) = tan(x) + cos(x).",
+      "options": ["sec²(x) - sin(x)", "sec²(x) + sin(x)", "sec²(x) - cos(x)", "sec²(x) + cos(x)"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Turunan dari tan(x) adalah sec²(x), dan turunan dari cos(x) adalah -sin(x).\n2. Jadi, f'(x) = sec²(x) - sin(x)."
+  },
+  {
+      "question": "14. Tentukan titik stasioner dari fungsi f(x) = x³ - 6x² + 9x + 4.",
+      "options": ["x = 1, x = 3", "x = -1, x = 3", "x = 1", "x = -1"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Turunan f'(x) = 3x² - 12x + 9.\n2. Set f'(x) = 0 => 3x² - 12x + 9 = 0 => (x - 1)(x - 3) = 0.\n3. Jadi, titik stasionernya adalah x = 1 dan x = 3."
+  },
+  {
+      "question": "15. Diketahui f(x) = x² + 2x - 5 dan g(x) = x³ - 4x + 2. Tentukan turunan dari komposisi fungsi f(g(x)).",
+      "options": ["2x + 2", "6x² - 4", "6x² + 2x - 10", "6x² + 2x + 2"],
+      "correctAnswer": 2,
+      "explanation": "Penyelesaian:\n1. Gunakan aturan rantai untuk turunan komposisi fungsi: (f ∘ g)'(x) = f'(g(x)) * g'(x).\n2. f(x) = x² + 2x - 5, f'(x) = 2x + 2.\n3. g(x) = x³ - 4x + 2, g'(x) = 3x² - 4.\n4. Jadi, (f ∘ g)'(x) = (2g(x) + 2) * (3x² - 4) = 6x² + 2x - 10."
+  },
+  {
+      "question": "16. Tentukan luas daerah yang dibatasi oleh kurva f(x) = x² + 2x - 1 dan garis y = 0 antara x = -1 dan x = 2.",
+      "options": ["5/3", "7/3", "9/3", "8/3"],
+      "correctAnswer": 1,
+      "explanation": "Penyelesaian:\n1. Luas daerah di bawah kurva dihitung dengan integral tak tentu: ∫[a,b] f(x) dx.\n2. Integral dari f(x) = x² + 2x - 1 dari x = -1 hingga x = 2.\n3. Hasil integral: ∫[−1,2] (x² + 2x - 1) dx = [1/3 x³ + x² - x] dari -1 hingga 2 = (8/3 + 4 - 2) - (-1/3 + 1 - 1) = 7/3."
+  },
+  {
+      "question": "17. Tentukan nilai maksimum dari fungsi f(x) = -2x² + 4x + 3.",
+      "options": ["3", "5", "7", "9"],
+      "correctAnswer": 1,
+      "explanation": "Penyelesaian:\n1. Fungsi f(x) adalah fungsi kuadrat dengan a = -2, b = 4, c = 3. Fungsi ini membuka ke bawah, sehingga ada nilai maksimum.\n2. Titik maksimum berada pada x = -b/(2a) = -4/(-4) = 1.\n3. f(1) = -2(1)² + 4(1) + 3 = 5."
+  },
+  {
+      "question": "18. Tentukan nilai limit dari lim(x→0) (sin(x)/x).",
+      "options": ["0", "1", "∞", "Tidak terdefinisi"],
+      "correctAnswer": 1,
+      "explanation": "Penyelesaian:\n1. Limit lim(x→0) (sin(x)/x) adalah limit standar yang dikenal sebagai hasil dari 1.\n2. Jadi, nilai limitnya adalah 1."
+  },
+  {
+      "question": "19. Tentukan turunan pertama dari fungsi f(x) = x / (x² + 1).",
+      "options": ["(x² - 1)/(x² + 1)²", "(x² + 1)/(x² + 1)²", "(x² - 1)/(x² + 1)", "(x² + 1)/x²"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Gunakan aturan turunan untuk fungsi pecahan: f'(x) = (v * u' - u * v') / v².\n2. Di sini, u = x dan v = x² + 1. Turunan u adalah u' = 1, dan turunan v adalah v' = 2x.\n3. Jadi, f'(x) = ( (x² + 1) * 1 - x * 2x ) / (x² + 1)² = (x² - 1) / (x² + 1)²."
+  },
+  {
+      "question": "20. Tentukan integral tak tentu dari fungsi f(x) = 5x³ - 4x² + 3x - 2.",
+      "options": ["x⁴ - x³ + (3/2)x² - 2x + C", "5x⁴ - 4x³ + (3/2)x² - 2x + C", "5x⁴ - 4x³ + 3x² - 2x + C", "5x⁴ - 4x³ + 3x² + 2x + C"],
+      "correctAnswer": 2,
+      "explanation": "Penyelesaian:\n1. Integrasi setiap suku: ∫5x³ dx = 5x⁴/4, ∫-4x² dx = -4x³/3, ∫3x dx = 3x²/2, ∫-2 dx = -2x.\n2. Jadi, hasil integral adalah 5x⁴ - 4x³ + 3x² - 2x + C."
+  }
+  
   ];
 
   const [selectedAnswers, setSelectedAnswers] = useState({});

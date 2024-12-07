@@ -110,7 +110,105 @@ const SoalLatihanKesebangunan = () => {
        - Perbandingan luas = (perbandingan sisi)².
        - Luas kedua = (9/6)² × luas pertama = (3/2)² × 36 = (9/4) × 36 = 81 cm².`,
     },
-    
+    {
+      question: 
+          "11. Dua bangun segitiga, ∆ABC dan ∆DEF, kongruen. Jika panjang sisi AB = 7 cm, BC = 24 cm, dan AC = 25 cm, berapakah keliling ∆DEF?",
+      options: ["56 cm", "62 cm", "48 cm", "52 cm"],
+      correctAnswer: 3,
+      explanation: `Penyelesaian:
+  1. Karena kedua segitiga kongruen, panjang semua sisi yang bersesuaian sama.
+  2. Keliling ∆DEF = AB + BC + AC = 7 cm + 24 cm + 25 cm = 56 cm.`,
+  },
+  {
+      question: 
+          "12. Dua lingkaran sebangun memiliki perbandingan diameter 2:3. Jika luas lingkaran yang lebih kecil adalah 50 cm², berapakah luas lingkaran yang lebih besar?",
+      options: ["75 cm²", "112.5 cm²", "90 cm²", "120 cm²"],
+      correctAnswer: 1,
+      explanation: `Penyelesaian:
+  1. Perbandingan luas lingkaran = (perbandingan diameter)².
+  2. Luas lingkaran besar = (3/2)² × 50 cm² = (9/4) × 50 = 112.5 cm².`,
+  },
+  {
+      question: 
+          "13. Sebuah kubus memiliki volume 216 cm³. Jika panjang sisi kubus tersebut diperbesar menjadi dua kali lipat, berapakah volume kubus yang baru?",
+      options: ["864 cm³", "1728 cm³", "432 cm³", "648 cm³"],
+      correctAnswer: 1,
+      explanation: `Penyelesaian:
+  1. Panjang sisi kubus = ∛216 = 6 cm.
+  2. Jika sisi diperbesar dua kali lipat, sisi baru = 2 × 6 = 12 cm.
+  3. Volume kubus baru = 12³ = 1728 cm³.`,
+  },
+  {
+      question: 
+          "14. Sebuah prisma segitiga memiliki panjang alas 6 cm, tinggi segitiga 8 cm, dan tinggi prisma 10 cm. Jika alas diperbesar menjadi 9 cm, berapakah volume prisma baru?",
+      options: ["360 cm³", "480 cm³", "540 cm³", "720 cm³"],
+      correctAnswer: 2,
+      explanation: `Penyelesaian:
+  1. Volume awal = luas alas × tinggi prisma = (1/2 × 6 × 8) × 10 = 240 cm³.
+  2. Jika panjang alas menjadi 9 cm, luas alas baru = 1/2 × 9 × 8 = 36 cm².
+  3. Volume baru = 36 × 10 = 360 cm³.`,
+  },
+  {
+      question: 
+          "15. Sebuah tabung memiliki jari-jari 14 cm dan tinggi 20 cm. Jika jari-jari tabung diperkecil menjadi setengahnya, berapakah volume tabung baru?",
+      options: ["1540 cm³", "3080 cm³", "3850 cm³", "6160 cm³"],
+      correctAnswer: 0,
+      explanation: `Penyelesaian:
+  1. Volume awal = πr²t = 3.14 × 14² × 20 = 12320 cm³.
+  2. Jika jari-jari menjadi setengahnya (7 cm), volume baru = 3.14 × 7² × 20 = 1540 cm³.`,
+  },
+  {
+      question: 
+          "16. Sebuah belah ketupat memiliki diagonal masing-masing 10 cm dan 24 cm. Jika kedua diagonal diperbesar menjadi 1.5 kali panjangnya, berapakah luas belah ketupat baru?",
+      options: ["180 cm²", "360 cm²", "270 cm²", "225 cm²"],
+      correctAnswer: 2,
+      explanation: `Penyelesaian:
+  1. Luas awal = 1/2 × d1 × d2 = 1/2 × 10 × 24 = 120 cm².
+  2. Setelah diperbesar, diagonal baru = 1.5 × 10 = 15 cm dan 1.5 × 24 = 36 cm.
+  3. Luas baru = 1/2 × 15 × 36 = 270 cm².`,
+  },
+  {
+      question: 
+          "17. Sebuah lingkaran memiliki keliling 31.4 cm. Jika diameter lingkaran tersebut diperbesar menjadi dua kali lipat, berapakah keliling lingkaran baru? (π = 3.14)",
+      options: ["31.4 cm", "62.8 cm", "94.2 cm", "125.6 cm"],
+      correctAnswer: 1,
+      explanation: `Penyelesaian:
+  1. Diameter awal = 31.4 ÷ π = 10 cm.
+  2. Jika diameter diperbesar dua kali, diameter baru = 20 cm.
+  3. Keliling baru = π × diameter baru = 3.14 × 20 = 62.8 cm.`,
+  },
+  {
+      question: 
+          "18. Sebuah kerucut memiliki jari-jari 7 cm dan tinggi 24 cm. Jika tinggi kerucut diperbesar menjadi dua kali lipat, berapakah volume kerucut baru?",
+      options: ["308 cm³", "615 cm³", "1230 cm³", "2460 cm³"],
+      correctAnswer: 3,
+      explanation: `Penyelesaian:
+  1. Volume awal = 1/3 × π × r² × t = 1/3 × 3.14 × 7² × 24 = 1230 cm³.
+  2. Jika tinggi diperbesar dua kali, tinggi baru = 2 × 24 = 48 cm.
+  3. Volume baru = 1/3 × 3.14 × 7² × 48 = 2460 cm³.`,
+  },
+  {
+      question: 
+          "19. Sebuah trapesium memiliki panjang sisi sejajar 10 cm dan 15 cm dengan tinggi 6 cm. Jika tinggi diperbesar 2 kali lipat, berapakah luas trapesium baru?",
+      options: ["120 cm²", "180 cm²", "240 cm²", "150 cm²"],
+      correctAnswer: 2,
+      explanation: `Penyelesaian:
+  1. Luas awal = 1/2 × (a + b) × t = 1/2 × (10 + 15) × 6 = 75 cm².
+  2. Setelah tinggi diperbesar dua kali lipat, t baru = 2 × 6 = 12 cm.
+  3. Luas baru = 1/2 × (10 + 15) × 12 = 180 cm².`,
+  },
+  {
+      question: 
+          "20. Sebuah kubus memiliki panjang sisi 5 cm. Jika panjang sisi diperbesar 3 kali lipat, berapakah perbandingan volume awal dengan volume baru?",
+      options: ["1:27", "1:9", "1:3", "1:8"],
+      correctAnswer: 0,
+      explanation: `Penyelesaian:
+  1. Volume awal = 5³ = 125 cm³.
+  2. Setelah sisi diperbesar tiga kali, sisi baru = 3 × 5 = 15 cm.
+  3. Volume baru = 15³ = 3375 cm³.
+  4. Perbandingan volume = 125:3375 = 1:27.`,
+  },
+  
   ];
 
   const [selectedAnswers, setSelectedAnswers] = useState({});

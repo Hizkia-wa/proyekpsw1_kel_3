@@ -153,6 +153,54 @@ const SoalLatihanLimit = () => {
        - Turunan cos(x) adalah -sin(x).
        Jadi, f''(x) = -sin(x).`,
     },
+    {
+      "question": "13. Tentukan nilai x yang meminimalkan fungsi f(x) = x³ - 3x² + 2x + 5.",
+      "options": ["x = 0", "x = 1", "x = 2", "x = 3"],
+      "correctAnswer": 1,
+      "explanation": "Penyelesaian:\n1. Cari turunan pertama f'(x) = 3x² - 6x + 2.\n2. Tentukan titik stasioner dengan menyelesaikan f'(x) = 0: 3x² - 6x + 2 = 0, yang menghasilkan x = 1."
+  },
+  {
+      "question": "14. Tentukan turunan pertama dari fungsi f(x) = e^(x²) - 3x.",
+      "options": ["2xe^(x²) - 3", "e^(x²) - 3", "2xe^(x²) + 3", "e^(x²) - 2x"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Gunakan aturan rantai: turunan dari e^(x²) adalah 2xe^(x²).\n2. Jadi, f'(x) = 2xe^(x²) - 3."
+  },
+  {
+      "question": "15. Tentukan turunan pertama dari fungsi f(x) = x² ln(x).",
+      "options": ["2x ln(x) + x", "x²/x", "2x ln(x) - x", "x²/x + ln(x)"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Gunakan aturan turunan hasil kali: f'(x) = (u'v + uv').\n2. Di sini, u = x², v = ln(x), u' = 2x, dan v' = 1/x.\n3. Jadi, f'(x) = 2x ln(x) + x."
+  },
+  {
+      "question": "16. Tentukan turunan kedua dari fungsi f(x) = x³ - 6x² + 4x.",
+      "options": ["6x - 12", "6x - 4", "6x + 4", "12x - 4"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Turunan pertama f'(x) = 3x² - 12x + 4.\n2. Turunan kedua f''(x) = 6x - 12."
+  },
+  {
+      "question": "17. Tentukan titik maksimum atau minimum dari fungsi f(x) = -x² + 4x - 5.",
+      "options": ["Titik maksimum di x = 2", "Titik minimum di x = 2", "Titik maksimum di x = -2", "Titik minimum di x = -2"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Turunan pertama f'(x) = -2x + 4.\n2. Set f'(x) = 0 => -2x + 4 = 0, sehingga x = 2.\n3. Karena koefisien x² negatif (-2), ini adalah titik maksimum di x = 2."
+  },
+  {
+      "question": "18. Tentukan turunan pertama dari fungsi f(x) = tan(x) + 2x.",
+      "options": ["sec²(x) + 2", "sec²(x) - 2", "sec²(x) + 2x", "sec²(x) + x"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Turunan dari tan(x) adalah sec²(x), dan turunan dari 2x adalah 2.\n2. Jadi, f'(x) = sec²(x) + 2."
+  },
+  {
+      "question": "19. Diketahui fungsi g(x) = 3x² - 5x + 2. Tentukan nilai x yang membuat turunan pertama sama dengan nol.",
+      "options": ["x = 1", "x = 2", "x = 3", "x = -1"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Turunan pertama g'(x) = 6x - 5.\n2. Set g'(x) = 0 => 6x - 5 = 0 => x = 5/6."
+  },
+  {
+      "question": "20. Tentukan turunan pertama dari fungsi f(x) = √(x + 1).",
+      "options": ["1/(2√(x + 1))", "1/√(x + 1)", "2/√(x + 1)", "2x/√(x + 1)"],
+      "correctAnswer": 0,
+      "explanation": "Penyelesaian:\n1. Turunan dari √(x + 1) adalah 1/(2√(x + 1))."
+  },  
   ];
 
   const [selectedAnswers, setSelectedAnswers] = useState({});

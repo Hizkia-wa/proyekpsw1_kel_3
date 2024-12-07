@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-  useLocation,
+import {BrowserRouter as Router,Route,Routes,Navigate,useLocation,
 } from "react-router-dom";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegistrationForm";
@@ -67,10 +62,9 @@ function App() {
 
   return (
     <div className="app-container d-flex flex-column min-vh-100">
-      <Navbar /> {/* Navbar selalu muncul */}
+      <Navbar />
       <div className="flex-grow-1">
         <Routes>
-          {/* Home sebagai halaman utama */}
           <Route path="/" element={<Home />} />
 
           <Route
@@ -90,7 +84,6 @@ function App() {
             }
           />
 
-          {/* Rute lainnya */}
           <Route path="/materi" element={<Materi />} />
           <Route path="/latihansoal" element={<LatihanSoal />} />
           <Route path="/brilian" element={<Brilian />} />
@@ -133,7 +126,6 @@ function App() {
           <Route path="/Soallatihanlimit" element={<SoalLatihanLimit />} />
           <Route path="/Soallatihanbinomial" element={<SoalLatihanBinomial />} />
           <Route path="/SoallatihanAp" element={<SoalLatihanAp />} />
-          {/* Redirect halaman tidak dikenal ke Home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

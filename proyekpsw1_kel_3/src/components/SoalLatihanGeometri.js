@@ -127,6 +127,56 @@ const SoalLatihanGeometri = () => {
 3. Jadi, L = 3√3/2 * 6² = 3√3/2 * 36 ≈ 93.53 cm².
 4. Volume prisma = L * t = 93.53 cm² * 8 cm ≈ 144 cm³.`,
   },
+  {
+    question: "16. Sebuah bangun ruang berbentuk tabung memiliki jari-jari 14 cm dan tinggi 10 cm. Jika sebuah bola dengan jari-jari 7 cm dimasukkan ke dalam tabung, berapa volume sisa ruang dalam tabung tersebut? (π = 3.14)",
+    options: ["3880 cm³", "4620 cm³", "3080 cm³", "3920 cm³"],
+    correctAnswer: 0,
+    explanation: `Penyelesaian:
+  1. Volume tabung dihitung dengan rumus V_tabung = πr²t, di mana r adalah jari-jari dan t adalah tinggi tabung.
+     V_tabung = 3.14 * 14² * 10 = 3.14 * 196 * 10 = 6154.4 cm³.
+  2. Volume bola dihitung dengan rumus V_bola = 4/3 * π * r³.
+     V_bola = 4/3 * 3.14 * 7³ = 4/3 * 3.14 * 343 = 1436.03 cm³.
+  3. Volume sisa ruang = V_tabung - V_bola = 6154.4 - 1436.03 ≈ 3880 cm³.`,
+  },
+  {
+    question: "17. Sebuah limas segi empat memiliki panjang alas 8 cm, lebar alas 6 cm, dan tinggi 15 cm. Jika tinggi limas diturunkan menjadi 10 cm tanpa mengubah dimensi alas, berapa perbandingan volume limas sebelum dan sesudah perubahan?",
+    options: ["3:2", "2:3", "5:3", "3:5"],
+    correctAnswer: 0,
+    explanation: `Penyelesaian:
+  1. Volume limas dihitung dengan rumus V = 1/3 * panjang * lebar * tinggi.
+     Volume awal = 1/3 * 8 * 6 * 15 = 240 cm³.
+     Volume akhir = 1/3 * 8 * 6 * 10 = 160 cm³.
+  2. Perbandingan volume awal dan akhir = 240:160 = 3:2.`,
+  },
+  {
+    question: "18. Sebuah taman berbentuk lingkaran dengan jari-jari 21 meter akan dipasang pagar di sekelilingnya. Jika biaya pemasangan pagar adalah Rp50.000 per meter, berapa total biaya yang diperlukan? (π = 22/7)",
+    options: ["Rp6.600.000", "Rp7.700.000", "Rp6.900.000", "Rp7.200.000"],
+    correctAnswer: 0,
+    explanation: `Penyelesaian:
+  1. Keliling taman dihitung dengan rumus K = 2πr.
+     K = 2 * 22/7 * 21 = 132 meter.
+  2. Total biaya pemasangan pagar = Rp50.000 * 132 = Rp6.600.000.`,
+  },
+  {
+    question: "19. Sebuah bola dengan jari-jari 6 cm dicelupkan ke dalam sebuah tabung yang berisi air hingga penuh. Jika air yang tumpah adalah 904.32 cm³, berapa tinggi air dalam tabung dengan jari-jari 6 cm setelah bola dicelupkan? (π = 3.14)",
+    options: ["8 cm", "12 cm", "16 cm", "10 cm"],
+    correctAnswer: 3,
+    explanation: `Penyelesaian:
+  1. Volume bola dihitung dengan rumus V = 4/3 * π * r³.
+     V = 4/3 * 3.14 * 6³ = 904.32 cm³.
+  2. Volume air yang tersisa akan membentuk silinder dengan jari-jari 6 cm.
+     Tinggi air dalam tabung = V / (πr²) = 904.32 / (3.14 * 6²) = 10 cm.`,
+  },
+  {
+    question: "20. Sebuah trapesium memiliki sisi sejajar 14 cm dan 20 cm, dengan tinggi 12 cm. Jika trapesium tersebut diputar mengelilingi sisi terpendeknya, berapa volume benda yang terbentuk? (π = 3.14)",
+    options: ["7910.4 cm³", "7056 cm³", "6842.8 cm³", "8426.4 cm³"],
+    correctAnswer: 1,
+    explanation: `Penyelesaian:
+  1. Volume benda putar berbentuk kerucut terpancung dihitung dengan rumus V = 1/3 * π * t * (R² + Rr + r²), di mana R dan r adalah jari-jari lingkaran besar dan kecil.
+     R = 20/2 = 10 cm, r = 14/2 = 7 cm, dan t = tinggi = 12 cm.
+     V = 1/3 * 3.14 * 12 * (10² + 10*7 + 7²) = 1/3 * 3.14 * 12 * (100 + 70 + 49) = 1/3 * 3.14 * 12 * 219 ≈ 7056 cm³.`,
+  },
+  
 ];
 
   const [selectedAnswers, setSelectedAnswers] = useState({});
