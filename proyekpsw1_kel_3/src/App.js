@@ -1,6 +1,7 @@
 import React from "react";
-import {BrowserRouter as Router,Route,Routes,Navigate,useLocation,
-} from "react-router-dom";
+import {BrowserRouter as Router,Route,Routes,Navigate,useLocation,} from "react-router-dom";
+import { AuthProvider } from "./components/AuthContext";
+import ProtectedRoute from "./components/ProtectedRoute";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegistrationForm";
 import Navbar from "./components/Navbar";
@@ -49,6 +50,7 @@ import SoalLatihanLimit from "./components/SoalLatihanLimit";
 import SoalLatihanBinomial from "./components/SoalLatihanBinomial";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 function CenteredLayout({ children }) {
   return (
     <div className="d-flex align-items-center justify-content-center vh-100 bg-light">
@@ -65,28 +67,34 @@ function App() {
       <Navbar />
       <div className="flex-grow-1">
         <Routes>
-          <Route path="/" element={<Home />} />
-
+        <Route path="/" element={<Home />} />
+  <Route
+    path="/login"
+    element={
+      <CenteredLayout>
+        <LoginForm />
+      </CenteredLayout>
+    }
+  />
+  <Route
+    path="/register"
+    element={
+      <CenteredLayout>
+        <RegisterForm />
+      </CenteredLayout>
+    }
+  />
           <Route
-            path="/login"
+            path="/brilian"
             element={
-              <CenteredLayout>
-                <LoginForm />
-              </CenteredLayout>
+              <ProtectedRoute>
+                <Brilian />
+              </ProtectedRoute>
             }
           />
-          <Route
-            path="/register"
-            element={
-              <CenteredLayout>
-                <RegisterForm />
-              </CenteredLayout>
-            }
-          />
-
           <Route path="/materi" element={<Materi />} />
           <Route path="/latihansoal" element={<LatihanSoal />} />
-          <Route path="/brilian" element={<Brilian />} />
+
           <Route path="/soallatihan" element={<SoalLatihan />} />
           <Route path="/BrilianGeometri" element={<BrilianGeometri />} />
           <Route path="/materistatistika" element={<MateriStatistika />} />
@@ -137,7 +145,9 @@ function App() {
 function AppWithRouter() {
   return (
     <Router>
+      <AuthProvider>
       <App />
+      </AuthProvider>
     </Router>
   );
 }

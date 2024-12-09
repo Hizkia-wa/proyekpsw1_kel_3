@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../components/AuthContext"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaCalculator, FaLock, FaUserLock } from "react-icons/fa";
 import "./LoginRegis.css";
@@ -9,6 +10,7 @@ function LoginForm() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const { login } = useAuth(); // Ambil fungsi login dari AuthContext
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -28,8 +30,9 @@ function LoginForm() {
       return;
     }
 
+    login(); // Ubah status login menggunakan AuthContext
     setError("");
-    navigate("/Home");
+    navigate("home"); // Arahkan ke halaman Brilian setelah login
   };
 
   return (

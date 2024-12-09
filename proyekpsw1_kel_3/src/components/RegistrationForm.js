@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {FaEnvelope,FaLock,FaCalculator,FaUserLock,FaUserAlt,} from "react-icons/fa";
+import { FaEnvelope, FaLock, FaCalculator, FaUserLock, FaUserAlt } from "react-icons/fa";
 import "./Register.css";
 
 function RegisterForm() {
@@ -15,7 +15,6 @@ function RegisterForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-
     if (
       username.trim() === "" ||
       email.trim() === "" ||
@@ -26,20 +25,17 @@ function RegisterForm() {
       return;
     }
 
-
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       setError("Please enter a valid email address.");
       return;
     }
 
-
     if (password !== confirmPassword) {
       setError("Passwords do not match.");
       return;
     }
 
- 
     const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
     const userExists = existingUsers.some(
       (user) => user.username === username || user.email === email
@@ -50,13 +46,11 @@ function RegisterForm() {
       return;
     }
 
-
     const newUser = { username, email, password };
     localStorage.setItem("users", JSON.stringify([...existingUsers, newUser]));
 
     setError("");
-    alert("Registration Successful!");
-    navigate("/"); 
+    navigate("/login"); // Arahkan ke halaman login
   };
 
   return (
@@ -169,7 +163,7 @@ function RegisterForm() {
             <a
               href="#"
               className="text-decoration-none text-primary"
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/login")}
             >
               Login here
             </a>
