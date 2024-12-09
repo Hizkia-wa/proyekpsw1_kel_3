@@ -57,7 +57,6 @@ function Home() {
               fontSize: "1.2rem",
             }}
           >
-            y = mx + c
           </span>
           <br />
           Platform belajar matematika yang interaktif, seru, dan cerdas!

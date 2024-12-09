@@ -5,7 +5,6 @@ const BusinessSection = () => {
   return (
     <div className="business-section">
       <div className="content">
-        {/* Bagian Kiri: Teks */}
         <div className="text-section">
           <h2 className="title">Kami Dari Team RUMAPI</h2>
           <p className="description">
@@ -16,7 +15,6 @@ const BusinessSection = () => {
           </p>
         </div>
 
-        {/* Bagian Kanan: Kartu */}
         <div className="card-section">
           <div className="card card-vision">
             <h3>Visi</h3>
@@ -38,14 +36,6 @@ const BusinessSection = () => {
               pengalaman belajar modern dan efektif. Selain itu, kami
               berkomitmen membentuk komunitas belajar yang kolaboratif dan
               saling mendukung demi keberhasilan bersama.
-            </p>
-          </div>
-          <div className="card card-values">
-            <h3>Nilai Kami</h3>
-            <p>
-              Dedikasi, Inovasi, Kolaborasi, dan Keunggulan adalah nilai-nilai
-              yang menjadi dasar dalam setiap langkah kami untuk membantu siswa
-              mencapai potensi terbaik mereka.
             </p>
           </div>
         </div>
